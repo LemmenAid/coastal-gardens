@@ -1,5 +1,5 @@
 body {
-    background-color: #F9FAFC;
+    background-color: #d9d9d9;
 }
 
 .brand {
@@ -34,16 +34,24 @@ body {
     background-color: transparent;
 }
 
+.card-title {
+    margin-top: .6rem;
+    margin-bottom: .6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #002542;
+}
+
 .image-container {
     position: relative;
 }
 
 .image-flash {
-    position: absolute;
+    /* position: absolute; */
     bottom: 5%;
     min-width: 30%;
-    left: -2px;
-    background-color: #188181;
+    
+    /* background-color: #aed2ed; */
 }
 
 .scale {
@@ -52,8 +60,9 @@ body {
 }
 
 .author {
-    color: white;
-    margin: 4px;
+    color: #1a17b8;
+    margin-top: 8px;
+    margin-bottom: 8px;
     text-transform: uppercase;
 }
 
