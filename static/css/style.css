@@ -54,11 +54,6 @@ body {
     /* background-color: #aed2ed; */
 }
 
-.scale {
-    width: 100%;
-    height: auto;
-}
-
 .author {
     color: #1a17b8;
     margin-top: 8px;
@@ -66,38 +61,35 @@ body {
     text-transform: uppercase;
 }
 
-.masthead {
-    margin-top: 10px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 33vh;
+.masthead-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.post-image {
     width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .masthead-text {
-    background-color: #445261;
-    color: white;
-    position: relative;
+    margin-bottom: 1rem;
 }
 
-.masthead-image {
-    position: relative;
-    overflow: hidden;
+.post-title {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
+.post-subtitle {
+    color: #63686c;
+}
+
+.post-content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .post-link {
@@ -107,17 +99,7 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
-}
-
-.post-title {
-    margin-top: 10%;
-    margin-left: 5%;
-}
-
-.post-subtitle {
-    margin-left: 5%;
-    color: lightgray;
+    color: #267960;
 }
 
 .btn-signup,
