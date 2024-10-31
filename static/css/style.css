@@ -7,43 +7,49 @@
 
 
 body {
-    background-color: #d9d9d9;
+    background-color: #f1f8e9;
 }
 
+/* Styles for Logo navbar */
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #404040;
+    color: #505050;
 }
 
 .green-o {
-    color: #278f4e;
+    color: #558b2f;
 }
 
 .thin {
     font-weight: 300;
 }
 
+/* Project colours */
 .light-bg {
-    background-color: #fff;
+    background-color: #dcedc8;
 }
 
 .dark-bg {
-    background-color: #445261;
+    background-color: #558b2f;
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: #f1f8e9;
+}
+
+.nav-bg {
+    background-color: #9dc7b0;
 }
 
 
 /* Styles Home Page */
 /* Main content */
 main {
-    background-color: #83d5c8;
+    background-color: #f1f8e9;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     display: flex;
@@ -55,7 +61,7 @@ main {
     height: 700px;
     width: 100%;
     background: url("../images/default.jpg") no-repeat center center/cover;
-    background-color: #498b6c;
+    background-color: #c5e1a5;
 }
 
 .hero-title {
@@ -93,23 +99,28 @@ main {
 }
 
 .action-button {
-    padding: 15px 25px;
-    border-style: solid;
-    border: 1px outset buttonborder;
-    border-radius: 100px;
+    padding: 12px 20px;
+    /* border-style: solid;
+    border: 1px outset buttonborder; */
+    border-radius: 100px; 
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 1.3px;
-    color: #212121;
-    background-color: #ff8833;
-    border-color: #ff8833;
+    color: #bdda76;
+    background-color: #3c431cd6;
+    /* border-color: #3c431cd6; */
+}
+
+.action-button:hover {
+    background-color: #bdda76;
+    color: #3c431cd6;
 }
 
 
-
+/* Styles Features Page */
 
 .card {
     border: none;
@@ -137,11 +148,12 @@ main {
 }
 
 .author {
-    color: #1a17b8;
+    color: #71be0d;
     margin-top: 8px;
     margin-bottom: 8px;
     text-transform: uppercase;
 }
+
 
 .masthead-image {
     display: flex;
@@ -181,7 +193,7 @@ main {
 
 .post-link:hover,
 .page-link {
-    color: #267960;
+    color: #59b83c;
 }
 
 .btn-signup,
