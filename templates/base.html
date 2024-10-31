@@ -31,14 +31,17 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">c<span class="red-o">o</span>astal<span
+            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">c<span class="green-o">o</span>astal<span
                         class="thin">|Gardens</span></span></a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
                             href="{% url 'home' %}">Home</a>
@@ -47,11 +50,8 @@
                         <a class="nav-link {% if request.path == features_url %}active{% endif %}" aria-current="page"
                             href="{% url 'features' %}">Features</a>
                     </li>
-
                 </ul>
-                <span class="navbar-text text-muted">
-                    All you need to now on how to make your coastal garden grow.
-                </span>
+               
             </div>
         </div>
     </nav>
@@ -68,9 +68,10 @@
     <footer class="footer mt-auto py-3 dark-bg">
         <p class="m-0 text-center text-white">
             {% block copyright %}
-            Made by Code Instituters
+            Made by LemmenAid
             {% endblock copyright %}</p>
-        <p class="m-0 text-center text-white">Follow us: <i class="fab fa-facebook-square ms-3"></i>
+        <p class="m-0 text-center text-white">Follow us: 
+            <i class="fab fa-facebook-square ms-3"></i>
             <i class="fab fa-twitter-square ms-3"></i>
             <i class="fab fa-instagram-square ms-3"></i>
             <i class="fab fa-youtube-square ms-3"></i>
