@@ -119,8 +119,32 @@ main {
     color: #3c431cd6;
 }
 
+/* custom Styles About Page */
 
-/* Styles Features Page */
+.about-image-container {
+    max-height: 300px;
+    overflow: hidden;
+  }
+  
+  .about-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .collapse-toggle {
+    cursor: pointer;
+  }
+  
+  .collapse-toggle i {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .collapse-toggle[aria-expanded="true"] i {
+    transform: rotate(180deg);
+  }
+
+/* custom Styles Features Page */
 
 .card {
     border: none;
