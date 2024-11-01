@@ -1,33 +1,150 @@
-body {
-    background-color: #d9d9d9;
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+
+body {
+    background-color: #f1f8e9;
+}
+
+/* Styles for Logo navbar */
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #4A4A4F;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #505050;
 }
 
-.red-o {
-    color: #E84610;
+.green-o {
+    color: #558b2f;
 }
 
 .thin {
     font-weight: 300;
 }
 
+/* Project colours */
 .light-bg {
-    background-color: #fff;
+    background-color: #dcedc8;
 }
 
 .dark-bg {
-    background-color: #445261;
+    background-color: #558b2f;
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: #f1f8e9;
 }
+
+.nav-bg {
+    background-color: #9dc7b0;
+}
+
+
+/* Styles Home Page */
+/* Main content */
+main {
+    background-color: #f1f8e9;
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero section */
+#hero {
+    height: 700px;
+    width: 100%;
+    background: url("../images/default.jpg") no-repeat center center/cover;
+    background-color: #c5e1a5;
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 4rem;
+    letter-spacing: 1.5px;
+    color: #252525;
+    margin-bottom: 5px;
+    text-align: center;
+    padding-top: 180px;
+}
+
+#hero p {
+    display: flex;
+    flex-direction: column;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 1.4px;
+    color: #161616;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#homepage-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.action-button {
+    padding: 12px 20px;
+    /* border-style: solid;
+    border: 1px outset buttonborder; */
+    border-radius: 100px; 
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    color: #bdda76;
+    background-color: #3c431cd6;
+    /* border-color: #3c431cd6; */
+}
+
+.action-button:hover {
+    background-color: #bdda76;
+    color: #3c431cd6;
+}
+
+/* custom Styles About Page */
+
+.about-image-container {
+    max-height: 300px;
+    overflow: hidden;
+  }
+  
+  .about-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .collapse-toggle {
+    cursor: pointer;
+  }
+  
+  .collapse-toggle i {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .collapse-toggle[aria-expanded="true"] i {
+    transform: rotate(180deg);
+  }
+
+/* custom Styles Features Page */
 
 .card {
     border: none;
@@ -54,50 +171,43 @@ body {
     /* background-color: #aed2ed; */
 }
 
-.scale {
-    width: 100%;
-    height: auto;
-}
-
 .author {
-    color: #1a17b8;
+    color: #71be0d;
     margin-top: 8px;
     margin-bottom: 8px;
     text-transform: uppercase;
 }
 
-.masthead {
-    margin-top: 10px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 33vh;
+
+.masthead-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.post-image {
     width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .masthead-text {
-    background-color: #445261;
-    color: white;
-    position: relative;
+    margin-bottom: 1rem;
 }
 
-.masthead-image {
-    position: relative;
-    overflow: hidden;
+.post-title {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
+.post-subtitle {
+    color: #63686c;
+}
+
+.post-content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .post-link {
@@ -107,17 +217,7 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
-}
-
-.post-title {
-    margin-top: 10%;
-    margin-left: 5%;
-}
-
-.post-subtitle {
-    margin-left: 5%;
-    color: lightgray;
+    color: #59b83c;
 }
 
 .btn-signup,
