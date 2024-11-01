@@ -8,36 +8,42 @@
   <div class="row mb-4">
     <div class="col-12">
       <div class="about-image-container">
-      <img src="{% static 'images/default.jpg' %}" class="about-image" alt="About image">
+      <img src="{% static 'images/about.jpg' %}" class="about-image" alt="About image">
       </div>
     </div>
   </div>
 
-<!-- Content -->
+<!-- Title and Content -->
+<div class="row mb-4">
+  <div class="col-12">
+    <h2>{{ about.title }}</h2>
+    <div>
+      {{ about.content | safe }}
+    </div>
+  </div>
+</div>
+
+
+  <!-- Zone Map and Get Started Images   -->
   <div class="row">
-    <!-- Side Image column -->
-    <div class="col-md-4 mb-4 mb-md-0">
-
-      <!-- Visible only on small screens, collapses the image -->
-      <h3 class="d-md-none collapse-toggle" data-bs-toggle="collapse" data-bs-target="#secondImageCollapse" aria-expanded="false" aria-controls="secondImageCollapse">
-        Garden Zone Map <i class="fas fa-chevron-down"></i>
-      </h3>
-
-      <!-- The collapsible/toggleable image container -->
-      <div class="collapse d-md-block" id="secondImageCollapse">
-        <img src="{% static 'images/zone-map-wht.jpg' %}" class="img-fluid mt-2" alt="Side image">
-      </div>
-    </div>
-
-    <!-- Content column -->
-    <div class="col-md-8">
-      <h2>{{ about.title }}</h2>
-        <div>
-          {{ about.content | safe }}
+    <div class="col-md-6 mb-4">
+      <a href="{% url 'zone_map' %}" class="d-block square-image-link">
+        <img src="{% static 'images/zone-map-wht.jpg' %}" class="img-fluid square-image" alt="Zone Map">
+        <div class="image-overlay">
+          <span>Zone Map</span>
         </div>
+      </a>
+    </div>
+    <div class="col-md-6 mb-4">
+      <a href="{% url 'get_started' %}" class="d-block square-image-link">
+        <img src="{% static 'images/default.jpg' %}" class="img-fluid square-image" alt="Get Started">
+        <div class="image-overlay">
+          <span>Get Started</span>
+        </div>
+      </a>
     </div>
   </div>
-
+  
   <!-- Updated date -->
   <div class="row mt-3">
     <div class="col-12">
