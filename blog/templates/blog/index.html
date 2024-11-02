@@ -1,10 +1,12 @@
 {% extends "base.html" %}
 {% url 'about' as about_url %}
+{% url 'features' as features_url %}
+{% load static %}
 
 {% block content %}
 
 <!-- index.html content starts here -->
-<main>
+
     <div id="hero">
         <h1 class="hero-title">Coastal Gardens</h1>
         <p>Everything you need to know about how to make stuff grow.</p>
@@ -12,7 +14,26 @@
             <a href="{% url 'about' %}" class="action-button">More About Us</a>
         </div>
     </div>
-</main>
+
+    <div class="link-container">
+        <a href="{% url 'about' %}" class="link-square">
+            <img src="{% static 'images/qa.jpg' %}" alt="About">
+            <span>About</span>
+        </a>
+        <a href="{% url 'features' %}" class="link-square">
+            <img src="{% static 'images/features.jpg' %}" alt="Features">
+            <span>Features</span>
+        </a>
+        <a href="#" class="link-square">
+            <img src="{% static 'images/get-started.jpg' %}" alt="Get Started">
+            <span>Get Started</span>
+        </a>
+        <a href="#" class="link-square">
+            <img src="{% static 'images/about.jpg' %}" alt="Q&A">
+            <span>Q&A</span>
+        </a>
+    </div>
+
 
 <!-- index.html content ends here -->
 {% endblock %}

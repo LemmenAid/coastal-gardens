@@ -10,22 +10,17 @@ body {
     background-color: #f1f8e9;
 }
 
-/* Styles for Logo navbar */
-.brand {
-    font-family: Lato, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #505050;
-}
-
-.green-o {
-    color: #558b2f;
-}
-
-.thin {
-    font-weight: 300;
+/* Main content */
+.main-content {
+    background-color: #f1f8e9;
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 2000px; /* whatever maximum width prefered */
+    margin: 0 auto;
+    padding: 0px;
 }
 
 /* Project colours */
@@ -46,16 +41,27 @@ body {
 }
 
 
-/* Styles Home Page */
-/* Main content */
-main {
-    background-color: #f1f8e9;
-    /* Make main element take up any surplus space to push footer down */
-    flex: 1 0 auto;
-    display: flex;
-    flex-direction: column;
+/* Styles for Logo navbar */
+.brand {
+    font-family: Lato, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #505050;
 }
 
+.green-o {
+    color: #558b2f;
+}
+
+.thin {
+    font-weight: 300;
+}
+
+
+
+/* Styles Home Page */
 /* Hero section */
 #hero {
     height: 700px;
@@ -100,8 +106,6 @@ main {
 
 .action-button {
     padding: 12px 20px;
-    /* border-style: solid;
-    border: 1px outset buttonborder; */
     border-radius: 100px; 
     text-align: center;
     text-transform: uppercase;
@@ -111,12 +115,68 @@ main {
     letter-spacing: 1.3px;
     color: #bdda76;
     background-color: #3c431cd6;
-    /* border-color: #3c431cd6; */
 }
 
 .action-button:hover {
     background-color: #bdda76;
     color: #3c431cd6;
+}
+
+/* Styles for square links on homepage */
+
+.link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.link-square {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex: 0 0 auto;
+    margin: 15px;
+}
+
+.link-square img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.link-square span {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+}
+
+@media (max-width: 900px) {
+    .link-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* custom Styles About Page */
