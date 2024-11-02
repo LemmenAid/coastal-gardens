@@ -3,18 +3,20 @@
 {% url 'features' as features_url %}
 {% load static %}
 
-{% block content %}
 
 <!-- index.html content starts here -->
+{% block content %}
 
-    <div id="hero">
-        <h1 class="hero-title">Coastal Gardens</h1>
-        <p>Everything you need to know about how to make stuff grow.</p>
-        <div id="homepage-button">
-            <a href="{% url 'about' %}" class="action-button">More About Us</a>
-        </div>
+<div id="hero">
+    <h1 class="hero-title">Coastal Gardens</h1>
+    <p>Coastal Gardening Made Simple: Explore, ask, and grow with fellow seaside gardeners. Here, you'll find the knowledge,
+        guidance, and inspiration to help your garden thrive in seaside conditions.</p>
+    <div id="homepage-button">
+        <a href="{% url 'about' %}" class="action-button">Sign Up Here</a>
     </div>
+</div>
 
+<div class="row">
     <div class="link-container">
         <a href="{% url 'about' %}" class="link-square">
             <img src="{% static 'images/qa.jpg' %}" alt="About">
@@ -33,10 +35,11 @@
             <span>Q&A</span>
         </a>
     </div>
-
+</div>
 
 <!-- index.html content ends here -->
 {% endblock %}
+
 {% block copyright %}
 Copyright 2024 LemmenAid
 {% endblock %}
