@@ -277,18 +277,18 @@ body {
 
 .btn-signup,
 .btn-edit {
-    background-color: #188181;
+    background-color: #558b2f;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
-    color: #23BBBB;
+    color: #558b2f;
 }
 
 .link {
-    color: #23BBBB;
+    color: #558b2f;
     text-decoration: none;
 }
 
@@ -299,19 +299,19 @@ body {
 }
 
 .btn-like {
-    color: #E84610;
+    color: #558b2f;
     border: none;
     background: transparent;
 }
 
 .btn-delete {
     color: #fff;
-    background: #E84610;
+    background: #f0691b;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #E84610;
+    color: #9dc7b0;
     background: transparent;
     border: none;
 }

@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% url 'about' as about_url %}
 {% url 'features' as features_url %}
+{% url 'account_signup' as signup_url %}
 {% load static %}
 
 
@@ -12,7 +13,7 @@
     <p>Coastal Gardening Made Simple: Explore, ask, and grow with fellow seaside gardeners. Here, you'll find the knowledge,
         guidance, and inspiration to help your garden thrive in seaside conditions.</p>
     <div id="homepage-button">
-        <a href="{% url 'about' %}" class="action-button">Sign Up Here</a>
+        <a href="{% url 'account_signup' %}" class="action-button">Sign Up Here</a>
     </div>
 </div>
 
