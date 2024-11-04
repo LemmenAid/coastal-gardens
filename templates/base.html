@@ -85,6 +85,13 @@
 
     <main class="main-content main-bg">
 
+        <!-- personalised message to member -->
+        {% if user.is_authenticated %}
+        <p class="text-end p-message">You are logged in as {{ user }}</p>
+        {% else %}
+        <p class="text-end m-3">You are not logged in</p>
+        {% endif %}
+
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
@@ -93,11 +100,11 @@
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3 nav-bg">
-        <p class="m-0 text-center text-white">
+        <p class="m-0 text-center text-black">
             {% block copyright %}
             Made by LemmenAid
             {% endblock copyright %}</p>
-        <p class="m-0 text-center text-white">Follow us:
+        <p class="m-0 text-center text-black">Follow us:
             <i class="fab fa-facebook-square ms-3"></i>
             <i class="fab fa-twitter-square ms-3"></i>
             <i class="fab fa-instagram-square ms-3"></i>

@@ -35,9 +35,14 @@ body {
 }
 
 .nav-bg {
-    background-color: #9dc7b0;
+    background-color: #bee5d0;
 }
 
+.p-message {
+    color: #00000854;
+    font-size: 0.8rem;
+    margin: 0px 20px 8px;
+}
 
 /* Styles for Logo navbar */
 .brand {
@@ -59,7 +64,6 @@ body {
 
 
 /* Styles Home Page */
-
 /* Hero section */
 #hero {
     height: 700px;
@@ -121,7 +125,6 @@ body {
 }
 
 /* Styles for square links on homepage */
-
 .link-container {
     display: flex;
     justify-content: center;
@@ -169,15 +172,8 @@ body {
     letter-spacing: 1.3px;
 }
 
-@media (max-width: 900px) {
-    .link-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
 
 /* custom Styles About Page */
-
 .about-image {
     object-fit: cover;
     width: 100%;
@@ -200,7 +196,6 @@ body {
 
 
 /* custom Styles Features Page */
-
 .card {
     border: none;
     background-color: transparent;
@@ -326,21 +321,33 @@ body {
 
 
 
-/* Main content(768px and up) */
+/* Media queries */
 
-/* Hero section */
-.hero-title {
-    padding-top: 150px;
+@media (max-width: 768px) {
+
+    /* Hero section */
+    .hero-title {
+        padding-top: 150px;
+    }
+
+    #hero p {
+        display: flex;
+        flex-direction: column;
+        text-transform: none;
+        font-size: 1rem;
+        letter-spacing: 1.4px;
+        text-align: center;
+        padding-top: 40px;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
 }
 
-#hero p {
-    display: flex;
-    flex-direction: column;
-    text-transform: none;
-    font-size: 1rem;
-    letter-spacing: 1.4px;
-    text-align: center;
-    padding-top: 40px;
-    padding-left: 45px;
-    padding-right: 45px;
+@media (max-width: 900px) {
+
+    /* links on homepage */
+    .link-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
