@@ -17,7 +17,7 @@ def about_me(request):
     )
 
 def zone_map_view(request):
-    return HttpResponse("Zone Map page is under construction")
+    return render(request, 'about/zone-map.html')
 
 def get_started_view(request):
     return HttpResponse("Get Started page is under construction")

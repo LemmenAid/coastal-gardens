@@ -7,8 +7,8 @@
   <!-- About Image -->
   <div class="row mb-4">
     <div class="col-12">
-      <div class="about-image-container">
-        <img src="{% static 'images/about.jpg' %}" class="about-image" alt="About image">
+      <div class="top-image-container">
+        <img src="{% static 'images/about.jpg' %}" class="top-image" alt="About image">
       </div>
     </div>
   </div>
@@ -27,10 +27,10 @@
   <div class="row">
     <div class="link-container">
       <a href="{% url 'zone_map' %}" class="link-square">
-        <img src="{% static 'images/zone-map-wht.jpg' %}" alt="About">
+        <img src="{% static 'images/zone.jpg' %}" alt="Zone map">
         <span>Zone Map</span>
       </a>
-      <a href="#" class="link-square">
+      <a href="{% url 'get_started' %}" class="link-square">
         <img src="{% static 'images/get-started.jpg' %}" alt="Get Started">
         <span>Get Started</span>
       </a>

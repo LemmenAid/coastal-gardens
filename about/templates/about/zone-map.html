@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+
+<div class="container mt-5">
+
+    <!-- Top Image -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="top-image-container">
+                <img src="{% static 'images/zone.jpg' %}" class="top-image" alt="Coastal image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Content and Zone Map -->
+    <div class="container">
+        <div class="zone-title">
+            <h2>Understanding Coastal Gardening Zones in the UK & Ireland</h2>
+        </div>
+
+        <div class="row mb-4 align-items-start">
+            <div class="col-md-6">
+                <img src="{% static 'images/zone-map.jpg' %}" class="img-fluid zone-image" alt="Zone-map image">
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <p>Coastal gardening in the UK and Ireland comes with unique conditions that influence what will
+                        thrive in your garden. This is where knowing your specific gardening zone is invaluable. Coastal
+                        zones benefit from milder winters and higher humidity, which means a longer growing season and
+                        the possibility to cultivate certain plants year-round. However, exposure to salty air, sandy
+                        soils, and stronger winds presents its own set of challenges.</p>
+
+                    <p style="margin-top: 15px;">Our zone map highlights areas with these specific coastal conditions,
+                        guiding you in choosing resilient plants, trees, and shrubs suited to seaside climates. By
+                        selecting the right plants for your zone, you'll have a better chance at creating a garden that
+                        withstands the elements while bringing beauty and diversity to your coastal space. Coastal
+                        gardening can be incredibly rewarding with the right knowledge and approach—and we're here to
+                        help you make the most of it!</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- square links   -->
+    <div class="row">
+        <div class="link-container">
+            <a href="#" class="link-square">
+                <img src="{% static 'images/get-started.jpg' %}" alt="Get Started">
+                <span>Get Started</span>
+            </a>
+            <a href="{% url 'features' %}" class="link-square">
+                <img src="{% static 'images/features.jpg' %}" alt="Features">
+                <span>Features</span>
+            </a>
+            <a href="{% url 'contact' %}" class="link-square">
+                <img src="{% static 'images/contact.jpg' %}" alt="Contact us">
+                <span>Contact Us</span>
+            </a>
+        </div>
+    </div>
+
+</div>
+{% endblock content %}
