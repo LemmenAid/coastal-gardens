@@ -65,40 +65,40 @@
 
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'home' %}">Home</a>
+                            href="{% url 'home' %}">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == about_url %}active{%endif%}" aria-current="page"
-                            href="{% url 'about' %}">About</a>
+                            href="{% url 'about' %}">ABOUT</a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == get_started_url %}active{% endif %}"
-                            aria-current="page" href="{% url 'get_started' %}">Get Started</a>
+                            aria-current="page" href="{% url 'get_started' %}">GET STARTED</a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == features_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'features' %}">Features</a>
+                            href="{% url 'features' %}">FEATURES</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'account_logout' %}">Logout</a>
+                            href="{% url 'account_logout' %}">LOGOUT</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'account_signup' %}">Register</a>
+                            href="{% url 'account_signup' %}">REGISTER</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'account_login' %}">Login</a>
+                            href="{% url 'account_login' %}">LOGIN</a>
                     </li>
                     {% endif %}
                     <li class="nav-item"></li>
                     <a class="nav-link {% if request.path == contact_url %}active{% endif %}" aria-current="page"
-                        href="{% url 'contact' %}">Contact Us</a>
+                        href="{% url 'contact' %}">CONTACT US</a>
                     </li>
                 </ul>
 
@@ -170,7 +170,7 @@
 
     <!-- Custom block for page-specific scripts -->
     {% block extra_js %}
-    {% endblock extra_js%}
+    {% endblock extra_js %}
 </body>
 
 </html>

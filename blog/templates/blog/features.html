@@ -9,8 +9,17 @@
     <div class="row mb-4">
         <div class="col-12">
             <div class="top-image-container">
-                <img src="{% static 'images/features.jpg' %}" class="top-image" alt="About image">
+                <img src="{% static 'images/features.jpg' %}" class="top-feature-image" alt="About image">
             </div>
+        </div>
+    </div>
+
+    <!-- Title and paragraph -->
+    <div class="row mb-4">
+        <div class="col-12 text-center">
+            <h1 class="mb-3">FEATURES</h1>
+            <p>Dive into inspiring stories and expert advice from coastal gardeners across the UK and Ireland. Explore
+                tips, techniques, and success stories to help your seaside garden flourish.</p>
         </div>
     </div>
 
@@ -25,11 +34,7 @@
                     <div class="col-md-4">
                         <div class="card mb-4">
                             <div class="card-body">
-                                <!--<div class="image-container">
-                                <div class="image-flash">
-                                    <p class="author">Author: {{ post.author }}</p>
-                                </div>
-                            </div> -->
+
                                 <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                     <h2 class="card-title">{{ post.title }}</h2>
                                     <div class="image-flash">
@@ -37,11 +42,11 @@
                                     </div>
                                     <p class="card-text">{{ post.excerpt }}</p>
                                 </a>
-
                                 <hr />
                                 <p class="card-text text-muted h6">{{ post.created_on}}
                                 </p>
                             </div>
+
                         </div>
                     </div>
                     {% if forloop.counter|divisibleby:3 %}

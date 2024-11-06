@@ -175,7 +175,7 @@ body {
 }
 
 .link-square:hover {
-    color:#558b2f
+    color: #558b2f
 }
 
 
@@ -218,8 +218,17 @@ body {
 
 
 /* custom Styles Features Page */
+.top-feature-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    overflow: hidden;
+}
+
 .card {
-    border: none;
+    margin: 4px;
+    border: solid 1px #0000002f;
     background-color: transparent;
 }
 
@@ -285,41 +294,51 @@ body {
 
 
 /* Styles for the Contact Us page" */
-/* pop-up map */
+
+
+/* Styles for pop-up modals on site */
 .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0,0,0,0.4);
-    }
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
-    .modal-content {
-        background-color: #fefefe;
-        margin: 15% auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-        max-width: 600px;
-    }
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
 
-    .close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
+.modal-backdrop {
+    z-index: 0;
+  }
+  
+  .modal.show {
+    z-index: 1060;
+  }
 
-    .close:hover,
-    .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 /* Styles for buttons on site */
@@ -354,7 +373,7 @@ body {
 
 .btn-delete {
     color: #fff;
-    background: #f0691b;
+    background: #d8611bf3;
 }
 
 .btn-like:hover,
@@ -369,8 +388,12 @@ body {
 }
 
 .approval {
-    color: rgb(222, 146, 168);
+    color: #558b2fbc;
 }
+
+
+
+
 
 
 
@@ -394,6 +417,16 @@ body {
         padding-left: 45px;
         padding-right: 45px;
     }
+
+    .comments-section {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .comment-form-section {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
 }
 
 @media (max-width: 900px) {
@@ -403,4 +436,15 @@ body {
         flex-direction: column;
         align-items: center;
     }
+
+    .comments-section {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+
+    .comment-form-section {
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+
 }
