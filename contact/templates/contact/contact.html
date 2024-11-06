@@ -3,8 +3,8 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-
 <div class="container mt-5">
+
   <!-- About Image -->
   <div class="row mb-4">
     <div class="col-12">
@@ -30,10 +30,8 @@
         {% csrf_token %}
         <button class="btn btn-secondary" type="submit">Submit</button>
       </form>
-
     </div>
   </div>
-
 
   <!-- Zone Map and Get Started Images   -->
   <div class="row">
@@ -56,6 +54,39 @@
       </a>
     </div>
   </div>
+</div>
 
+<!-- Modal for the zone map -->
+<div id="zoneMapModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="{% static 'images/zone-map.jpg' %}" alt="Garden Zone Map">
+  </div>
 </div>
 {% endblock content %}
+
+
+{% block extra_js %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var modal = document.getElementById("zoneMapModal");
+    var link = document.querySelector(".zone-map-link");
+    var span = document.getElementsByClassName("close")[0];
+
+    link.onclick = function (e) {
+      e.preventDefault();
+      modal.style.display = "block";
+    }
+
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  });
+</script>
+{% endblock extra_js %}

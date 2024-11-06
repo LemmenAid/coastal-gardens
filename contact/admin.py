@@ -6,4 +6,4 @@ from .models import Contact
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
 
-    list_display = ('message', 'read',)
+    list_display = ('gardening_experience', 'garden_zone', 'message', 'read',)
