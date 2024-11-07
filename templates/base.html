@@ -64,43 +64,41 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
-                            aria-label="link to the home page in navbar" href="{% url 'home' %}">HOME</a>
+                        <a class="nav-link {% if request.path == home_url %}active" aria-current="page{% endif %}"
+                            href="{% url 'home' %}">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == about_url %}active{%endif%}" aria-current="page"
-                            aria-label="link to the about page in navbar" href="{% url 'about' %}">ABOUT</a>
+                        <a class="nav-link {% if request.path == about_url %}active" aria-current="page{% endif %}"
+                            href="{% url 'about' %}">ABOUT</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == get_started_url %}active{% endif %}"
-                            aria-current="page" aria-label="link to the get started page in navbar"
+                        <a class="nav-link {% if request.path == get_started_url %}active" aria-current="page {% endif %}" 
                             href="{% url 'get_started' %}">GET STARTED</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == features_url %}active{% endif %}" aria-current="page"
-                            aria-label="link to the features page in navbar" href="{% url 'features' %}">FEATURES</a>
+                        <a class="nav-link {% if request.path == features_url %}active" aria-current="page{% endif %}"
+                            href="{% url 'features' %}">FEATURES</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
-                            aria-label="link to the logout page in navbar" href="{% url 'account_logout' %}">LOGOUT</a>
+                        <a class="nav-link {% if request.path == logout_url %}active" aria-current="page{% endif %}"
+                            href="{% url 'account_logout' %}">LOGOUT</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
-                            aria-label="link to the register page in navbar"
+                        <a class="nav-link {% if request.path == signup_url %}active" aria-current="page{% endif %}"
                             href="{% url 'account_signup' %}">REGISTER</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page"
-                            aria-label="link to the login page in navbar" href="{% url 'account_login' %}">LOGIN</a>
+                        <a class="nav-link {% if request.path == login_url %}active" aria-current="page{% endif %}"
+                            href="{% url 'account_login' %}">LOGIN</a>
                     </li>
                     {% endif %}
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == contact_url %}active{% endif %}" aria-current="page"
-                            aria-label="link to the contact us page in navbar" href="{% url 'contact' %}">CONTACT US</a>
+                        <a class="nav-link {% if request.path == contact_url %}active" aria-current="page{% endif %}"
+                            href="{% url 'contact' %}">CONTACT US</a>
                     </li>
                 </ul>
 
