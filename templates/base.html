@@ -65,40 +65,42 @@
 
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'home' %}">HOME</a>
+                            aria-label="link to the home page in navbar" href="{% url 'home' %}">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == about_url %}active{%endif%}" aria-current="page"
-                            href="{% url 'about' %}">ABOUT</a>
+                            aria-label="link to the about page in navbar" href="{% url 'about' %}">ABOUT</a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == get_started_url %}active{% endif %}"
-                            aria-current="page" href="{% url 'get_started' %}">GET STARTED</a>
+                            aria-current="page" aria-label="link to the get started page in navbar"
+                            href="{% url 'get_started' %}">GET STARTED</a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == features_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'features' %}">FEATURES</a>
+                            aria-label="link to the features page in navbar" href="{% url 'features' %}">FEATURES</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'account_logout' %}">LOGOUT</a>
+                            aria-label="link to the logout page in navbar" href="{% url 'account_logout' %}">LOGOUT</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
+                            aria-label="link to the register page in navbar"
                             href="{% url 'account_signup' %}">REGISTER</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'account_login' %}">LOGIN</a>
+                            aria-label="link to the login page in navbar" href="{% url 'account_login' %}">LOGIN</a>
                     </li>
                     {% endif %}
-                    <li class="nav-item"></li>
-                    <a class="nav-link {% if request.path == contact_url %}active{% endif %}" aria-current="page"
-                        href="{% url 'contact' %}">CONTACT US</a>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == contact_url %}active{% endif %}" aria-current="page"
+                            aria-label="link to the contact us page in navbar" href="{% url 'contact' %}">CONTACT US</a>
                     </li>
                 </ul>
 
@@ -141,12 +143,18 @@
         <p class="m-0 text-center text-black">
             {% block copyright %}
             Made by LemmenAid
-            {% endblock copyright %}</p>
-        <p class="m-0 text-center text-black">Follow us:
-            <i class="fab fa-facebook-square ms-3" aria-label="facebook link"></i>
-            <i class="fab fa-twitter-square ms-3" aria-label="twitter link"></i>
-            <i class="fab fa-instagram-square ms-3" aria-label="instagram link"></i>
-            <i class="fab fa-youtube-square ms-3" aria-label="youtube link"></i>
+            {% endblock copyright %}
+        </p>
+        <p class="m-0 text-center text-black footer-icons">
+            Follow us:
+            <a href="https://github.com/LemmenAid/coastal-gardens" target="_blank" rel="noopener noreferrer"
+                aria-label="Visit our GitHub Repository (opens in a new tab)">
+                <i class="fab fa-github-square ms-3" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/karlanlemmen/" target="_blank" rel="noopener noreferrer"
+                aria-label="Visit our Instagram page (opens in a new tab)">
+                <i class="fab fa-instagram-square ms-3" aria-hidden="true"></i>
+            </a>
         </p>
     </footer>
 
