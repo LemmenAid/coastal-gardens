@@ -7,8 +7,13 @@
 
     <div class="container">
         <div class="row">
+
             <div class="top-image-container">
-                <img src="{% static 'images/default.jpg' %}" class="top-image" alt="Post image">
+                {% if "placeholder" in post.featured_image.url %}
+                <img src="{% static 'images/default.jpg' %}" class="top-image" alt="placeholder image">
+                {% else %}
+                <img src=" {{ post.featured_image.url }}" class="top-image" alt="{{ post.title }}">
+                {% endif %}
             </div>
             <div class="masthead-text">
                 <h1 class="post-title mb-3">{{ post.title }}</h1>
