@@ -1,14 +1,18 @@
 {% extends 'base.html' %}
-{% block content %}
 {% load static %}
 
+{% block content %}
 
 <div class="container mt-5">
   <!-- About Image -->
   <div class="row mb-4">
     <div class="col-12">
       <div class="top-image-container">
-        <img src="{% static 'images/about.jpg' %}" class="top-image" alt="About image">
+        {% if "placeholder" in about.profile_image.url %}
+        <img src="{% static 'images/about.jpg' %}" class="top-image" alt="placeholder image">
+        {% else %}
+        <img src="{{ about.profile_image.url }}" class="top-image" alt="{{ about.title }}">
+        {% endif %}
       </div>
     </div>
   </div>
@@ -37,11 +41,11 @@
       <a href="{% url 'features' %}" class="link-square">
         <img src="{% static 'images/features.jpg' %}" alt="Features">
         <span>Features</span>
-    </a>
-    <a href="{% url 'contact' %}" class="link-square">
-      <img src="{% static 'images/contact.jpg' %}" alt="Contact us">
-      <span>Contact Us</span>
-  </a>
+      </a>
+      <a href="{% url 'contact' %}" class="link-square">
+        <img src="{% static 'images/contact.jpg' %}" alt="Contact us">
+        <span>Contact Us</span>
+      </a>
     </div>
   </div>
 
