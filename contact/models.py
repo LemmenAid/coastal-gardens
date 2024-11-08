@@ -1,12 +1,12 @@
 from django.db import models
 
-# Create your models here.
-
-
-
 
 class Contact(models.Model):
-
+    """
+    This model stores information about users who reach out, including their 
+    name, email, gardening experience level, garden zone, message, and whether 
+    the request has been read.
+    """
     EXPERIENCE_CHOICES = [
         ('novice', "I'm new to gardening"),
         ('intermediate', "I have some experience"),

@@ -6,9 +6,15 @@ from .forms import ContactForm
 
 def contact_us(request):
     """
-    Renders the Contact page
-    """
+    Handles contact form submissions and displays the Contact page.
 
+    **Context**
+    ``contact_form``
+        A form for users to submit contact requests.
+
+    **Template:**
+    :template:`contact/contact.html`
+    """
     if request.method == "POST":
         contact_form = ContactForm(data=request.POST)
         if contact_form.is_valid():

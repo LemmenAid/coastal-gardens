@@ -7,6 +7,15 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 
 class Post(models.Model):
+    """
+    Stored a single blog post entry related to :model:`auth.User`.
+
+    Meta:
+    - Orders posts in reverse-chronological order by creation date.
+
+    Methods:
+    - __str__: Returns a string of the post title and author for display purposes.
+    """
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
@@ -27,6 +36,16 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
+    """
+    Stores a single comment entry related to  :model:`blog.Post` 
+    and :model:`auth.User`.
+
+    Meta:
+    - Orders comments in chronological order based on creation date.
+
+    Methods:
+    - __str__: Returns a string of the comment body and its author for display purposes.
+    """
     post = models.ForeignKey(
         Post, on_delete=models.CASCADE, related_name="comments")
     author = models.ForeignKey(
