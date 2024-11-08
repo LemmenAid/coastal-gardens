@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+
+<div class="container mt-5">
+
+    <!-- Top Image -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="top-image-container">
+                <img src="{% static 'images/above.jpg' %}" class="top-image" alt="Coastal image">
+            </div>
+        </div>
+    </div>
+
+    <h2>Create a Member Story</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Publish Story</button>
+    </form>
+
+</div>
+{% endblock content %}

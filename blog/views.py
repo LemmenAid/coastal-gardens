@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
 from .models import Post, Comment
 from .forms import CommentForm
@@ -134,3 +135,9 @@ def comment_delete(request, slug, comment_id):
         messages.add_message(request, messages.ERROR,
         'You can only delete your own comments!')
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
+@login_required
+def member_stories(request):
+    stories = Post.objects.filter(is_member_story=True, status=1)  # Only published stories
+    return render(request, "blog/member_stories.html", {"stories": stories})

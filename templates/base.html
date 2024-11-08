@@ -7,6 +7,7 @@
 {% url 'account_signup' as signup_url %}
 {% url 'account_logout' as logout_url %}
 {% url 'contact' as contact_url %}
+{% url 'dashboard' as dashboard_url %}
 {% url 'get_started' as get_started_url %}
 
 <!DOCTYPE html>
@@ -72,16 +73,24 @@
                             href="{% url 'about' %}">ABOUT</a>
                     </li>
 
+                    {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == get_started_url %}active" aria-current="page {% endif %}" 
-                            href="{% url 'get_started' %}">GET STARTED</a>
+                        <a class="nav-link {% if request.path == member_stories_url %}active"
+                            aria-current="page{% endif %}" href="{% url 'member_stories' %}">MEMBER STORIES</a>
+                        <a class="nav-link {% if request.path == create_member_story_url %}active"
+                            aria-current="page{% endif %}" href="{% url 'create_member_story' %}">WRITE A STORY</a>
                     </li>
+                    {% endif %}
 
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == features_url %}active" aria-current="page{% endif %}"
                             href="{% url 'features' %}">FEATURES</a>
                     </li>
                     {% if user.is_authenticated %}
+                    <li class="nav-item"></li>
+                    <a class="nav-link {% if request.path == logout_url %}active" aria-current="page{% endif %}"
+                        href="{% url 'dashboard' %}">DASHBOARD</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == logout_url %}active" aria-current="page{% endif %}"
                             href="{% url 'account_logout' %}">LOGOUT</a>

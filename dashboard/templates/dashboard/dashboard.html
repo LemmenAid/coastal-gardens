@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+
+<div class="container mt-5">
+
+    <!-- Top Image -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="top-image-container">
+                <img src="{% static 'images/above.jpg' %}" class="top-image" alt="Coastal image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Content and Zone Map -->
+    <div class="container">
+        <h1>Welcome to your Dashboard, {{ request.user.username }}</h1>
+        <!-- <p>Your Garden Zone: {{ user_profile.garden_zone }}</p> -->
+
+        <h2>Saved Blogs</h2>
+        {% for post in saved_posts %}
+        <a href="{% url 'post_detail' slug=post.slug %}">{{ post.title }}</a><br>
+        {% empty %}
+        <p>No saved blogs.</p>
+        {% endfor %}
+
+        <h2>Your Posts</h2>
+        {% for story in member_stories %}
+        <a href="{% url 'post_detail' slug=post.slug %}">{{ story.title }}</a><br>
+        {% empty %}
+        <p>You haven't written any posts yet.</p>
+        {% endfor %}
+
+        <h2>Your Comments</h2>
+        {% for comment in user_comments %}
+        <p>{{ comment.body }} on {{ comment.post.title }}</p>
+        {% empty %}
+        <p>No comments yet.</p>
+        {% endfor %}
+    </div>
+
+    <!-- square links   -->
+    <div class="row">
+        <div class="link-container">
+            <a href="#" class="link-square">
+                <img src="{% static 'images/get-started.jpg' %}" alt="Get Started">
+                <span>Get Started</span>
+            </a>
+            <a href="{% url 'features' %}" class="link-square">
+                <img src="{% static 'images/features.jpg' %}" alt="Features">
+                <span>Features</span>
+            </a>
+            <a href="{% url 'contact' %}" class="link-square">
+                <img src="{% static 'images/contact.jpg' %}" alt="Contact us">
+                <span>Contact Us</span>
+            </a>
+        </div>
+    </div>
+
+</div>
+{% endblock content %}

@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+
+<div class="container mt-5">
+    <!-- Feature Image -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="top-image-container">
+                <img src="{% static 'images/features.jpg' %}" class="top-image" alt="About image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Title and paragraph -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <h1 class="mb-3">MEMBER FEATURES</h1>
+            <p>Dive into inspiring stories and expert advice from coastal gardeners across the UK and Ireland.
+                Explore
+                tips, techniques, and success stories to help your seaside garden flourish.</p>
+        </div>
+    </div>
+
+    <!-- features in row of three -->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Blog Entries Column -->
+            <div class="col-12 mt-3 left">
+                <div class="row">
+
+                    {% for story in stories %}
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <!-- Features Image -->
+                                <div class="image-container">
+                                    {% if "placeholder" in post.featured_image.url %}
+                                    <img class="card-img-top" src="{% static 'images/default.jpg' %}"
+                                        alt="placeholder image">
+                                    {% else %}
+                                    <img class="card-img-top" src=" {{ post.featured_image.url }}"
+                                        alt="{{ post.title }}">
+                                    {% endif %}
+                                </div>
+                                {% if story.slug %}
+                                <a href="{% url 'post_detail' story.slug %}" class="post-link">
+                                    {% else %}
+                                    <span class="post-link">No details available</span>
+                                    {% endif %}
+                                    <h2 class="card-title">{{ story.title }}</h2>
+                                    <div class="image-flash">
+                                        <p class="author">Author: {{ story.author }}</p>
+                                    </div>
+                                    <p class="card-text">{{ story.excerpt }}</p>
+                                </a>
+                                <hr />
+                                <p class="card-text text-muted h6">{{ story.created_on}}
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    {% if forloop.counter|divisibleby:3 %}
+                </div>
+                <div class="row">
+                    {% endif %}
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+        {% if is_paginated %}
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+                {% if page_obj.has_previous %}
+                <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV</a></li>
+                {% endif %}
+                {% if page_obj.has_next %}
+                <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+        {% endif %}
+    </div>
+
+
+</div>
+{% endblock content %}
