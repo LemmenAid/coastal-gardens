@@ -27,8 +27,8 @@
         {% endfor %}
 
         <h2>Your Posts</h2>
-        {% for story in member_stories %}
-        <a href="{% url 'post_detail' slug=post.slug %}">{{ story.title }}</a><br>
+        {% for post in user_posts %}
+        <a href="{% url 'post_detail' slug=post.slug %}">{{ post.title }}</a><br>
         {% empty %}
         <p>You haven't written any posts yet.</p>
         {% endfor %}

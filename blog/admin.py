@@ -8,12 +8,6 @@ class PostAdmin(SummernoteModelAdmin):
     """
     Admin configuration for the Post model, enabling a customized admin interface.
 
-    Attributes:
-    - `list_display`: Displays the title, slug, status, and creation date in the admin list view.
-    - `search_fields`: Allows admin to search by title or content.
-    - `list_filter`: Filters posts by status and creation date.
-    - `prepopulated_fields`: Auto-populates the slug field based on the title.
-    - `summernote_fields`: Enables the Summernote editor for the content field.
     """
     list_display = ('title', 'slug', 'status', 'created_on')
     search_fields = ['title', 'content']
@@ -26,13 +20,7 @@ class PostAdmin(SummernoteModelAdmin):
 class CommentAdmin(admin.ModelAdmin):
     """
     Admin configuration for the Comment model, providing management for comment moderation.
-
-    Attributes:
-    - `list_display`: Shows approval status, author, body, related post, and creation date in list view.
-    - `list_filter`: Adds filters for approval status and creation date.
-    - `search_fields`: Allows searching by author and body fields.
-    - `actions`: Includes a custom action to bulk-approve selected comments.
-
+    
     Methods:
     - `approve_comments`: Approves selected comments in the admin.
     """
