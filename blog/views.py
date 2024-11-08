@@ -137,7 +137,23 @@ def comment_delete(request, slug, comment_id):
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-@login_required
-def member_stories(request):
-    stories = Post.objects.filter(is_member_story=True, status=1)  # Only published stories
-    return render(request, "blog/member_stories.html", {"stories": stories})
+#@login_required
+#def member_stories(request):
+ #   stories = Post.objects.filter(is_member_story=True, status=1)  # Only published stories
+  #  return render(request, "blog/member_stories.html", {"stories": stories})
+
+class MemberStoriesView(generic.ListView):
+    """
+    Displays a paginated list of member stories posts.
+
+    **Context**
+    ``object_list``
+        A list of published stories by members, ordered by creation date.
+
+    **Template:**
+    :template:`blog/member_stories.html`
+    """
+    queryset = Post.objects.filter(status=1, is_member_story=True).order_by("created_on")
+    template_name = "blog/member_stories.html"
+    context_object_name = "stories"
+    paginate_by = 3 
