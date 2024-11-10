@@ -31,10 +31,10 @@
         </div>
     </div>
 
-    <!-- Add bookmark button -->
+    <!-- Add Save button -->
     <form action="{% url 'save_post' post_id=post.id %}" method="POST">
         {% csrf_token %}
-        <button type="submit">
+        <button type="submit" class="btn btn-save">
             {% if post in request.user.profile.saved_posts.all %}
                 Unsave
             {% else %}
@@ -45,7 +45,7 @@
 
     <!-- Displaying count of comments -->
     <div class="row">
-        <div class="col-12">
+        <div class="col-12 count">
             <strong class="text-secondary">
                 <i class="far fa-comments"></i> {{ comment_count }}
             </strong>

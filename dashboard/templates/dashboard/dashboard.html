@@ -4,35 +4,43 @@
 
 
 <div class="container mt-5">
-
     <!-- Top Image -->
-    <div class="row mb-4">
-        <div class="col-12">
-            <div class="top-image-container">
-                <img src="{% static 'images/above.jpg' %}" class="top-image" alt="Coastal image">
-            </div>
+    <div class="row mb-4 col-12">
+        <div class="top-image-container">
+            <img src="{% static 'images/above.jpg' %}" class="top-image" alt="Coastal image">
         </div>
     </div>
 
-    <!-- Content and Zone Map -->
-    <div class="container">
+    <!-- Title and paragraph -->
+    <div class="row mb-4 col-12">
         <h1>Welcome to your Dashboard, {{ request.user.username }}</h1>
-        <!-- <p>Your Garden Zone: {{ user_profile.garden_zone }}</p> -->
+        <p>Write stories! Share Ideas, get inspired.</p>
+    </div>
 
-        <h2>Saved Blogs</h2>
+
+    <div class="row mb-4 col-12 dashboard-card">
+        <h2>Saved Features</h2>
         {% for post in saved_posts %}
         <a href="{% url 'post_detail' slug=post.slug %}">{{ post.title }}</a><br>
         {% empty %}
-        <p>No saved blogs.</p>
+        <p>No saved Features.</p>
         {% endfor %}
+    </div>
 
-        <h2>Your Posts</h2>
+    <div class="row mb-4 col-12 dashboard-card">
+        <h2>Your Stories</h2>
+        <a href="{% url 'create_member_story' %}" class="btn btn-story mb-3">Create New Story</a>
+        <br>
+        <div class="row mb-4 col-12">
         {% for post in user_posts %}
         <a href="{% url 'post_detail' slug=post.slug %}">{{ post.title }}</a><br>
         {% empty %}
-        <p>You haven't written any posts yet.</p>
+        <p>You haven't written any stories yet.</p>
         {% endfor %}
+        </div>
+    </div>
 
+    <div class="row mb-4 col-12 dashboard-card">
         <h2>Your Comments</h2>
         {% for comment in user_comments %}
         <p>{{ comment.body }} on {{ comment.post.title }}</p>
@@ -40,24 +48,29 @@
         <p>No comments yet.</p>
         {% endfor %}
     </div>
+</div>
 
-    <!-- square links   -->
-    <div class="row">
-        <div class="link-container">
-            <a href="#" class="link-square">
-                <img src="{% static 'images/get-started.jpg' %}" alt="Get Started">
-                <span>Get Started</span>
-            </a>
-            <a href="{% url 'features' %}" class="link-square">
-                <img src="{% static 'images/features.jpg' %}" alt="Features">
-                <span>Features</span>
-            </a>
-            <a href="{% url 'contact' %}" class="link-square">
-                <img src="{% static 'images/contact.jpg' %}" alt="Contact us">
-                <span>Contact Us</span>
-            </a>
-        </div>
+<!-- square links   -->
+<div class="row">
+    <div class="link-container">
+        <a href="{% url 'about' %}" class="link-square">
+            <img src="{% static 'images/about.jpg' %}" alt="About">
+            <span>About</span>
+        </a>
+        <a href="{% url 'zone_map' %}" class="link-square" aria-label="garden zone map">
+            <img src="{% static 'images/zone.jpg' %}" alt="Zone map">
+            <span>Zone Map</span>
+        </a>
+        <a href="{% url 'features' %}" class="link-square">
+            <img src="{% static 'images/features.jpg' %}" alt="Features">
+            <span>Features</span>
+        </a>
+        <a href="{% url 'contact' %}" class="link-square">
+            <img src="{% static 'images/contact.jpg' %}" alt="Contact us">
+            <span>Contact Us</span>
+        </a>
     </div>
+</div>
 
 </div>
 {% endblock content %}

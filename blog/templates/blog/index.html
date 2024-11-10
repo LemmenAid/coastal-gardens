@@ -10,7 +10,8 @@
 
 <div id="hero">
     <h1 class="hero-title">Coastal Gardens</h1>
-    <p>Coastal Gardening Made Simple: Explore, ask, and grow with fellow seaside gardeners. Here, you'll find the knowledge,
+    <p>Coastal Gardening Made Simple: Explore, ask, and grow with fellow seaside gardeners. Here, you'll find the
+        knowledge,
         guidance, and inspiration to help your garden thrive in seaside conditions.</p>
     <div id="homepage-button">
         <a href="{% url 'account_signup' %}" class="action-button">Sign Up Here</a>
@@ -23,17 +24,17 @@
             <img src="{% static 'images/about.jpg' %}" alt="About">
             <span>About</span>
         </a>
+        <a href="{% url 'zone_map' %}" class="link-square" aria-label="garden zone map">
+            <img src="{% static 'images/zone.jpg' %}" alt="Zone map">
+            <span>Zone Map</span>
+        </a>
         <a href="{% url 'features' %}" class="link-square">
             <img src="{% static 'images/features.jpg' %}" alt="Features">
             <span>Features</span>
         </a>
-        <a href="{% url 'get_started' %}" class="link-square">
-            <img src="{% static 'images/get-started.jpg' %}" alt="Get Started">
-            <span>Get Started</span>
-        </a>
-        <a href="#" class="link-square">
-            <img src="{% static 'images/above.jpg' %}" alt="Q&A">
-            <span>Q&A</span>
+        <a href="{% url 'contact' %}" class="link-square" aria-label="link to the contact us page">
+            <img src="{% static 'images/contact.jpg' %}" alt="Contact us">
+            <span>Contact Us</span>
         </a>
     </div>
 </div>
