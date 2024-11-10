@@ -285,8 +285,44 @@ body {
     color: #59b83c;
 }
 
+.count {
+    margin: 15px;
+}
 
 /* Styles for the Contact Us page" */
+
+
+/* Styles for Dashboard */
+
+.dashboard-card {
+    margin: 4px;
+    border: solid 1px #0000002f;
+    border-radius: .30rem;
+    background-color: transparent;
+    padding: 15px;
+}
+
+.dashboard-card a {
+    text-decoration: none;
+    color: #558b2f;
+}
+
+.dashboard-card a:hover {
+    color: #d26a09;
+}
+
+.dashboard-card h2 {
+    text-transform: uppercase;
+}
+
+.btn-story {
+    width: 190px;
+    text-transform: uppercase;
+    padding: 12px;
+    margin: 15px;
+    color: #fbfbfb !important;
+}
+
 
 /* Styles for Footer */
 
@@ -342,9 +378,19 @@ body {
 
 /* Styles for buttons on site */
 .btn-signup,
-.btn-edit {
+.btn-edit,
+.btn-story,
+.btn-save {
     background-color: #558b2f;
-    color: #fff;
+    color: #fbfbfb;
+}
+
+.btn-signup:hover,
+.btn-edit:hover,
+.btn-story:hover,
+.btn-save:hover {
+    background-color: #0e0e0e;
+    color: #fbfbfb;
 }
 
 .btn-signup:hover,
