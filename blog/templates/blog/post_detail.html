@@ -36,9 +36,9 @@
         {% csrf_token %}
         <button type="submit" class="btn btn-save">
             {% if post in request.user.profile.saved_posts.all %}
-                Unsave
+            Unsave
             {% else %}
-                Save
+            Save
             {% endif %}
         </button>
     </form>
