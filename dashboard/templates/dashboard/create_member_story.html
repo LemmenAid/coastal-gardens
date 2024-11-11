@@ -14,12 +14,27 @@
         </div>
     </div>
 
-    <h2>Create a Member Story</h2>
-    <form method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Publish Story</button>
-    </form>
+    <div class="create-story mb-4">
+        <h2>Create a Member Story</h2>
+        <p>Ready to share your coastal gardening journey?</p>
+        <p>
+            Here's your space to dive into your unique experiences, insights, and tips! Whether you've mastered the art
+            of windproofing plants, found new species that thrive by the sea, or have stories from your own garden
+            adventures, your voice adds depth to our community. Share your trials, triumphs, or even a bit of
+            green-thumb wisdom you wish you'd known sooner.
+        </p>
+        <p> Every story makes our coastal gardening world a little
+            richer—let's hear yours!
+        </p>
+
+        <div class="container story-form mt-5">
+            <form  method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button class="btn btn-publish" type="submit">Publish Story</button>
+            </form>
+        </div>
+    </div>
 
 </div>
 {% endblock content %}

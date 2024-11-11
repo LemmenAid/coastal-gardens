@@ -22,35 +22,41 @@
     </div>
 
 
-    <div class="row mb-4 col-12 dashboard-card">
-        <h2>Saved Features</h2>
-        {% for post in saved_posts %}
-        <a href="{% url 'post_detail' slug=post.slug %}">{{ post.title }}</a><br>
-        {% empty %}
-        <p>No saved Features.</p>
-        {% endfor %}
-    </div>
-
-    <div class="row mb-4 col-12 dashboard-card">
-        <h2>Your Stories</h2>
-        <a href="{% url 'create_member_story' %}" class="btn btn-story mb-3">Create New Story</a>
-        <br>
-        <div class="row mb-4 col-12">
-            {% for post in user_posts %}
+    <div class="row mb-4 dashboard-card">
+        <div class="col-12">
+            <h2>Saved Features</h2>
+            {% for post in saved_posts %}
             <a href="{% url 'post_detail' slug=post.slug %}">{{ post.title }}</a><br>
             {% empty %}
-            <p>You haven't written any stories yet.</p>
+            <p>No saved Features.</p>
             {% endfor %}
         </div>
     </div>
 
-    <div class="row mb-4 col-12 dashboard-card">
-        <h2>Your Comments</h2>
-        {% for comment in user_comments %}
-        <p>{{ comment.body }} on {{ comment.post.title }}</p>
-        {% empty %}
-        <p>No comments yet.</p>
-        {% endfor %}
+    <div class="row mb-4 dashboard-card">
+        <div class="col-12">
+            <h2>Your Stories</h2>
+            <a href="{% url 'create_member_story' %}" class="btn btn-story mb-3">Create New Story</a>
+            <br>
+            <div class="row mb-4 col-12">
+                {% for post in user_posts %}
+                <a href="{% url 'post_detail' slug=post.slug %}">{{ post.title }}</a><br>
+                {% empty %}
+                <p>You haven't written any stories yet.</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-4 dashboard-card">
+        <div class="col-12">
+            <h2>Your Comments</h2>
+            {% for comment in user_comments %}
+            <p>{{ comment.body }} on {{ comment.post.title }}</p>
+            {% empty %}
+            <p>No comments yet.</p>
+            {% endfor %}
+        </div>
     </div>
 </div>
 
