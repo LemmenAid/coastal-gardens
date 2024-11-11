@@ -340,16 +340,11 @@ body {
     border-radius: 0.5rem;
 }
 
+/* create story page */
 .form-control {
-    width: 100%; /* Ensure fields take up available width */
-    max-width: 100%; /* Prevent overflow */
-    box-sizing: border-box; /* Include padding in width calculation */
-}
-
-@media (max-width: 768px) {
-    .form-control {
-        font-size: 0.9rem; /* Adjust font size for small screens */
-    }
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 
@@ -384,11 +379,11 @@ body {
 
 .modal-backdrop {
     z-index: 0;
-  }
-  
-  .modal.show {
+}
+
+.modal.show {
     z-index: 1060;
-  }
+}
 
 .close {
     color: #aaa;
@@ -430,33 +425,9 @@ body {
     color: #558b2f;
 }
 
-.link {
-    color: #558b2f;
-    text-decoration: none;
-}
-
-.link:hover,
-.link:active {
-    color: #445261;
-    text-decoration: underline;
-}
-
-.btn-like {
-    color: #558b2f;
-    border: none;
-    background: transparent;
-}
-
 .btn-delete {
     color: #fff;
     background: #d8611bf3;
-}
-
-.btn-like:hover,
-.btn-like:active {
-    color: #9dc7b0;
-    background: transparent;
-    border: none;
 }
 
 .faded {
@@ -469,9 +440,9 @@ body {
 
 
 
-
 /* Media query: tablets and larger */
 @media screen and (min-width: 768px) {
+
     /* Hero section */
     .hero-title {
         padding-top: 150px;
@@ -493,7 +464,12 @@ body {
         flex: 0 0 50%;
         max-width: 50%;
     }
+
+    .form-control {
+        font-size: 0.9rem;
+    }
 }
+
 
 @media (min-width: 950px) {
 
@@ -514,6 +490,4 @@ body {
         max-height: 500px;
         overflow: hidden;
     }
-
-    
 }

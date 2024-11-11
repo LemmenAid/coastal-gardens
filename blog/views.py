@@ -30,7 +30,7 @@ class PostList(generic.ListView):
     **Template:**
     :template:`blog/features.html`
     """
-    queryset = Post.objects.filter(status=1).order_by("created_on")
+    queryset = Post.objects.filter(status=1, is_member_story=False).order_by("-created_on")
     template_name = "blog/features.html"
     paginate_by = 3
 
@@ -137,10 +137,6 @@ def comment_delete(request, slug, comment_id):
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-#@login_required
-#def member_stories(request):
- #   stories = Post.objects.filter(is_member_story=True, status=1)  # Only published stories
-  #  return render(request, "blog/member_stories.html", {"stories": stories})
 
 class MemberStoriesView(generic.ListView):
     """
@@ -153,7 +149,7 @@ class MemberStoriesView(generic.ListView):
     **Template:**
     :template:`blog/member_stories.html`
     """
-    queryset = Post.objects.filter(status=1, is_member_story=True).order_by("created_on")
+    queryset = Post.objects.filter(status=1, is_member_story=True).order_by("-created_on")
     template_name = "blog/member_stories.html"
     context_object_name = "stories"
     paginate_by = 3 
