@@ -16,8 +16,9 @@ def home(request):
     **Template:**
     :template:`blog/index.html`
     """
-    return render(request, 'blog/index.html')
-
+    #return render(request, 'blog/index.html')
+    latest_posts = Post.objects.filter(status=1, is_member_story=False).order_by('-created_on')[:3]
+    return render(request, 'blog/index.html', {'latest_posts': latest_posts})
 
 class PostList(generic.ListView):
     """

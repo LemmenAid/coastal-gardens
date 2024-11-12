@@ -18,6 +18,26 @@
     </div>
 </div>
 
+<!-- "What's New?" section -->
+<div class="whats-new mt-5">
+    <h2 class="text-center">What's New?</h2>
+    <p class="p-new">Dive into our latest features and get inspired by fresh ideas, expert tips, and coastal
+        garden stories. Whether you're just starting out or a seasoned gardener, these posts bring the best of
+        seaside
+        gardening to you!</p>
+    <div class="new-nav">
+        {% for post in latest_posts %}
+        <div class="card-new">
+            <a href="{% url 'post_detail' post.slug %}">
+                <img src="{{ post.featured_image.url }}" alt="Feature Image" class="card-image">
+                <h3 class="card-title-new">{{ post.title }}</h3>
+                <p class="card-author-new">By {{ post.author }}</p>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
 <div class="row">
     <div class="link-container">
         <a href="{% url 'about' %}" class="link-square">
