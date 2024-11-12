@@ -76,10 +76,11 @@ body {
 .hero-title {
     display: flex;
     flex-direction: column;
+    font-family: 'Cormorant Garamond', serif;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 900;
     font-size: 3.3rem;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     color: #252525;
     margin-bottom: 5px;
     text-align: center;
@@ -123,6 +124,91 @@ body {
 .action-button:hover {
     background-color: #bdda76;
     color: #3c431cd6;
+}
+
+/* Styles for What's New section */
+
+.new-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 0px 20px;
+    width: fit-content;
+    gap: 20px;
+}
+
+.h2-new {
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+}
+
+.p-new {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 20px;
+    max-width: 830px;
+    display: flex;
+}
+
+.card-new {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #bee5d0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f7f4;
+    transition: transform 0.2s ease;
+}
+
+.card-new a {
+    text-decoration: none;
+}
+
+.card-new:hover {
+    transform: translateY(-5px);
+    /* Slight lift on hover */
+}
+
+.card-image {
+    width: 100%;
+    height: 150px;
+    /* Consistent image height */
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.card-title-new {
+    font-size: 1.1rem;
+    margin-top: .8rem;
+    margin-bottom: .6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #558b2f;
+}
+
+.card-author-new {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.3rem;
+    font-family: "Cormorant Garamond", serif;
+}
+
+@media (max-width: 725px) {
+    .new-nav {
+        flex-direction: column;
+    }
+
+    .card-new {
+        width: 100%;
+        /* Full width on smaller screens */
+        margin-bottom: 1rem;
+    }
 }
 
 
@@ -189,6 +275,11 @@ body {
     overflow: hidden;
 }
 
+.h2-about {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 900;
+}
+
 .collapse-toggle {
     cursor: pointer;
 }
@@ -215,10 +306,19 @@ body {
 .zone-title {
     padding-top: 20px;
     padding-bottom: 40px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 900;
 }
 
 
 /* custom Styles Features Page */
+.h2-features,
+.h2-stories,
+.post-title {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 900;
+}
+
 .card {
     margin: 4px;
     border: solid 1px #0000002f;
@@ -289,24 +389,18 @@ body {
     margin: 15px;
 }
 
-.posts-nav { 
-    margin-top: 25px;
-    width: fit-content;
-    padding-left: 0;
-    margin-top: 25px;
-    width: fit-content;
-    padding-left: 0;
-    list-style-type: none;
-    display: flex;
-    gap: 10px;
-}
-
-
-
 /* Styles for the Contact Us page" */
 
+.h2-contact {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 900;
+}
 
 /* Styles for Dashboard */
+.h2-dashboard {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 900;
+}
 
 .dashboard-card {
     margin: 4px;
@@ -345,6 +439,8 @@ body {
 
 .create-story h2 {
     margin-bottom: 25px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 900;
 }
 
 .story-form {
