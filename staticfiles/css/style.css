@@ -67,7 +67,7 @@ body {
 /* Styles Home Page */
 /* Hero section */
 #hero {
-    height: 700px;
+    height: 610px;
     width: 100%;
     background: url("../images/default.jpg") no-repeat center center/cover;
     background-color: #c5e1a5;
@@ -78,12 +78,12 @@ body {
     flex-direction: column;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 4rem;
+    font-size: 3.3rem;
     letter-spacing: 1.5px;
     color: #252525;
     margin-bottom: 5px;
     text-align: center;
-    padding-top: 180px;
+    padding-top: 80px;
 }
 
 #hero p {
@@ -91,11 +91,11 @@ body {
     flex-direction: column;
     text-transform: none;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1rem;
     letter-spacing: 1.4px;
     color: #161616;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 30px;
     padding-left: 65px;
     padding-right: 65px;
 }
@@ -460,13 +460,18 @@ body {
     /* Hero section */
     .hero-title {
         padding-top: 150px;
+        font-size: 4rem;
+    }
+
+    #hero {
+        height: 700px;
     }
 
     #hero p {
         display: flex;
         flex-direction: column;
         text-transform: none;
-        font-size: 1rem;
+        font-size: 1.2rem;
         letter-spacing: 1.4px;
         text-align: center;
         padding-top: 40px;
