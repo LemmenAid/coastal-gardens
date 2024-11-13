@@ -85,9 +85,12 @@ Jump to Credits: [Credits](#credits)
 
 ![alt text](README-files/colour-palette.png)
 
-* The colour scheme is inspired by the colour of a lush green forest. The green colour is used in various shades for the main background of the quiz, header, footer, hover effects and buttons. The rest of the colours are kept in neutral whites and dark grays to maintain a sereen feeling.
-* The shades of the colours are all chosen with good readability and accessibility in mind.
-* The design was made to be aesthetically pleasing, to give users a positive and attractive feeling towards the subject - Irish trees. 
+The Coastal Gardens color scheme draws inspiration from coastal landscapes, incorporating natural tones that create a natural and earthy feel.
+
+* Green shades reflect the resilience and freshness of coastal plants, appearing in various parts of the design to establish a harmonious look.
+* Light neutrals and deep charcoal are used for contrast, ensuring readability and accessible text elements without overwhelming the page.
+
+This palette creates a welcoming environment that mirrors nature while being easy to navigate and visually pleasant.
 
 ### Typography
 
