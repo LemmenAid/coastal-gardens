@@ -32,6 +32,7 @@
                 <img src="{{ post.featured_image.url }}" alt="Feature Image" class="card-image">
                 <h3 class="card-title-new">{{ post.title }}</h3>
                 <p class="card-author-new">By {{ post.author }}</p>
+                <p class="card-author-new">Created on {{ post.created_on }}</p>
             </a>
         </div>
         {% endfor %}
