@@ -1,131 +1,317 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# SURF SPOT FINDER
 
-Welcome Karlan Lemmen,
+![Main Mockup](README-files/main-mockup.png)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[View Live Website here.](https://coastal-gardens-e950c82335fb.herokuapp.com/)
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+[GitHub Repo](https://github.com/LemmenAid/coastal-gardens)
 
-## Gitpod Reminders
+*** 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Project Description  
 
-`python3 -m http.server`
+_Coastal Gardens is a interactive website for my third portfolio project with [Code Institute](https://codeinstitute.net/ie/)._
 
-A blue button should appear to click: _Make Public_,
+Coastal Gardens is a web platform designed to connect and support coastal gardeners in Ireland and the UK. Focused on the unique challenges and rewards of gardening by the sea, the site provides accessible resources, insights, and a collaborative space for gardeners. Users can browse a curated selection of feature posts, explore plant zones, and, by becoming members, unlock a personalized dashboard. Members have the opportunity to save favorite posts, keep track of their comments, and publish their own garden stories to inspire other coastal enthusiasts.
 
-Another blue button should appear to click: _Open Browser_.
+## Project Purpose
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+The purpose of Coastal Gardens is to foster a vibrant online community dedicated to coastal gardening. Recognizing the specific needs of coastal regions, the platform aims to be a comprehensive resource for both beginners and seasoned gardeners facing the unique conditions of seaside environments. By providing a space for knowledge exchange, storytelling, and advice, Coastal Gardens empowers gardeners to create thriving, resilient gardens and build connections with others who share similar experiences.
 
-A blue button should appear to click: _Make Public_,
+***
 
-Another blue button should appear to click: _Open Browser_.
+## Index – Table of Contents
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* [User Experience (UX)](#user-experience)
+* [Creating Process](#creating-process)
+* [Design](#design)
+* [Features](#features)
+* [Libraries and Technologies Used](#libraries-and-technologies-used)
+* [Testing](#testing)
+* [Solved Bugs](#solved-bugs)
+* [Deployment](#deployment)
+* [Credits](#credits)
 
-To log into the Heroku toolbelt CLI:
+***
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## User Experience (UX)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+### User Stories
 
-### Connecting your Mongo database
+1. As a Visitor, I want to browse feature articles on coastal gardening, so that I can learn more about gardening by the sea.
+2. As a Visitor, I want to understand the plant zone map, so I can determine in which zone I live.
+3. As a Visitor, I want to read an About page to understand the purpose and mission of the site.
+4. As a Visitor, I want to easily navigate to different sections of the site, so I can find relevant information quickly.
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+5. As a Potential Member, I want to view a sign-up page that explains the benefits of joining, so I know why I should become a member.
+6. As a Potential Member, I want a simple registration process, so I can quickly join the community.
 
-------
+7. As a Member, I want a personalized dashboard where I can save and view my favorite articles, so I can easily revisit them.
+8. As a Member, I want to see a list of all my comments in one place, so I can keep track of my participation.
+9. As a Member, I want the ability to write and publish my own gardening stories, so I can share my experiences with other members.
+10. As a Member, I want access to member-only stories, so I can learn from the experiences of other coastal gardeners.
 
-## Release History
+11. As an Admin, I want to manage feature posts and member stories, so that the content is relevant, accurate, and engaging for users.
+12. As an Admin, I want to moderate comments, so I can ensure a respectful and constructive environment.
+13. As an Admin, I want to manage user accounts, so I can assist with membership issues and maintain site quality.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+***
 
-**June 18, 2024,** Add Mongo back into template
+## Creating Process
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+When I started developing Coastal Gardens, it was my first time working on a project that combined both backend and frontend development, and my second time using Python. This project presented a steep learning curve, especially as I tackled the challenges of Django, CSS, and user interactivity. I wanted to create something with real-world application, so the idea of a resource for coastal gardeners felt both meaningful and practical.
 
-**May 28 2024:** Fix Mongo and Links installs
+At the beginning, I felt unsure about how to approach the project, but as I started coding, things began to click. Working through each part of the website—from creating personalized dashboards to designing the user experience—helped me better understand the concepts from my lessons. The process not only taught me more about Python logic and web frameworks, but also boosted my confidence as I realized I could solve problems and make the website functional.
 
-**April 26 2024:** Update node version to 16
+The creative process became really enjoyable as I saw the website take shape, and I'm proud that it’s a tool gardeners in Ireland and the UK can use to share stories, access local gardening advice, and find inspiration for their coastal spaces.
 
-**September 20 2023:** Update Python version to 3.9.17.
+### Project SetUp
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+For setting up Coastal Gardens, I followed the CodeStar follow-along project structure, customizing it to create a unique platform for coastal gardening enthusiasts.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+I began by building a Django framework, developing the foundational pages (Home, About, Features, and Zone Map) that offer general information to anyone interested in coastal gardening. Once this structure was stable, I added unique member features, including personalized dashboards and the option for members to write and share blog posts exclusively within the community.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+This was my first experience handling both backend and frontend tasks together, which was challenging but rewarding. Developing these elements involved custom logic for saving, displaying, and managing user-generated content in a way that’s engaging and intuitive. Testing each step along the way helped me ensure smooth functionality and an accessible user experience.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+Overall, this process taught me a lot about web development and reinforced concepts from my coursework in a real-world setting, helping me build confidence in my coding abilities.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Jump to Credits: [Credits](#credits)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+***
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Design
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* ASCII art to make the welcome and good-bye screens a bit more interesting.
+* The colour scheme of this app has not been changed, to keep it classic and simple.
+* The type of script has also not been changed, the original one was well suited for this application.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+***
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Features 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### ASCII Art
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+ASCII Art is used as a title for the app to give the Surf Spot Finder a visual identity and to make it visually appealing.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+![ACSII Art](README-files/banner-surfspot.png)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Slow Print
 
-------
+The majority of the text in the app is printed slowly to improve User experience and to make sure that the User is not overwhelmed by the text appearing on the screen.
 
-## FAQ about the uptime script
+### Welcome Message & Counties
 
-**Why have you added this script?**
+* As soon as the page is loaded, the ASCII Art is displayed and a welcome message is gradually printed out. 
+In the welcome message the purpuse of the app is explained. 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+* After the welcome message a list of available Counties is displayed and the User is promted to choose a County where they want to go surfing.
 
-**How will this affect me?**
+![Welcome](README-files/welcome.png)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Surfspots
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+* After choosing a County the terminal is cleared and a list of available surfspots for that County is displayed. The User is asked if they want to explore one of these surfspots further or if they want to exit the program.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+![Surfspots](README-files/surfspots.png)
 
-**So….?**
+### Surfspot Details & Program Continue Options
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+* After choosing a spot more detailed information is given about the chosen spot.
 
-**Can I opt out?**
+* After the more detailed surfspot information is displayed, the User can choose between 3 options on how to continue in the app. They can either choose to explore another surfspot in the same County, choose a different County they want to explore or exit the program.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![Spot Details](README-files/spot-details.png)
+
+### Goodbye Message
+
+* If the User chooses to leave the program a goodbye message is displayed. 
+
+![Goodbye](README-files/goodbye.png)
+
+
+### Future Implementations
+
+* In the future, the User name and favorite surf spots tracking functionality could be implemented.
+* In the future I would like to add more information to the database, and cover all (coastal) Counties.
+* Through further learning I would like to use a weather forcast API to add information to the surf spot details with current weather conditions.
+* I would have loved to add a feature that User can store their favorite surf spots. After finishing the course I would like to come back to this project and create this feature. 
+
+*** 
+
+## Libraries and Technologies Used
+
+* [Github](https://github.com/) - Used for hosting the repository.
+* [Heroku](https://heroku.com/) - Used for deploying the live project.
+* [Gitpod](https://www.gitpod.io/#get-started) - Used for developing the application.
+* [Python](https://www.python.org/) - Used for adding functionality to the application.
+* [Google Sheets](https://docs.google.com/spreadsheets/) - used for storing, editing and saving Surf Spot Finder database.
+* [Google Cloud Platform](https://cloud.google.com/) - used to provide the APIs for connecting the data sheets with the Python code.
+* [Lucidchart](https://lucid.co/) - Used for creating the app flowchart.
+* [CI Python Linter](https://pep8ci.herokuapp.com/#) - Used for validation python code.
+
+### Python Libraries
+
+* [gspread](https://docs.gspread.org/en/v6.0.0/) - used to add, remove and manipulate data in the connected Google Sheets worksheets.
+* [google.oauth.service_account](https://google-auth.readthedocs.io/en/master/reference/google.oauth2.service_account.html) - used for the authentication needed to access the Google APIs to connect the Service Account with the Credentials function. A CREDS.json file was generated with the details needed for the API to access the Google account which holds the Google Sheets worksheet containing the applications data. When deploying to Heroku, this information is then stored in the config var section to ensure the application will run.
+* [Pyfiglet](https://pypi.org/project/pyfiglet/) - Used for the opening title and Goodbye message.
+* [Time](https://docs.python.org/3/library/time.html) - Used for the slow print functionality and for delaying print statements.
+* [Sys](https://docs.python.org/3/library/sys.html) - Used to provide access to some variables used or maintained by the interpreter.
+* [Random](https://docs.python.org/3/library/random.html) - Used to add the slow_print functionality.
+* [OS](https://docs.python.org/3/library/os.html) - Used to add the clear_terminal function for a neater flow of the program.
+
+***
+
+## Testing
+
+
+### Python Validation
+
+The [CI Python Linter](https://pep8ci.herokuapp.com/#) is used for validation python code. The run.py file was checked and a few errors were reported:
+
+![pep8](README-files/pep8.png)
+
+<br>
+After fixing the errors, no errors were reported:
+
+![pep-8-after](README-files/pep8-after.png) 
+
+
+### Input Testing
+
+During developments User input has been tested frequently to check if various inputs were valid, namely if the validation functions were catching all errors as expected. It was important that the User could easily navigate back to different Counties and surfspot options, as well as exiting the app. When testing User input I have repeatedly used the same set of input values: "Enter button only", "test" and "123".
+
+All tests were completed in the local terminal as well as in the Heroku terminal.
+
+| Feature                    | Tested?    | User Feedback Provided      |
+|----------------------------|------------|-----------------------------|
+| Choose County              | Yes        | Sorry, {user_county} is not a valid county. |
+| Choose surfspot            | Yes        | {selected_spot} is not a valid surfspot. Please enter one of the available options.|
+| Program continue options   | Yes        | {restart} is not a valid input! Please enter Y, N or C. |
+| Exit                       | Yes        | Goodbye message is displayed. |
+
+
+### Browser Testing  
+Surf Spot Finder was tested through the Heroku app website on the following browsers without issues:  
+- Google Chrome (Version 126.0.6478.182)
+- Mozilla Firefox (Version 127.0.2)  
+- Microsoft Edge (Version Version 126.0.2592.102) 
+
+***
+
+## Solved Bugs
+
+* One bug that came up during testing was quite interesting and was only discovered by accident. The correct name for a County was entered, but accidentally had a blank space in front of it, the input was returned as not valid. After looking into this, I found that this could be solved by calling the .strip() function before calling the .capitalize() function on the User input:
+
+ ![blank space bug](README-files/blank-bug.png)
+
+***
+
+## Deployment to Heroku
+
+### Project Deployment
+
+_I have used several different READMEs to write the deployment section of this README.<br> 
+All listed in the credit section below._<br>
+
+The application was deployed to Heroku. In order to deploy, the following steps were taken:
+
+1. If you have an account, login to Heroku. Otherwise create a new account.
+2. Once signed in, click the "New" button in the top right corner, below the header and choose "Create new app".
+3. Choose a unique name for the application and select your region. When done, click "Create app".
+4. This brings you to the "Deploy" tab. From here, click the "Settings" tab and scroll down to the "Config Vars" section and click on "Reveal Config Vars". 
+
+- In the KEY input field, enter "PORT" and in the VALUE input field, enter "8000". After that, click the "Add" button on the right.
+
+- In KEY enter "CREDS", in VALUE, paste in the text content of your CREDS.json file. 
+
+5. In the Settings tab, in the Buildpack section, click the button "Add Buildpack".
+6. First add "Python" package and then "node.js". 
+7. If you exchanged the order of the packages: the Python buildpack must be above the NodeJS buildpack. You can drag the Python buildback to the top.
+8. Scroll back to the top of the page and go to the "Deploy" tab. Choose "GitHub" as your Deployment method.
+9. Go to "Connect to GiHub" section, search for the repository name and click "Connect".
+10. In the "Automatic Deploys" section, choose your preferred method for deployment. I chose the 'automatic' option. Click "Deploy Branch".
+11. Once the building of the app is finished you can click the "view" button to be redirected to the newly deployed site.
+
+### Forking repo on GitHub
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
 
 ```
-pkill uptime.sh
-rm .vscode/uptime.sh
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 ```
 
-**Anything more?**
+7. Press Enter. Your local clone will be created.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
 
----
+***
 
-Happy coding!
+## Credits
+
+* I would like to thank Brian Macharia for his great mentor support and guidance - helping me through the process of building my first ever CLI application.
+* My facilitator Amy from Code Institute for supporting us through our third project and giving us great tips and resources for learning tools, and her feedback during the weekly stand-ups.
+* At last I would like to give thanks to my friends and family for taking the time to test the application and giving me great feedback.
+
+### Content
+
+I have taken information from the following websites for the Surf Spot Google Sheet:
+* [Surf Forecast](https://www.surf-forecast.com/)
+* [Discovering Cork](http://www.discoveringcork.ie/surfing/)
+* [Surfer Today](https://www.surfertoday.com/surfing/the-best-surf-spots-in-ireland)
+* [Surfline](https://www.surfline.com/travel/ireland-surfing-and-beaches/2963597)
+
+
+### Code
+
+The walkthrough project "Love Sandwiches" was a great way of understanding how to get started on an CLI application and it was therefor a good source of inspiration. 
+I decided to make an app that can help users to find information on surfspots per County in Ireland. 
+I have used various resources to help me with figuring out how to create the Surf Spot Finder app:
+
+* [Stack overflow](https://stackoverflow.com/)
+* [Pep Style Guide](https://peps.python.org/pep-0008/)
+* [W3Schools](https://www.w3schools.com/)
+* [The Hitchhiker's Guide to Python](https://docs.python-guide.org/writing/style/)
+* [Real Python - for quick tutorials on several subjects](https://realpython.com/)
+* [Real Python - Name-Main](https://realpython.com/if-name-main-python/)
+* [Real Python - While loops](https://realpython.com/python-while-loop/)
+* [Pypi - ASCII title banner](https://pypi.org/project/pyfiglet/)
+* [Stack Overflow - Slow Printing](https://stackoverflow.com/questions/15375368/slow-word-by-word-terminal-printing-in-python)
+* [Stack Overflow - clear terminal](https://stackoverflow.com/questions/2084508/clear-the-terminal-in-python)
+* [W3Schools - strip()](https://www.w3schools.com/python/ref_string_strip.asp)
+* [Tripleten - best practices](https://tripleten.com/blog/posts/python-best-practices)
+
+* Code Institute Slack Channel
+
+
+### Templates I have used for inspiration and creating my readme-file:
+
+I have used several readme file as inspiration to write this readme:
+
+* [Sample README Code Institute](https://github.com/Code-Institute-Solutions/SampleREADME/blob/master/README.md?plain=1) - Copied the Deployment section and used for general guideline.
+* [Towers of Hanoi - Lucia2007](https://github.com/lucia2007/towers-of-hanoi/) - For general inspiration and the Heroku Deployment section for this readme.
+* [Weather Checker - mdurmus](https://github.com/mdurmus/weather-checker/) - Used for general guideline.
+* [Read Me Template Code Institute](https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md)
+Used for general guideline.
+* [Plant Factory - crypticCaroline](https://github.com/crypticCaroline/ms1-plantfactory/blob/master/README.md?plain=1) - Especially for the Technologies Used, Testing sections and design sections.
+* [Visit Järbo - ClaudiaInSweden](https://github.com/ClaudiaInSweden/visit-jarbo/blob/main/README.md?plain=1) - General inspiration / guideline.
+* [GitHub Docs](https://docs.github.com/en)
