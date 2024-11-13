@@ -47,9 +47,9 @@ body {
 
 /* Styles for Logo navbar */
 .brand {
-    font-family: Lato, sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 1.4rem;
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #505050;

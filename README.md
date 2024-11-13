@@ -85,9 +85,9 @@ Jump to Credits: [Credits](#credits)
 
 ![alt text](README-files/colour-palette.png)
 
-The Coastal Gardens color scheme draws inspiration from coastal landscapes, incorporating natural tones that create a natural and earthy feel.
+The Coastal Gardens colour scheme draws inspiration from coastal landscapes, incorporating natural tones that aligns with the garden-focused theme.
 
-* Green shades reflect the resilience and freshness of coastal plants, appearing in various parts of the design to establish a harmonious look.
+* The palette centers on a calming green to echo the lushness of coastal plant life, balanced by subtle, neutral tones to maintain clarity and focus. 
 * Light neutrals and deep charcoal are used for contrast, ensuring readability and accessible text elements without overwhelming the page.
 
 This palette creates a welcoming environment that mirrors nature while being easy to navigate and visually pleasant.
