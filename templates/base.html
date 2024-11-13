@@ -8,6 +8,7 @@
 {% url 'account_logout' as logout_url %}
 {% url 'contact' as contact_url %}
 {% url 'dashboard' as dashboard_url %}
+{% url 'member_stories' as member_stories_url %}
 {% url 'create_member_story' as create_member_story_url %}
 {% url 'get_started' as get_started_url %}
 
@@ -66,12 +67,12 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == logout_url %}active" aria-current="page{% endif %}"
+                        <a class="nav-link {% if request.path == dashboard_url %}active" aria-current="page{% endif %}"
                             href="{% url 'dashboard' %}">DASHBOARD</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == member_stories_url %}active"
-                            aria-current="page{% endif %}" href="{% url 'member_stories' %}">MEMBER STORIES</a>
+                        <a class="nav-link {% if request.path == member_stories_url %}active" aria-current="page{% endif %}"
+                            href="{% url 'member_stories' %}">MEMBER STORIES</a>
                     </li>
                     {% endif %}
                     <li class="nav-item">
