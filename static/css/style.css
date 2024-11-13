@@ -492,6 +492,14 @@ body {
     color: #f8f7f3;
 }
 
+.footer-container {
+    background-color:#bee5d0;
+    color: #161616;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+
 /* Styles for pop-up modals on site */
 .modal {
     display: none;
