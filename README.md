@@ -1,4 +1,4 @@
-# SURF SPOT FINDER
+# COASTAL GARDENS
 
 ![Main Mockup](README-files/main-mockup.png)
 
