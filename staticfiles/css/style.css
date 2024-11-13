@@ -278,6 +278,7 @@ body {
 .h2-about {
     font-family: "Cormorant Garamond", serif;
     font-weight: 900;
+    text-transform: uppercase;
 }
 
 .collapse-toggle {
@@ -394,12 +395,14 @@ body {
 .h2-contact {
     font-family: "Cormorant Garamond", serif;
     font-weight: 900;
+    text-transform: uppercase;
 }
 
 /* Styles for Dashboard */
 .h2-dashboard {
     font-family: "Cormorant Garamond", serif;
     font-weight: 900;
+    text-transform: uppercase;
 }
 
 .dashboard-card {
@@ -455,6 +458,16 @@ body {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+}
+
+/* Styles for login / logout / signup */
+
+.h2-signup,
+.h2-logout,
+.h2-signin {
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 
