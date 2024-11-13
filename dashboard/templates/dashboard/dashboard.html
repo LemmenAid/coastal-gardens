@@ -37,10 +37,10 @@
         <div class="col-12">
             <h2>Your Stories</h2>
             <a href="{% url 'create_member_story' %}" class="btn btn-story mb-3">Create New Story</a>
-            <br>
+            <hr>
             <div class="row mb-4 col-12">
                 {% for post in user_posts %}
-                <a href="{% url 'post_detail' slug=post.slug %}">{{ post.title }}</a><br>
+                <a href="{% url 'post_detail' slug=post.slug %}">{{ post.title }}</a>
                 {% empty %}
                 <p>You haven't written any stories yet.</p>
                 {% endfor %}

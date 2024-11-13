@@ -464,7 +464,7 @@ body {
 
 .h2-signup,
 .h2-logout,
-.h2-signin {
+.h2-login {
     font-family: 'Cormorant Garamond', serif;
     text-transform: uppercase;
     font-weight: 900;
@@ -477,6 +477,19 @@ body {
     color: black !important;
 }
 
+.footer-logo a {
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: #252525;
+}
+
+.footer-logo a:hover {
+    color: #f8f7f3;
+}
 
 /* Styles for pop-up modals on site */
 .modal {
