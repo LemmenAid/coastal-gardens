@@ -142,24 +142,29 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 nav-bg">
-        <p class="m-0 text-center text-black">
-            {% block copyright %}
-            Made by LemmenAid
-            {% endblock copyright %}
-        </p>
-        <p class="m-0 text-center text-black footer-icons">
-            Follow us:
-            <a href="https://github.com/LemmenAid/coastal-gardens" target="_blank" rel="noopener noreferrer"
-                aria-label="Visit our GitHub Repository (opens in a new tab)">
-                <i class="fab fa-github-square ms-3" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.instagram.com/karlanlemmen/" target="_blank" rel="noopener noreferrer"
-                aria-label="Visit our Instagram page (opens in a new tab)">
-                <i class="fab fa-instagram-square ms-3" aria-hidden="true"></i>
-            </a>
-        </p>
+    <footer class="footer mt-auto py-3 nav-bg text-center text-black">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            
+            <!-- Sign Up section -->
+            <section>
+                <p class="d-flex justify-content-center align-items-center">
+                    <span class="me-3">SIGN UP FOR FREE</span>
+                    <a href="{% url 'account_signup' %}" class="btn btn-outline-dark btn-rounded">
+                        Sign up!
+                    </a>
+                </p>
+            </section>
+
+            <!-- Copyright -->
+            <p class="m-0 text-center text-black">
+                {% block copyright %}
+                Made by LemmenAid
+                {% endblock copyright %}
+            </p>
+            <a class="text-dark" href="https://github.com/LemmenAid/coastal-gardens">GitHub/LemmenAid</a>
     </footer>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
