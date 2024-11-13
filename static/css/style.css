@@ -162,7 +162,7 @@ body {
     padding: 1rem;
     border: 1px solid #bee5d0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f8f7f4;
+    background-color: #f8f7f3;
     transition: transform 0.2s ease;
 }
 
@@ -368,7 +368,7 @@ body {
 }
 
 .post-subtitle {
-    color: #63686c;
+    color: #666;
 }
 
 .post-content {
@@ -378,7 +378,7 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: #666;
 }
 
 .post-link:hover,
@@ -434,7 +434,7 @@ body {
     padding: 7px;
     margin: 15px 0px;
     color: #fbfbfb !important;
-    background-color: #6c757d;
+    background-color: #717375;
 }
 
 .create-story {
@@ -473,11 +473,6 @@ body {
 
 
 /* Styles for Footer */
-
-.footer-icons a {
-    color: black !important;
-}
-
 .footer-logo a {
     text-decoration: none;
     font-family: 'Cormorant Garamond', serif;
@@ -494,7 +489,7 @@ body {
 
 .footer-container {
     background-color:#bee5d0;
-    color: #161616;
+    color: #252525;
     max-width: 100%;
     margin-top: 20px;
 }
@@ -514,10 +509,10 @@ body {
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: #dcedc8;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid #666;
     width: 80%;
     max-width: 600px;
 }
@@ -539,7 +534,7 @@ body {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #252525;
     text-decoration: none;
     cursor: pointer;
 }
@@ -559,18 +554,18 @@ body {
 .btn-story:hover,
 .btn-save:hover,
 .btn-publish:hover {
-    background-color: #0e0e0e;
+    background-color: #252525;
     color: #fbfbfb;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #fff;
+    background-color: #fbfbfb;
     color: #558b2f;
 }
 
 .btn-delete {
-    color: #fff;
+    color: #fbfbfb;
     background: #d8611bf3;
 }
 

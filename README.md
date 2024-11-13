@@ -10,13 +10,13 @@
 
 ## Project Description  
 
-_Coastal Gardens is a interactive website for my third portfolio project with [Code Institute](https://codeinstitute.net/ie/)._
+_Coastal Gardens is a interactive website for my fourth portfolio project with [Code Institute](https://codeinstitute.net/ie/)._
 
-Coastal Gardens is a web platform designed to connect and support coastal gardeners in Ireland and the UK. Focused on the unique challenges and rewards of gardening by the sea, the site provides accessible resources, insights, and a collaborative space for gardeners. Users can browse a curated selection of feature posts, explore plant zones, and, by becoming members, unlock a personalized dashboard. Members have the opportunity to save favorite posts, keep track of their comments, and publish their own garden stories to inspire other coastal enthusiasts.
+Coastal Gardens is a web platform designed to connect and support coastal gardeners in Ireland and the UK. Focused on the unique challenges and rewards of gardening by the sea, the site provides accessible resources, insights, and a collaborative space for gardeners. Users can browse a curated selection of feature posts, explore their plant zone, and, by becoming members, unlock a personalized dashboard. Members have the opportunity to save favorite posts, keep track of their comments, and publish their own garden stories to inspire other coastal enthusiasts.
 
 ## Project Purpose
 
-The purpose of Coastal Gardens is to foster a vibrant online community dedicated to coastal gardening. Recognizing the specific needs of coastal regions, the platform aims to be a comprehensive resource for both beginners and seasoned gardeners facing the unique conditions of seaside environments. By providing a space for knowledge exchange, storytelling, and advice, Coastal Gardens empowers gardeners to create thriving, resilient gardens and build connections with others who share similar experiences.
+The purpose of Coastal Gardens is to foster a vibrant online community dedicated to coastal gardening. Recognizing the specific needs of the coastal region, the platform aims to be a comprehensive resource for both beginners and seasoned gardeners facing the unique conditions of seaside environments. By providing a space for knowledge exchange, storytelling, and advice, Coastal Gardens empowers gardeners to create thriving, resilient gardens and build connections with others who share similar experiences.
 
 ***
 
@@ -81,9 +81,37 @@ Jump to Credits: [Credits](#credits)
 
 ## Design
 
-* ASCII art to make the welcome and good-bye screens a bit more interesting.
-* The colour scheme of this app has not been changed, to keep it classic and simple.
-* The type of script has also not been changed, the original one was well suited for this application.
+### Colour Scheme
+
+![alt text](README-files/colour-palette.png)
+
+* The colour scheme is inspired by the colour of a lush green forest. The green colour is used in various shades for the main background of the quiz, header, footer, hover effects and buttons. The rest of the colours are kept in neutral whites and dark grays to maintain a sereen feeling.
+* The shades of the colours are all chosen with good readability and accessibility in mind.
+* The design was made to be aesthetically pleasing, to give users a positive and attractive feeling towards the subject - Irish trees. 
+
+### Typography
+
+* The typography used throughout the site is PT Serif for headings, and Helvetica for paragraphs. 
+ PT Serif is imported from google fonts. PT Serif was chosen for it’s readability in various sizes and to suit the botanical design of the website. As a fallback font Times and serif is used. The fallback font used for Helvetica is sans-serif. The letter spacing and line-height has been increased slightly to improve readability in the paragraphs. For the headings letter spacing has also been applied, as well as a heavier font weight to make them stand out more. 
+
+The following code has been imported into the top of the style.css
+
+    @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+![alt text](README-files/PT-Serif.png)<br>
+
+### Call to Action
+
+* The call to action buttons on the landing page lead to the three different quizes. At the end of each quiz there is a call to action button to replay the game and a button to play another game.
+* All the buttons on the website are styled with a colour change so that it is clear for any visitor that these are buttons.
+* The social media links will send the visitor to the social media pages. The links will open in a new tab.
+* The header and footer logo have a colour change hover effect to make it clear that they are links.
+
+### Imagery
+
+Images used in the different quizes were selected for their aesthetic appeal and informative use.
+
+Several free image sources were used. The links to these sources are listed here:
 
 ***
 
