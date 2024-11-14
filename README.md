@@ -325,9 +325,9 @@ Surf Spot Finder was tested through the Heroku app website on the following brow
 
 ## Solved Bugs
 
-* One bug that came up during testing was quite interesting and was only discovered by accident. The correct name for a County was entered, but accidentally had a blank space in front of it, the input was returned as not valid. After looking into this, I found that this could be solved by calling the .strip() function before calling the .capitalize() function on the User input:
+* One bug that came up during testing was 
 
- ![blank space bug](README-files/blank-bug.png)
+ ![blank space bug](README-files/bug.png)
 
 ***
 
@@ -393,24 +393,20 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 ## Credits
 
-* I would like to thank Brian Macharia for his great mentor support and guidance - helping me through the process of building my first ever CLI application.
-* My facilitator Amy from Code Institute for supporting us through our third project and giving us great tips and resources for learning tools, and her feedback during the weekly stand-ups.
-* At last I would like to give thanks to my friends and family for taking the time to test the application and giving me great feedback.
+* I would like to thank Brian Macharia for his great mentor support and guidance - helping me through the process of building my first ever full stack website.
+* My facilitator Lewis from Code Institute for supporting us through our fourth project and giving us great tips and resources for learning tools, and her feedback during the weekly stand-ups.
+* At last I would like to give thanks to my friends and family for taking the time to test the website and giving me great feedback.
 
 ### Content
 
-I have taken information from the following websites for the Surf Spot Google Sheet:
-* [Surf Forecast](https://www.surf-forecast.com/)
-* [Discovering Cork](http://www.discoveringcork.ie/surfing/)
-* [Surfer Today](https://www.surfertoday.com/surfing/the-best-surf-spots-in-ireland)
-* [Surfline](https://www.surfline.com/travel/ireland-surfing-and-beaches/2963597)
+I have taken inspiration and information from the following websites for Coastal Gardens:
 
 
 ### Code
 
-The walkthrough project "Love Sandwiches" was a great way of understanding how to get started on an CLI application and it was therefor a good source of inspiration. 
-I decided to make an app that can help users to find information on surfspots per County in Ireland. 
-I have used various resources to help me with figuring out how to create the Surf Spot Finder app:
+The walkthrough project "Codestar" was a great way of understanding how to get started on an full stack Django framework website and it was therefor a good source of inspiration. 
+
+I have used various resources to help me with figuring out how to create the Coastal Garden Website:
 
 * [Stack overflow](https://stackoverflow.com/)
 * [Pep Style Guide](https://peps.python.org/pep-0008/)
