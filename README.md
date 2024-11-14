@@ -187,6 +187,8 @@ Navigation bar for members:<br>
 Dropdown navigation menu:<br>
 ![Nav Bar dropdown menu](README-files/navbar-drop.png)
 
+***
+
 #### The Footer
 
 * Featured on all three pages, the footer section includes the contact information of the club.
@@ -195,11 +197,15 @@ Dropdown navigation menu:<br>
 
 ![Footer](README-files/footer.png)
 
+***
+
 #### Square Links
 
 * The Square Links make it easy for users to navigate between pages while also adding visual appeal that encourages exploration across the site.
 
 ![Nav Bar](README-files/square-links.png)
+
+***
 
 ### Features by page
 
@@ -208,41 +214,56 @@ The Home Page serves as an inviting introduction to Coastal Gardens with a capti
 
 ![Home Page](README-files/home-page.png)
 
+***
+
 #### About Us Page
 The About Us page introduces Coastal Gardens’ mission, explaining the importance of community and knowledge-sharing for coastal gardening enthusiasts in the UK and Ireland. It helps new users understand the site's goals and encourages them to join.
 
 ![About Us](README-files/about.png)
+
+***
 
 #### Features Page
 The Features page showcases Coastal Gardens' most recent articles and resources, displayed from newest to oldest. This page offers a broad view of content, covering expert tips, gardening insights, and coastal plant recommendations.
 
 ![Features](README-files/features.png)
 
+***
+
 #### Dashboard
 The personalized Dashboard page provides logged-in members with an overview of their saved features, their own written stories, and all comments they’ve made. A “Create Story” button is available, allowing members to publish their own coastal gardening experiences directly to the Member Stories page.
 
 ![Dashboard](README-files/dashboard.png)
+
+***
 
 #### Create Story
 This page allows members to create and publish their own stories by inputting a title, uploading an image, and writing a blog post and excerpt. The user-friendly layout encourages members to share their knowledge and unique gardening experiences.
 
 ![Create Story](README-files/create-story.png)
 
+***
+
 #### Member Stories
 The Member Stories page is a member-exclusive section where users can read stories and insights shared by other community members. This feature encourages a sense of community and gives members access to firsthand experiences in coastal gardening.
 
 ![Member Stories](README-files/member-stories.png)
+
+***
 
 #### Sign Up Page
 The Sign-Up page includes standard registration fields with added questions about gardening experience level and the user’s garden zone. This customization helps Coastal Gardens offer a more tailored experience for each member.
 
 ![Sign Up](README-files/signup.png)
 
+***
+
 #### Contact Us Page
 The Contact Us page provides a direct way for users to reach out with inquiries or feedback. It ensures members feel supported and have access to help if needed.
 
 ![Sign Up](README-files/contact.png)
 
+***
 
 ### Future Implementations
 
