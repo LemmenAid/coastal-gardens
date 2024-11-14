@@ -203,43 +203,52 @@ Dropdown navigation menu:<br>
 
 ### Features by page
 
-#### Landing Page
+#### Home Page
+The Home Page serves as an inviting introduction to Coastal Gardens with a captivating hero image and a clear call-to-action button leading to the sign-up page. The "What's New?" section highlights the three latest posts, keeping content fresh and engaging for returning visitors. Below, visually appealing square links guide users to key pages, offering easy navigation across the site.
 
-* The landing page introduces the user to Atlantic Dippers with an eye catching photograph to grab their attention.
-* This page includes a call to action button that leads to the “About Us” which allows users to easily find more information about the club. 
-* The landing page also has three buttons to external links that are useful for members of the club. They are on the landing page so frequent users are just one click away from this information, like the local tides, local weather and national swimming events.
+![Home Page](README-files/home-page.png)
 
-![Landing Page](README-files/landing-page.png)
-
-#### About Page
-
-* The about page includes a brief outline of what the club is all about.
-* This page also includes some information about the benefits of cold water dipping and swimming.
-* A call to action button is added to the bottom of the page which leads visitors to the Signup page.
+#### About Us Page
+The About Us page introduces Coastal Gardens’ mission, explaining the importance of community and knowledge-sharing for coastal gardening enthusiasts in the UK and Ireland. It helps new users understand the site's goals and encourages them to join.
 
 ![About Us](README-files/about.png)
 
-#### Meetup Times Page
+#### Features Page
+The Features page showcases Coastal Gardens' most recent articles and resources, displayed from newest to oldest. This page offers a broad view of content, covering expert tips, gardening insights, and coastal plant recommendations.
 
-* This page informs the user about when the meetups will happen and where they will be located.
-* Included on this page is a google map that was embedded via Google Maps with the exact location where the Atlantic Dippers meet up.
+![Features](README-files/features.png)
 
-![Meetup Times](README-files/meetup.png)
+#### Dashboard
+The personalized Dashboard page provides logged-in members with an overview of their saved features, their own written stories, and all comments they’ve made. A “Create Story” button is available, allowing members to publish their own coastal gardening experiences directly to the Member Stories page.
 
+![Dashboard](README-files/dashboard.png)
+
+#### Create Story
+This page allows members to create and publish their own stories by inputting a title, uploading an image, and writing a blog post and excerpt. The user-friendly layout encourages members to share their knowledge and unique gardening experiences.
+
+![Create Story](README-files/create-story.png)
+
+#### Member Stories
+The Member Stories page is a member-exclusive section where users can read stories and insights shared by other community members. This feature encourages a sense of community and gives members access to firsthand experiences in coastal gardening.
+
+![Member Stories](README-files/member-stories.png)
 
 #### Sign Up Page
-
-* This page will allow the user to get signed up to the Atlantic Dippers to start their dipping journey with their local community. The user will be asked what level of previous experience they have with open water swimming. The user will be asked to submit their full name and email address. 
+The Sign-Up page includes standard registration fields with added questions about gardening experience level and the user’s garden zone. This customization helps Coastal Gardens offer a more tailored experience for each member.
 
 ![Sign Up](README-files/signup.png)
+
+#### Contact Us Page
+The Contact Us page provides a direct way for users to reach out with inquiries or feedback. It ensures members feel supported and have access to help if needed.
+
+![Sign Up](README-files/contact.png)
 
 
 ### Future Implementations
 
-* In the future, the User name and favorite surf spots tracking functionality could be implemented.
-* In the future I would like to add more information to the database, and cover all (coastal) Counties.
-* Through further learning I would like to use a weather forcast API to add information to the surf spot details with current weather conditions.
-* I would have loved to add a feature that User can store their favorite surf spots. After finishing the course I would like to come back to this project and create this feature. 
+* One future feature planned for Coastal Gardens is a Reddit-style Q&A advice page. This page would allow members to post gardening questions and receive answers from the community, promoting knowledge-sharing among users with various experience levels. Members could upvote helpful responses, making it easy to identify valuable advice and reliable contributors. This addition would create an interactive support space, further enhancing the community feel of Coastal Gardens.
+
+* Another future enhancement could be a “Garden Planner” feature. This planner could provide personalized monthly to-do lists where gardeners can focus on timely tasks like planting, pruning, and seasonal maintenance.
 
 *** 
 
@@ -249,20 +258,10 @@ Dropdown navigation menu:<br>
 * [Heroku](https://heroku.com/) - Used for deploying the live project.
 * [Gitpod](https://www.gitpod.io/#get-started) - Used for developing the application.
 * [Python](https://www.python.org/) - Used for adding functionality to the application.
-* [Google Sheets](https://docs.google.com/spreadsheets/) - used for storing, editing and saving Surf Spot Finder database.
-* [Google Cloud Platform](https://cloud.google.com/) - used to provide the APIs for connecting the data sheets with the Python code.
-* [Lucidchart](https://lucid.co/) - Used for creating the app flowchart.
 * [CI Python Linter](https://pep8ci.herokuapp.com/#) - Used for validation python code.
 
 ### Python Libraries
 
-* [gspread](https://docs.gspread.org/en/v6.0.0/) - used to add, remove and manipulate data in the connected Google Sheets worksheets.
-* [google.oauth.service_account](https://google-auth.readthedocs.io/en/master/reference/google.oauth2.service_account.html) - used for the authentication needed to access the Google APIs to connect the Service Account with the Credentials function. A CREDS.json file was generated with the details needed for the API to access the Google account which holds the Google Sheets worksheet containing the applications data. When deploying to Heroku, this information is then stored in the config var section to ensure the application will run.
-* [Pyfiglet](https://pypi.org/project/pyfiglet/) - Used for the opening title and Goodbye message.
-* [Time](https://docs.python.org/3/library/time.html) - Used for the slow print functionality and for delaying print statements.
-* [Sys](https://docs.python.org/3/library/sys.html) - Used to provide access to some variables used or maintained by the interpreter.
-* [Random](https://docs.python.org/3/library/random.html) - Used to add the slow_print functionality.
-* [OS](https://docs.python.org/3/library/os.html) - Used to add the clear_terminal function for a neater flow of the program.
 
 ***
 
