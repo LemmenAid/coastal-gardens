@@ -94,70 +94,142 @@ This palette creates a welcoming environment that mirrors nature while being eas
 
 ### Typography
 
-* The typography used throughout the site is PT Serif for headings, and Helvetica for paragraphs. 
- PT Serif is imported from google fonts. PT Serif was chosen for it’s readability in various sizes and to suit the botanical design of the website. As a fallback font Times and serif is used. The fallback font used for Helvetica is sans-serif. The letter spacing and line-height has been increased slightly to improve readability in the paragraphs. For the headings letter spacing has also been applied, as well as a heavier font weight to make them stand out more. 
+* The typography on Coastal Gardens combines Cormorant Garamond with Roboto, a clean sans-serif font, to create a modern magazine-like feel. Cormorant Garamond adds an elegant, editorial touch, while the Roboto font keeps the content easy to read and approachable. 
 
-The following code has been imported into the top of the style.css
+The following code has been imported into the top of the base.html file
 
-    @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-![alt text](README-files/PT-Serif.png)<br>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+![alt text](README-files/roboto.png)<br>
+![alt text](README-files/cormorant.png)<br>
 
 ### Call to Action
 
-* The call to action buttons on the landing page lead to the three different quizes. At the end of each quiz there is a call to action button to replay the game and a button to play another game.
-* All the buttons on the website are styled with a colour change so that it is clear for any visitor that these are buttons.
-* The social media links will send the visitor to the social media pages. The links will open in a new tab.
-* The header and footer logo have a colour change hover effect to make it clear that they are links.
+* The call to action button on the homepage leads to the Sign Up page, unless you are signed in as a member, then it leads to your personalised Dashboard.
+
+![alt text](README-files/action-button.png)<br>
 
 ### Imagery
 
-Images used in the different quizes were selected for their aesthetic appeal and informative use.
+Several image sources were used for the images throughout the website.<br>
+The links to these sources are listed here:
 
-Several free image sources were used. The links to these sources are listed here:
+* [Hero Image, Bells of Ireland](https://floralife.com/article/bells-of-ireland-troubleshooting/)
+* Photo by Image Hunter: https://www.pexels.com/photo/hand-holding-note-on-green-bush-background-13092789/
+* Photo by Lukas Medvedevas: https://www.pexels.com/photo/a-man-standing-on-the-mountain-6013664/
+* Photo by Vicky Sim: https://unsplash.com/photos/brown-and-white-1-storey-house-surrounded-by-trees-VYRc_uIafIg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash/
+* Photo by Dmitrij Paskevic: https://unsplash.com/photos/white-concrete-house-beside-road-SGuK8EIUx_Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash/
+* Photo by Johny Goerend: https://unsplash.com/photos/aerial-view-of-green-grass-field-near-body-of-water-during-daytime-cGMTvIzhmAA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash/
+* https://www.lummi.ai/photo/a-close-up-view-of-a-lake-and-grass-near-a-cabin-in-t-e8db6be2-994a-4f68-b3f3-54493d2929d8-GuY3A
+* https://www.lummi.ai/photo/underwater-serenity-hx6rp
+* Photo by Steve W: https://www.pexels.com/photo/close-up-photo-of-labrador-on-flower-field-4200202/
+* Photo by Wynand van Poortvliet: https://unsplash.com/photos/two-black-and-white-birds-4AmyOdXZAQc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash/
+* Photo by Kristina Paukshtite: https://www.pexels.com/photo/blue-white-and-red-poppy-flower-field-712876/
+* Photo by Joerg Hartmann from Pexels: https://www.pexels.com/photo/poppy-on-meadow-17832251/
+* Photo by Photo By: Kaboompics.com: https://www.pexels.com/photo/person-in-brown-shorts-watering-the-plants-4750270/
+* Photo by Roy Manuhutu: https://www.pexels.com/photo/close-up-photo-of-flower-with-spiderweb-4099836/
+* Photo by Helena Jankovičová Kováčová from Pexels: https://www.pexels.com/photo/red-poppies-on-meadow-25578696/
+* Photo by Helena Jankovičová Kováčová: https://www.pexels.com/photo/close-up-of-red-berries-on-a-branch-outdoors-29238660/
+* https://www.gardensillustrated.com/features/wildlife-sand-habitats-gardens
+* Photo by Brendan Rühli: https://www.pexels.com/photo/close-up-of-blue-flowers-7268049/
+* Photo by Amie Roussel: https://www.pexels.com/photo/gardener-in-autumn-sunflower-garden-28965902/
+* Photo by Everson Marcos de Carvalho: https://www.pexels.com/photo/latin-american-fleabane-in-close-up-shot-12711555/
+* Photo by Tommes Frites: https://www.pexels.com/photo/a-single-cornflower-in-a-field-with-wheat-27797805/
+* Photo by Werner Redlich: https://www.pexels.com/photo/purple-foxglove-flowers-24287691/
+* Photo by Drew Anderson: https://www.pexels.com/photo/branch-of-blooming-tree-with-blossoms-5549936/
+* Photo by Daniil Komov: https://www.pexels.com/photo/black-and-gray-bird-flying-in-the-sky-10662583/
+* https://www.lummi.ai/photo/a-close-up-view-of-a-lake-and-grass-near-a-cabin-in-t-e8db6be2-994a-4f68-b3f3-54493d2929d8-GuY3A/
+* https://www.goodeggs.com/repettonursery/bells-of-ireland/5c82e8ba2a974d000e7099fe/
+
 
 ***
 
+
+## Layout / Wireframes
+
+* The basic design layout of the website has been made using wireframes with Balsamiq. 
+* Responsive design has been used for creating this website. For instance, when a page goes from mobile to larger screens some of the content goes from stacked to lined up.
+
+#### Home Page
+![alt text](README-files/wireframe-main.png)<br>
+
+#### About Us Page
+![alt text](README-files/wireframe-about.png)<br>
+
+#### Meetup Page
+![alt text](README-files/wireframe-meetup.png)<br>
+
+#### Signup Page
+![alt text](README-files/wireframe-signup.png)<br>
+
+#### Mobile View
+![alt text](README-files/mb-all-wireframe.png)<br>
+
+
+***
+
+
 ## Features 
 
-### ASCII Art
+### General Features on each page
 
-ASCII Art is used as a title for the app to give the Surf Spot Finder a visual identity and to make it visually appealing.
+#### Navigation Bar
 
-![ACSII Art](README-files/banner-surfspot.png)
+* Featured on all three pages, the full responsive navigation bar includes links to the Logo/landing page, about us, meetup times and Sign Up page and is identical in each page to allow for easy navigation.
+* This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
 
-### Slow Print
+Navigation bar:<br>
+![Nav Bar](README-files/navbar.png)
 
-The majority of the text in the app is printed slowly to improve User experience and to make sure that the User is not overwhelmed by the text appearing on the screen.
+Dropdown navigation menu:<br>
+![Nav Bar dropdown menu](README-files/navbar-drop.png)
 
-### Welcome Message & Counties
+#### The Footer
 
-* As soon as the page is loaded, the ASCII Art is displayed and a welcome message is gradually printed out. 
-In the welcome message the purpuse of the app is explained. 
+* Featured on all three pages, the footer section includes the contact information of the club.
+* The footer section includes links to the relevant social media sites for Atlantic Dippers. The links will open to a new tab to allow easy navigation for the user. 
 
-* After the welcome message a list of available Counties is displayed and the User is promted to choose a County where they want to go surfing.
 
-![Welcome](README-files/welcome.png)
+![Footer](README-files/footer.png)
 
-### Surfspots
+#### Square Links
 
-* After choosing a County the terminal is cleared and a list of available surfspots for that County is displayed. The User is asked if they want to explore one of these surfspots further or if they want to exit the program.
+* The Square Links add an easy way for users to navigate between pages, but also has great visual appeal to make users want to click on it and explore other parts of the website.
 
-![Surfspots](README-files/surfspots.png)
 
-### Surfspot Details & Program Continue Options
+### Features by page
 
-* After choosing a spot more detailed information is given about the chosen spot.
+#### Landing Page
 
-* After the more detailed surfspot information is displayed, the User can choose between 3 options on how to continue in the app. They can either choose to explore another surfspot in the same County, choose a different County they want to explore or exit the program.
+* The landing page introduces the user to Atlantic Dippers with an eye catching photograph to grab their attention.
+* This page includes a call to action button that leads to the “About Us” which allows users to easily find more information about the club. 
+* The landing page also has three buttons to external links that are useful for members of the club. They are on the landing page so frequent users are just one click away from this information, like the local tides, local weather and national swimming events.
 
-![Spot Details](README-files/spot-details.png)
+![Landing Page](README-files/landing-page.png)
 
-### Goodbye Message
+#### About Page
 
-* If the User chooses to leave the program a goodbye message is displayed. 
+* The about page includes a brief outline of what the club is all about.
+* This page also includes some information about the benefits of cold water dipping and swimming.
+* A call to action button is added to the bottom of the page which leads visitors to the Signup page.
 
-![Goodbye](README-files/goodbye.png)
+![About Us](README-files/about.png)
+
+#### Meetup Times Page
+
+* This page informs the user about when the meetups will happen and where they will be located.
+* Included on this page is a google map that was embedded via Google Maps with the exact location where the Atlantic Dippers meet up.
+
+![Meetup Times](README-files/meetup.png)
+
+
+#### Sign Up Page
+
+* This page will allow the user to get signed up to the Atlantic Dippers to start their dipping journey with their local community. The user will be asked what level of previous experience they have with open water swimming. The user will be asked to submit their full name and email address. 
+
+![Sign Up](README-files/signup.png)
 
 
 ### Future Implementations

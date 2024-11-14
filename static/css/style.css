@@ -19,6 +19,7 @@ body {
     max-width: 2000px;
     margin: 0 auto;
     padding: 0px;
+    font-family: 'Roboto', Helvetica, sans-serif;
 }
 
 
@@ -126,8 +127,8 @@ body {
     color: #3c431cd6;
 }
 
-/* Styles for What's New section */
 
+/* Styles for What's New section */
 .new-nav {
     display: flex;
     align-items: center;
@@ -172,13 +173,11 @@ body {
 
 .card-new:hover {
     transform: translateY(-5px);
-    /* Slight lift on hover */
 }
 
 .card-image {
     width: 100%;
     height: 150px;
-    /* Consistent image height */
     object-fit: cover;
     border-radius: 4px;
 }
@@ -199,20 +198,8 @@ body {
     font-family: "Cormorant Garamond", serif;
 }
 
-@media (max-width: 725px) {
-    .new-nav {
-        flex-direction: column;
-    }
 
-    .card-new {
-        width: 100%;
-        /* Full width on smaller screens */
-        margin-bottom: 1rem;
-    }
-}
-
-
-/* Styles for square links on homepage */
+/* Styles Square links */
 .link-container {
     display: flex;
     justify-content: center;
@@ -416,6 +403,7 @@ body {
     margin: 15px;
 }
 
+
 /* Styles for the Contact Us page" */
 
 .h2-contact {
@@ -423,6 +411,7 @@ body {
     font-weight: 900;
     text-transform: uppercase;
 }
+
 
 /* Styles for Dashboard */
 .dashboard-card {
@@ -459,6 +448,14 @@ body {
     background-color: #717375;
 }
 
+
+/* create story page */
+.form-control {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 .create-story {
     padding: 25px;
 }
@@ -475,12 +472,6 @@ body {
     border-radius: 0.5rem;
 }
 
-/* create story page */
-.form-control {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-}
 
 /* Styles for login / logout / signup */
 
@@ -494,6 +485,14 @@ body {
 
 
 /* Styles for Footer */
+.footer-container {
+    background-color:#bee5d0;
+    color: #252525;
+    max-width: 100%;
+    margin-top: 20px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
 .footer-logo a {
     text-decoration: none;
     font-family: 'Cormorant Garamond', serif;
@@ -506,13 +505,6 @@ body {
 
 .footer-logo a:hover {
     color: #f8f7f3;
-}
-
-.footer-container {
-    background-color:#bee5d0;
-    color: #252525;
-    max-width: 100%;
-    margin-top: 20px;
 }
 
 
@@ -601,6 +593,20 @@ body {
 
 
 /* Media query: tablets and larger */
+
+@media (max-width: 725px) {
+    
+    /* What's new section on home page */
+    .new-nav {
+        flex-direction: column;
+    }
+
+    .card-new {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
 @media screen and (min-width: 768px) {
 
     /* Hero section */
@@ -634,7 +640,6 @@ body {
         font-size: 0.9rem;
     }
 }
-
 
 @media (min-width: 950px) {
 
