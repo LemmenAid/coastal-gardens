@@ -306,9 +306,37 @@ body {
 
 .zone-title {
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     font-family: "Cormorant Garamond", serif;
     font-weight: 900;
+}
+
+.zone-intro {
+    font-size: 1.1em;
+    color: #252525;
+}
+
+.zone-list {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #252525;
+}
+
+.zone-list h3 {
+    color: #558b2f;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+.zone-list ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.zone-list li {
+    margin-bottom: 8px;
+    font-size: 1em;
 }
 
 
