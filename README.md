@@ -174,11 +174,15 @@ The links to these sources are listed here:
 
 #### Navigation Bar
 
-* Featured on all three pages, the full responsive navigation bar includes links to the Logo/landing page, about us, meetup times and Sign Up page and is identical in each page to allow for easy navigation.
-* This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+* Featured on all pages, the full responsive navigation bar includes links to the Home page, About, Features, Sign Up, Login, and Contact Us page and is identical in each page to allow for easy navigation. This will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+
+* If a member is logged in the Dashboard page and Member Stories page will also be visible in the navigation bar. 
 
 Navigation bar:<br>
 ![Nav Bar](README-files/navbar.png)
+
+Navigation bar for members:<br>
+![Nav Bar](README-files/navbar-member.png)
 
 Dropdown navigation menu:<br>
 ![Nav Bar dropdown menu](README-files/navbar-drop.png)
@@ -193,8 +197,9 @@ Dropdown navigation menu:<br>
 
 #### Square Links
 
-* The Square Links add an easy way for users to navigate between pages, but also has great visual appeal to make users want to click on it and explore other parts of the website.
+* The Square Links make it easy for users to navigate between pages while also adding visual appeal that encourages exploration across the site.
 
+![Nav Bar](README-files/square-links.png)
 
 ### Features by page
 
