@@ -155,14 +155,11 @@ The links to these sources are listed here:
 #### Home Page
 ![alt text](README-files/wireframe-main.png)<br>
 
-#### About Us Page
-![alt text](README-files/wireframe-about.png)<br>
+#### Text Pages
+![alt text](README-files/wireframe-text-page.png)<br>
 
-#### Meetup Page
-![alt text](README-files/wireframe-meetup.png)<br>
-
-#### Signup Page
-![alt text](README-files/wireframe-signup.png)<br>
+#### Feature Page
+![alt text](README-files/wireframe-features.png)<br>
 
 #### Mobile View
 ![alt text](README-files/mb-all-wireframe.png)<br>
