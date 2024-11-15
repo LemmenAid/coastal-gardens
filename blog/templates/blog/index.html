@@ -19,48 +19,50 @@
 </div>
 
 <!-- "What's New?" -->
-<div class="whats-new mt-5 mb-5">
-    <h2 class="h2-new">What's New?</h2>
-    <p class="p-new">Dive into our latest features and get inspired by fresh ideas, expert tips, and coastal
-        garden stories. Whether you're just starting out or a seasoned gardener, these posts bring the best of
-        seaside
-        gardening to you!</p>
-    <div class="new-nav">
-        {% for post in latest_posts %}
-        <div class="card-new">
-            <a href="{% url 'post_detail' post.slug %}">
-                <img src="{{ post.featured_image.url }}" alt="Feature Image" class="card-image">
-                <h3 class="card-title-new">{{ post.title }}</h3>
-                <p class="card-author-new">By {{ post.author }}</p>
-                <p class="card-author-new">Created on {{ post.created_on }}</p>
-            </a>
+<div class="container mt-5 mb-5">
+    <div class="whats-new">
+        <h2 class="h2-new">What's New?</h2>
+        <p class="p-new">Dive into our latest features and get inspired by fresh ideas, expert tips, and coastal
+            garden stories. Whether you're just starting out or a seasoned gardener, these posts bring the best of
+            seaside
+            gardening to you!</p>
+        <div class="new-nav">
+            {% for post in latest_posts %}
+            <div class="card-new">
+                <a href="{% url 'post_detail' post.slug %}">
+                    <img src="{{ post.featured_image.url }}" alt="Feature Image" class="card-image">
+                    <h3 class="card-title-new">{{ post.title }}</h3>
+                    <p class="card-author-new">By {{ post.author }}</p>
+                    <p class="card-author-new">Created on {{ post.created_on }}</p>
+                </a>
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
-    </div>  
-</div>
-<hr>
-
-<!-- Square Links -->
-<div class="row">
-    <div class="link-container">
-        <a href="{% url 'about' %}" class="link-square">
-            <img src="{% static 'images/about.jpg' %}" alt="About">
-            <span>About</span>
-        </a>
-        <a href="{% url 'zone_map' %}" class="link-square" aria-label="garden zone map">
-            <img src="{% static 'images/zone.jpg' %}" alt="Zone map">
-            <span>Zone Map</span>
-        </a>
-        <a href="{% url 'features' %}" class="link-square">
-            <img src="{% static 'images/features.jpg' %}" alt="Features">
-            <span>Features</span>
-        </a>
-        <a href="{% url 'contact' %}" class="link-square" aria-label="link to the contact us page">
-            <img src="{% static 'images/contact.jpg' %}" alt="Contact us">
-            <span>Contact Us</span>
-        </a>
+        <hr>
+        <!-- Square Links -->
+        <div class="row">
+            <div class="link-container">
+                <a href="{% url 'about' %}" class="link-square">
+                    <img src="{% static 'images/about.jpg' %}" alt="About">
+                    <span>About</span>
+                </a>
+                <a href="{% url 'zone_map' %}" class="link-square" aria-label="garden zone map">
+                    <img src="{% static 'images/zone.jpg' %}" alt="Zone map">
+                    <span>Zone Map</span>
+                </a>
+                <a href="{% url 'features' %}" class="link-square">
+                    <img src="{% static 'images/features.jpg' %}" alt="Features">
+                    <span>Features</span>
+                </a>
+                <a href="{% url 'contact' %}" class="link-square" aria-label="link to the contact us page">
+                    <img src="{% static 'images/contact.jpg' %}" alt="Contact us">
+                    <span>Contact Us</span>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
+
 
 <!-- index.html content ends here -->
 {% endblock %}

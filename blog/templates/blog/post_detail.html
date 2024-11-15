@@ -4,10 +4,8 @@
 
 {% block content %}
 <div class="container mt-5">
-
-    <div class="container">
-        <div class="row">
-
+    <div class="row mb-4">
+        <div class="col-12">
             <div class="top-image-container">
                 {% if "placeholder" in post.featured_image.url %}
                 <img src="{% static 'images/default.jpg' %}" class="top-image" alt="placeholder image">
@@ -25,9 +23,9 @@
     <!-- Feature content -->
     <div class="container">
         <div class="row">
-            <article class="post-content">
+            <div class="post-content">
                 {{ post.content|safe }}
-            </article>
+            </div>
         </div>
     </div>
 
@@ -54,7 +52,6 @@
             <hr>
         </div>
     </div>
-
 
     <!-- Displaying Comments -->
     <div class="container-fluid">
@@ -106,7 +103,6 @@
                     {% endif %}
                 </div>
             </div>
-
         </div>
     </div>
     <hr>
@@ -131,7 +127,6 @@
             </a>
         </div>
     </div>
-
 </div>
 
 <!-- Delete confirmation modal -->
@@ -152,11 +147,7 @@
         </div>
     </div>
 </div>
-
 {% endblock content %}
-{% block copyright %}
-Copyright 2024
-{% endblock %}
 
 {% block extra_js %}
 <script src="{% static 'js/comments.js' %}"></script>
