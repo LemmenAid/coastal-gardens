@@ -118,6 +118,8 @@ The links to these sources are listed here:
 
 * [Hero Image, Bells of Ireland](https://floralife.com/article/bells-of-ireland-troubleshooting/)
 * Photo by Image Hunter: https://www.pexels.com/photo/hand-holding-note-on-green-bush-background-13092789/
+* Photo by Dave Love: https://www.pexels.com/photo/extreme-close-up-of-a-ripe-dandelion-17401938/
+* Photo by Photo By: Kaboompics.com: https://www.pexels.com/photo/plants-on-white-background-4736271/
 * Photo by Lukas Medvedevas: https://www.pexels.com/photo/a-man-standing-on-the-mountain-6013664/
 * Photo by Vicky Sim: https://unsplash.com/photos/brown-and-white-1-storey-house-surrounded-by-trees-VYRc_uIafIg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash/
 * Photo by Dmitrij Paskevic: https://unsplash.com/photos/white-concrete-house-beside-road-SGuK8EIUx_Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash/
@@ -199,7 +201,7 @@ Featured on all pages, the footer section includes a logo that links to the home
 
 #### Square Links
 
-The Square Links are on all pages, apart from the Feature, Member Stories and viewing a single blog page. The links make it easy for users to navigate between pages while also adding visual appeal that encourages exploration across the site.
+The Square Links are displayed on all pages. The links make it easy for users to navigate between pages while also adding visual appeal that encourages exploration across the site.
 
 ![Nav Bar](README-files/square-links.png)
 
