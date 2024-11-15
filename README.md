@@ -10,13 +10,13 @@
 
 ## Project Description  
 
-_Coastal Gardens is a interactive website for my fourth portfolio project with [Code Institute](https://codeinstitute.net/ie/)._
+_Coastal Gardens is a website for my fourth portfolio project with [Code Institute](https://codeinstitute.net/ie/)._
 
-Coastal Gardens is a web platform designed to connect and support coastal gardeners in Ireland and the UK. Focused on the unique challenges and rewards of gardening by the sea, the site provides accessible resources, insights, and a collaborative space for gardeners. Users can browse a curated selection of feature posts, explore their plant zone, and, by becoming members, unlock a personalized dashboard. Members have the opportunity to save favorite posts, keep track of their comments, and publish their own garden stories to inspire other coastal enthusiasts.
+Coastal Gardens is a website designed to connect and support coastal gardeners in Ireland and the UK. Focused on the unique challenges and rewards of gardening by the sea, the site provides a selection of feature posts, plant zone information, and, by becoming members, unlock a personalized dashboard. Members have the opportunity to save favorite posts, keep track of their comments, and publish their own garden stories to inspire other coastal gardeners.
 
 ## Project Purpose
 
-The purpose of Coastal Gardens is to foster a vibrant online community dedicated to coastal gardening. Recognizing the specific needs of the coastal region, the platform aims to be a comprehensive resource for both beginners and seasoned gardeners facing the unique conditions of seaside environments. By providing a space for knowledge exchange, storytelling, and advice, Coastal Gardens empowers gardeners to create thriving, resilient gardens and build connections with others who share similar experiences.
+The purpose of Coastal Gardens is to create an online community dedicated to coastal gardening. Recognizing the specific needs of gardening by the sea, the platform aims to be a comprehensive resource for both beginners and seasoned gardeners facing the unique conditions of the coast. By providing a space for knowledge exchange, storytelling, and advice, Coastal Gardens empowers gardeners to create thriving and resilient gardens.
 
 ***
 
@@ -59,11 +59,11 @@ The purpose of Coastal Gardens is to foster a vibrant online community dedicated
 
 ## Creating Process
 
-When I started developing Coastal Gardens, it was my first time working on a project that combined both backend and frontend development, and my second time using Python. This project presented a steep learning curve, especially as I tackled the challenges of Django, CSS, and user interactivity. I wanted to create something with real-world application, so the idea of a resource for coastal gardeners felt both meaningful and practical.
+When I started developing Coastal Gardens, it was my first time working on a project that combined both backend and frontend development using the Django web Framework, and my second time using Python. This project presented a steep learning curve, especially as I tackled the challenges of Django, CSS, and user interactivity. I wanted to create something with real-world application, so the idea of a resource for coastal gardeners felt both meaningful and practical.
 
-At the beginning, I felt unsure about how to approach the project, but as I started coding, things began to click. Working through each part of the website—from creating personalized dashboards to designing the user experience—helped me better understand the concepts from my lessons. The process not only taught me more about Python logic and web frameworks, but also boosted my confidence as I realized I could solve problems and make the website functional.
+At the beginning, I felt unsure about how to approach the project, but as I started coding, things began to click. Working through each part of the website—from creating basic pages to designing the user experience—helped me better understand the concepts from my lessons. The process not only taught me more about Python logic and web frameworks, but also boosted my confidence as I realized I could solve problems and make the website functional.
 
-The creative process became really enjoyable as I saw the website take shape, and I'm proud that it’s a tool gardeners in Ireland and the UK can use to share stories, access local gardening advice, and find inspiration for their coastal spaces.
+The creative process became really enjoyable as I saw the website take shape, and I'm happy with how far I have gotten with it - it’s a website gardeners in Ireland and the UK could use to share stories, access local gardening advice, and find inspiration for their coastal gardens.
 
 ### Project SetUp
 
