@@ -271,6 +271,10 @@ The Contact Us page provides a direct way for users to reach out with inquiries 
 
 * Another future enhancement could be a “Garden Planner” feature. This planner could provide personalized monthly to-do lists where gardeners can focus on timely tasks like planting, pruning, and seasonal maintenance.
 
+* A direct messages option between members.
+
+* A gallery page of all images features on the website.
+
 *** 
 
 ## Libraries and Technologies Used
@@ -287,6 +291,25 @@ The Contact Us page provides a direct way for users to reach out with inquiries 
 ***
 
 ## Testing
+
+### HTML validation
+
+The [W3C HTML validator](https://validator.w3.org/) is used for validating the HTML code.<br>
+All pages were checked and had no errors, apart from the cases I have described here:
+
+The index.html page had a warning and info alert:
+![index](README-files/errors_index.png)
+
+After fixing these the page came up with no errors etc.
+![index](README-files/no_errors.png)
+
+The Sign Up page had a few errors, but I did not know how to fix them, because it was not in the code that I have written, but in the Django Allauth Form:
+![index](README-files/signup_error.png)
+
+And last but not least the comment_id error for the edit and delete button for comments. 
+The solution provided in the "Tydying Up" video did not work for me, after adding the data- tag to the comment_id my buttons did not work.
+
+![index](README-files/comment_id_error.png)
 
 
 ### Python Validation
