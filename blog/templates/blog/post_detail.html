@@ -109,6 +109,28 @@
 
         </div>
     </div>
+    <hr>
+    <!-- Square Links -->
+    <div class="row">
+        <div class="link-container">
+            <a href="{% url 'about' %}" class="link-square">
+                <img src="{% static 'images/about.jpg' %}" alt="About">
+                <span>About</span>
+            </a>
+            <a href="{% url 'zone_map' %}" class="link-square" aria-label="garden zone map">
+                <img src="{% static 'images/zone.jpg' %}" alt="Zone map">
+                <span>Zone Map</span>
+            </a>
+            <a href="{% url 'features' %}" class="link-square">
+                <img src="{% static 'images/features.jpg' %}" alt="Features">
+                <span>Features</span>
+            </a>
+            <a href="{% url 'contact' %}" class="link-square" aria-label="link to the contact us page">
+                <img src="{% static 'images/contact.jpg' %}" alt="Contact us">
+                <span>Contact Us</span>
+            </a>
+        </div>
+    </div>
 
 </div>
 

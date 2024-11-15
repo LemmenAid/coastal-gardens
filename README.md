@@ -69,7 +69,7 @@ The creative process became really enjoyable as I saw the website take shape, an
 
 For setting up Coastal Gardens, I followed the CodeStar follow-along project structure, customizing it to create a unique platform for coastal gardening enthusiasts.
 
-I began by building a Django framework, developing the foundational pages (Home, About, Features, and Zone Map) that offer general information to anyone interested in coastal gardening. Once this structure was stable, I added unique member features, including personalized dashboards and the option for members to write and share blog posts exclusively within the community.
+I began by building a Django framework, developing the foundational pages (Home, About, Features, and Zone Map) that offer general information to anyone interested in coastal gardening. Once this structure was stable, I added unique member features, including a personalized dashboards and the option for members to write and share blog posts exclusively within the community.
 
 This was my first experience handling both backend and frontend tasks together, which was challenging but rewarding. Developing these elements involved custom logic for saving, displaying, and managing user-generated content in a way that’s engaging and intuitive. Testing each step along the way helped me ensure smooth functionality and an accessible user experience.
 
@@ -85,29 +85,29 @@ Jump to Credits: [Credits](#credits)
 
 ![alt text](README-files/colour-palette.png)
 
-The Coastal Gardens colour scheme draws inspiration from coastal landscapes, incorporating natural tones that aligns with the garden-focused theme.
+The Coastal Gardens colour scheme draws inspiration from the coastal landscape, incorporating natural tones that aligns with the garden-focused theme.
 
-* The palette centers on a calming green to echo the lushness of coastal plant life, balanced by subtle, neutral tones to maintain clarity and focus. 
-* Light neutrals and deep charcoal are used for contrast, ensuring readability and accessible text elements without overwhelming the page.
-
-This palette creates a welcoming environment that mirrors nature while being easy to navigate and visually pleasant.
+Wanting to keep the design clean and clear, I have used only a few hues of green for adding colour. Making sure the attention of the reader is mostly drawn to the content. <br>
+I have chosen a light neutral for the background, which feels more natural than pure white and a deep charcoal for headers and accents to provide the necessary contrast, ensuring readability and accessible text elements without overwhelming the page.
 
 ### Typography
 
-* The typography on Coastal Gardens combines Cormorant Garamond with Roboto, a clean sans-serif font, to create a modern magazine-like feel. Cormorant Garamond adds an elegant, editorial touch, while the Roboto font keeps the content easy to read and approachable. 
+The typography on Coastal Gardens combines Cormorant Garamond with Roboto, a clean sans-serif font, to create a modern magazine-like feel. Cormorant Garamond adds an elegant, editorial touch, while the Roboto font keeps the content easy to read. 
 
-The following code has been imported into the top of the base.html file
+The following code has been imported into the top of the base.html file:
 
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+Roboto:<br>
 ![alt text](README-files/roboto.png)<br>
+Cormorant Garamond:<br>
 ![alt text](README-files/cormorant.png)<br>
 
 ### Call to Action
 
-* The call to action button on the homepage leads to the Sign Up page, unless you are signed in as a member, then it leads to your personalised Dashboard.
+The call to action button on the homepage leads to the Sign Up page, unless you are signed in as a member, then it leads to your personalised Dashboard.
 
 ![alt text](README-files/action-button.png)<br>
 
@@ -149,8 +149,7 @@ The links to these sources are listed here:
 
 ## Layout / Wireframes
 
-* The basic design layout of the website has been made using wireframes with Balsamiq. 
-* Responsive design has been used for creating this website. For instance, when a page goes from mobile to larger screens some of the content goes from stacked to lined up.
+The basic design layout of the website has been made using wireframes with Balsamiq. Responsive design has been used for creating this website. For instance, when a page goes from mobile to larger screens some of the content goes from stacked to lined up.
 
 #### Home Page
 ![alt text](README-files/wireframe-main.png)<br>
@@ -174,7 +173,7 @@ The links to these sources are listed here:
 
 #### Navigation Bar
 
-* Featured on all pages, the full responsive navigation bar includes links to the Home page, About, Features, Sign Up, Login, and Contact Us page and is identical in each page to allow for easy navigation. This will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+* Featured on all pages, the full responsive navigation bar includes links to the Home page, About, Features, Sign Up, Login, and Contact Us page and is identical on each page to allow for easy navigation.
 
 * If a member is logged in the Dashboard page and Member Stories page will also be visible in the navigation bar. 
 
@@ -191,8 +190,7 @@ Dropdown navigation menu:<br>
 
 #### The Footer
 
-* Featured on all three pages, the footer section includes the contact information of the club.
-* The footer section includes links to the relevant social media sites for Atlantic Dippers. The links will open to a new tab to allow easy navigation for the user. 
+Featured on all pages, the footer section includes a logo that links to the home page, a sign up button,copyright information and a link to the GitHub Repository.
 
 
 ![Footer](README-files/footer.png)
@@ -201,7 +199,7 @@ Dropdown navigation menu:<br>
 
 #### Square Links
 
-* The Square Links make it easy for users to navigate between pages while also adding visual appeal that encourages exploration across the site.
+The Square Links are on all pages, apart from the Feature, Member Stories and viewing a single blog page. The links make it easy for users to navigate between pages while also adding visual appeal that encourages exploration across the site.
 
 ![Nav Bar](README-files/square-links.png)
 
