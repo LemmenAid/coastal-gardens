@@ -56,11 +56,8 @@
                                     <p class="card-text">{{ story.excerpt }}</p>
                                 </a>
                                 <hr>
-                                <p class="card-text text-muted h6">{{ story.created_on}}
-                                </p>
-
+                                <p class="card-text text-muted h6">{{ story.created_on}}</p>
                             </div>
-
                         </div>
                     </div>
                     {% if forloop.counter|divisibleby:3 %}
@@ -68,7 +65,6 @@
                 <div class="row">
                     {% endif %}
                     {% endfor %}
-
                 </div>
             </div>
         </div>
@@ -106,9 +102,5 @@
             </a>
         </div>
     </div>
-
 </div>
 {% endblock content %}
-{% block copyright %}
-Copyright 2024
-{% endblock %}
