@@ -26,7 +26,7 @@ The purpose of Coastal Gardens is to create an online community dedicated to coa
 * [Creating Process](#creating-process)
 * [Design](#design)
 * [Features](#features)
-* [Libraries and Technologies Used](#libraries-and-technologies-used)
+* [Technologies Used](#technologies-used)
 * [Testing](#testing)
 * [Solved Bugs](#solved-bugs)
 * [Deployment](#deployment)
@@ -277,7 +277,7 @@ The Contact Us page provides a direct way for users to reach out with inquiries 
 
 *** 
 
-## Libraries and Technologies Used
+## Technologies Used
 
 * [Github](https://github.com/) - Used for hosting the repository.
 * [Heroku](https://heroku.com/) - Used for deploying the live project.
@@ -331,25 +331,35 @@ The [CI Python Linter](https://pep8ci.herokuapp.com/#) is used for validation py
 
 ***
 
-### Input Testing
+### Functionality Testing
 
-During developments User input has been tested frequently to check if various inputs were valid, namely if the validation functions were catching all errors as expected. It was important that the User could easily navigate back to different Counties and surfspot options, as well as exiting the app. When testing User input I have repeatedly used the same set of input values: "Enter button only", "test" and "123".
+| Feature | Testing Performed | Expected Outcome | Pass/Fail |
+| --- | --- | --- | --- |
+| Link Coastal Gardens header | click Title | When clicked the user will be redirected to the home page. | PASS |
+| Internal Links | click on internal links | Internal links redirect to where they should. | PASS |
+| External Links | click on external links | External links go where they should and open in separate tab. | PASS |
+| Create Member Story | created/uploaded story on the create story page | As a logged in member I can write and upload a story with title, image, content and excerpt. | PASS |
+| draft status member story | after uploading story, checked status to be 'draft' and not published | upon uploading a member story the Admin has to change the status of the story from draft to published before it will appear on the Member Stories Page | PASS |
+| Hover buttons | checking the hover effect for buttons across the site |When hovered over a button the background colour changes to dark grey. | PASS |
+| messages | checking feedback messages | After updating or deleting a comment as a user you get a feedback message. | PASS |
+| messages disappear automatically | checking if messages disappear after 5 sec | After message appears it will automatically disappear. | PASS |
+| Next button | checking next button on features page and member stories page | below features / stories there is a PREV and NEXT button | PASS |
 
-All tests were completed in the local terminal as well as in the Heroku terminal.
+*** 
 
-| Feature                    | Tested?    | User Feedback Provided      |
-|----------------------------|------------|-----------------------------|
-| Choose County              | Yes        | Sorry, {user_county} is not a valid county. |
-| Choose surfspot            | Yes        | {selected_spot} is not a valid surfspot. Please enter one of the available options.|
-| Program continue options   | Yes        | {restart} is not a valid input! Please enter Y, N or C. |
-| Exit                       | Yes        | Goodbye message is displayed. |
+### Responsivness
+* The website has been tested on different devices(under which; iPhone SE / iPhone 12 / iPhone 14 / Samsung Galaxy S9 / MacBook Air / MacBook Pro / HP laptop).
+* The website was responsive on all screens from mobile phones to desktops.
+* Chrome DEV Tools have been used to check the responsivness throughout the development of the website.
 
+***
 
-### Browser Testing  
-Surf Spot Finder was tested through the Heroku app website on the following browsers without issues:  
-- Google Chrome (Version 126.0.6478.182)
-- Mozilla Firefox (Version 127.0.2)  
-- Microsoft Edge (Version Version 126.0.2592.102) 
+### Browser Compatibility
+Coastal Gardens was tested through the Heroku app website on the following browsers without issues:  
+- Google Chrome (Version 132.0.6834.6)
+- Mozilla Firefox (Version 132.0)
+- Safari (Version 20619.2.8)
+- Microsoft Edge (Version 131.0.2903.51)
 
 ***
 
