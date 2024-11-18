@@ -300,17 +300,11 @@ All pages were checked and had no errors, apart from the cases I have described 
 The index.html page had a warning and info alert:
 ![index](README-files/errors_index.png)
 
-After fixing these the page came up with no errors etc.
+After fixing the info alert by removing the trailing slash and fixing the warning by replacing the section element by a div element the page came up with no errors or warnings.
 ![index](README-files/no_errors.png)
 
 The Sign Up page had a few errors, but I did not know how to fix them, because it was not in the code that I have written, but in the Django Allauth Form:
 ![index](README-files/signup_error.png)
-
-And last but not least the comment_id error for the edit and delete button for comments. 
-The solution provided in the "Tydying Up" video did not work for me, after adding the data- tag to the comment_id my buttons did not work.
-
-![index](README-files/comment_id_error.png)
-
 
 ### Python Validation
 

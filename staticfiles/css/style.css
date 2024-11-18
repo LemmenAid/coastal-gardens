@@ -518,11 +518,9 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
-    background-color: #dcedc8;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #666;
@@ -550,6 +548,15 @@ body {
     color: #252525;
     text-decoration: none;
     cursor: pointer;
+}
+
+.success {
+    background-color: #d4edda !important; /* Example green */
+    color: #155724 !important;
+}
+.danger {
+    background-color: #f8d7da !important; /* Example red */
+    color: #de6a0c !important;
 }
 
 
