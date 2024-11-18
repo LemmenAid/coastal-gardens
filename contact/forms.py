@@ -8,7 +8,8 @@ class GardenZoneField(forms.ChoiceField):
     Custom form field that represents the garden zone selection.
 
     This field provides a custom label that includes a link to a zone map
-    and is used in the ContactForm to allow users to select their gardening zone.
+    and is used in the ContactForm to allow users to select their
+    gardening zone.
 
     Attributes:
         label (str): The label displayed for the field, including a hyperlink.
@@ -30,10 +31,12 @@ class ContactForm(forms.ModelForm):
     choice field with a link to a zone map.
 
     Attributes:
-        garden_zone (GardenZoneField): Custom field for selecting the gardening zone.
+        garden_zone (GardenZoneField): Custom field for selecting
+        the gardening zone.
     """
     garden_zone = GardenZoneField(choices=Contact.ZONE_CHOICES, required=False)
-    
+
     class Meta:
         model = Contact
-        fields = ('name', 'email', 'gardening_experience', 'garden_zone', 'message')
+        fields = ('name', 'email', 'gardening_experience',
+                  'garden_zone', 'message')

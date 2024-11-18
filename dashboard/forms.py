@@ -1,7 +1,11 @@
 from django import forms
 from blog.models import Post
 
+
 class MemberStoryForm(forms.ModelForm):
+    """
+    A form for creating and editing member stories.
+    """
     class Meta:
         model = Post
         fields = ["featured_image", "title", "content", "excerpt"]

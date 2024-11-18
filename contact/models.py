@@ -3,8 +3,8 @@ from django.db import models
 
 class Contact(models.Model):
     """
-    This model stores information about users who reach out, including their 
-    name, email, gardening experience level, garden zone, message, and whether 
+    This model stores information about users who reach out, including their
+    name, email, gardening experience level, garden zone, message, and whether
     the request has been read.
     """
     EXPERIENCE_CHOICES = [

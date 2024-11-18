@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from blog.models import Post
@@ -14,7 +15,7 @@ for user in User.objects.all():
 def user_dashboard(request):
     """
     Renders the personalized user dashboard.
-    
+
     **Context**
     - ``user``: The current authenticated user instance.
     - ``user_posts``: Posts or data specific to the user.
@@ -37,6 +38,20 @@ def user_dashboard(request):
 
 @login_required
 def save_post(request, post_id):
+    """
+    Toggles the saved state of a blog post for the logged-in user.
+
+    If the post is already saved by the user,
+    it will be removed from their saved posts.
+    If it is not saved, it will be added to their saved posts.
+
+    Args:
+        request: The HTTP request object.
+        post_id: The ID of the post to toggle the saved state for.
+
+    Returns:
+        Redirects to the post's detail page.
+    """
     post = Post.objects.get(id=post_id)
     if post in request.user.profile.saved_posts.all():
         request.user.profile.saved_posts.remove(post)
@@ -47,15 +62,34 @@ def save_post(request, post_id):
 
 @login_required
 def create_member_story(request):
+    """
+    Allows logged-in users to create and submit a new member story.
+
+    Handles both displaying the form and processing form submissions.
+    If the form submission is valid, the story is saved as authored by the user
+    and marked as a member story with a published status.
+
+    Args:
+        request: The HTTP request object.
+
+    Returns:
+        - Renders the "create_member_story" template if request method is GET.
+        - Redirects to "member_stories" page upon successful form submission.
+    """
     if request.method == "POST":
         form = MemberStoryForm(request.POST, request.FILES)
         if form.is_valid():
             story = form.save(commit=False)
             story.author = request.user
             story.is_member_story = True
-            story.status = 1  # Set status to published
+            story.status = 0  # Set status to draft
             story.save()
+            messages.add_message(request, messages.SUCCESS,
+                                 'Story waiting for approval!')
             return redirect("member_stories")
     else:
+        messages.add_message(request, messages.ERROR,
+                             'Error uploading story!')
         form = MemberStoryForm()
-    return render(request, "dashboard/create_member_story.html", {"form": form})
+    return render(request, "dashboard/create_member_story.html",
+                  {"form": form})

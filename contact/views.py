@@ -19,8 +19,9 @@ def contact_us(request):
         contact_form = ContactForm(data=request.POST)
         if contact_form.is_valid():
             contact_form.save()
-            messages.add_message(request, messages.SUCCESS, 
-            "Contact request received! We endeavour to respond within 2 working days.")
+            messages.add_message(request, messages.SUCCESS,
+                                 "Contact request received!"
+                                 " We endeavour to respond within 2 days.")
 
     contact = Contact.objects.all()
     contact_form = ContactForm()

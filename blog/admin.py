@@ -6,8 +6,8 @@ from .models import Post, Comment
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
     """
-    Admin configuration for the Post model, enabling a customized admin interface.
-
+    Admin configuration for the Post model,
+    enabling a customized admin interface.
     """
     list_display = ('title', 'author', 'status', 'created_on')
     search_fields = ['title', 'content']
@@ -19,8 +19,9 @@ class PostAdmin(SummernoteModelAdmin):
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
     """
-    Admin configuration for the Comment model, providing management for comment moderation.
-    
+    Admin configuration for the Comment model,
+    providing management for comment moderation.
+
     Methods:
     - `approve_comments`: Approves selected comments in the admin.
     """

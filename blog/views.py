@@ -16,9 +16,10 @@ def home(request):
     **Template:**
     :template:`blog/index.html`
     """
-    #return render(request, 'blog/index.html')
-    latest_posts = Post.objects.filter(status=1, is_member_story=False).order_by('-created_on')[:3]
+    latest_posts = Post.objects.filter(status=1,
+        is_member_story=False).order_by('-created_on')[:3]
     return render(request, 'blog/index.html', {'latest_posts': latest_posts})
+
 
 class PostList(generic.ListView):
     """
@@ -31,7 +32,8 @@ class PostList(generic.ListView):
     **Template:**
     :template:`blog/features.html`
     """
-    queryset = Post.objects.filter(status=1, is_member_story=False).order_by("-created_on")
+    queryset = Post.objects.filter(status=1,
+        is_member_story=False).order_by("-created_on")
     template_name = "blog/features.html"
     paginate_by = 3
 
@@ -85,7 +87,6 @@ def post_detail(request, slug):
 
 def comment_edit(request, slug, comment_id):
     """
-    
     Display an individual comment for edit.
 
     **Context**
@@ -116,7 +117,6 @@ def comment_edit(request, slug, comment_id):
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-
 def comment_delete(request, slug, comment_id):
     """
     Delete an individual comment from a blog post.
@@ -135,9 +135,8 @@ def comment_delete(request, slug, comment_id):
         messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
     else:
         messages.add_message(request, messages.ERROR,
-        'You can only delete your own comments!')
+            'You can only delete your own comments!')
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
-
 
 
 class MemberStoriesView(generic.ListView):
@@ -154,4 +153,4 @@ class MemberStoriesView(generic.ListView):
     queryset = Post.objects.filter(status=1, is_member_story=True).order_by("-created_on")
     template_name = "blog/member_stories.html"
     context_object_name = "stories"
-    paginate_by = 3 
+    paginate_by = 3
