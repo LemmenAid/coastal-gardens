@@ -36,6 +36,30 @@ The purpose of Coastal Gardens is to create an online community dedicated to coa
 
 ## User Experience (UX)
 
+### Agile Methodology
+Epics were created to break down and group user stories which were then further broken down into tasks as steps to follow in the building process of the website. These were added to Project Boards on Github to assist with better organisation and prioritisation of the tasks. 
+
+<details>
+<summary> User Story Template
+</summary>
+
+![User Story Template](./assets/docs/user-story-temp.png)
+</details>
+
+<details>
+<summary> User Story Issues
+</summary>
+
+![User Story Issues](./assets/docs/issues.png)
+</details>
+
+<details>
+<summary> Project Board
+</summary>
+
+![Project Board](./assets/docs/project-board.png)
+</details>
+
 ### User Stories
 
 1. As a Visitor, I want to browse feature articles on coastal gardening, so that I can learn more about gardening by the sea.
@@ -168,8 +192,37 @@ The basic design layout of the website has been made using wireframes with Balsa
 
 ***
 
-
 ## Features 
+
+### Database Models / ERD's
+
+1. AllAuth User Model
+    - The Django built AllAuth is used as a default User model and provides user authentication.
+    - Pre-defined fields of username, email and password are used.
+    - The User is a one-to-many relationship with the Recipe model. 
+2. Post Model
+    - ....
+    - ....
+3. Comment Model
+    - The Comment Model was created for logged in users to post a comment if they wish on a feature or member story, with a many-to-one relationship as many comments can be posted on one story.
+    - Users see comments posted by other users on posts, date, time and who posted the comment is visible to users in the comment section.
+    - Comment model has full CRUD functionality to the user
+4.  About Model
+    - The About Model was created for users of the web page to get to know more about the site.
+    - Fields include a featured image, updated on, title and body.
+    - The fields can only be populated by the site admin with full CRUD functionality.
+6. Contact Us Model
+    - The Contact Model was created for visitors / logged in users to populate their info ie. name, email, garden zone, gardening experience and message.
+    - This information gets sent to the admin section where there is full CRUD available on the form info sent as well as an option to mark it as "read".
+
+<details>
+<summary> Database Diagram - Entity Relationship Diagram (ERD)
+</summary>
+
+![Database Diagram](./assets/docs/database-diagram.png)
+</details>
+
+***
 
 ### General Features on each page
 
@@ -279,14 +332,28 @@ The Contact Us page provides a direct way for users to reach out with inquiries 
 
 ## Technologies Used
 
+### Languages
+
+* HTML
+* CSS
+* Javascript
+* Python
+
+### Frameworks, programs and libraries
+
+* [Django](https://docs.djangoproject.com/en/5.0/) - Framework used to create full stack
+* [AllAuth](https://docs.allauth.org/en/latest/) - use to provide authentication framework for project
 * [Github](https://github.com/) - Used for hosting the repository.
-* [Heroku](https://heroku.com/) - Used for deploying the live project.
 * [Gitpod](https://www.gitpod.io/#get-started) - Used for developing the application.
-* [Python](https://www.python.org/) - Used for adding functionality to the application.
-* [CI Python Linter](https://pep8ci.herokuapp.com/#) - Used for validation python code.
-
-### Python Libraries
-
+* [Am I Responsive?](https://ui.dev/amiresponsive) - Used to create an image of the website on various screen sizes.
+* [Heroku](https://www.heroku.com/) - Used for deploying the live project.
+* [Favicon](https://favicon.io/) - Used to create favicon
+* [Font Awesome](https://fontawesome.com/) - Used to add special font images to website
+* [Bootstrap 5](https://getbootstrap.com/) - Used to add style to the displayed pages
+* [Pagination](https://getbootstrap.com/docs/4.0/components/pagination/) - Information page used to add more UX to the pagination list
+* [ChatGPT](https://chat.openai.com/) - Used to create the test blogs, user biography and landing pages articles.
+* [Code Beautify](https://codebeautify.org/) - Used to format HTML and CSS code
+* [Clouidnary](https://cloudinary.com/) - Used to host images and integrate with django and the admin portal
 
 ***
 
@@ -331,7 +398,60 @@ The [CI Python Linter](https://pep8ci.herokuapp.com/#) is used for validation py
 
 ***
 
+### Lighthouse
+
+After validator testing I have used Chrome’s Lighthouse developer tool to check all pages for performance and accessibility. Overall I am happy with the outcome. However, the performance is significantly influenced by Cloudinary images.
+
+#### Home Page
+
+![alt text](README-files/lh-home.png)
+
+#### About Us Page
+
+![alt text](README-files/lh-about.png)
+
+#### Zone Map Page
+
+![alt text](README-files/lh-zone-map.png)
+
+#### Features Page
+
+![alt text](README-files/lh-features.png)
+
+#### Contact Us Page
+
+![alt text](README-files/lh-score.png)
+
+#### Dashboard Page
+
+![alt text](README-files/lh-dashboard.png)
+
+#### Create Story Page
+
+![alt text](README-files/lh-create-story.png)
+
+#### Member Stories Page
+
+![alt text](README-files/lh-member-stories.png)
+
+#### Sign Up Page
+
+![alt text](README-files/lh-signup.png)
+
+***
+
 ### Functionality Testing
+
+### __Test Cases and Results__
+
+<details closed>
+<summary>The below table details the test cases that were used. </summary>
+<br>
+
+
+</details>
+
+User stories want to use here:
 
 | Feature | Testing Performed | Expected Outcome | Pass/Fail |
 | --- | --- | --- | --- |
@@ -365,7 +485,8 @@ Coastal Gardens was tested through the Heroku app website on the following brows
 
 ## Solved Bugs
 
-* One bug that came up during testing was 
+* Using signal.py to automatically create a profile when a new user registers
+    [Django signals](https://docs.djangoproject.com/en/5.0/topics/signals/)
 
  ![blank space bug](README-files/bug.png)
 
