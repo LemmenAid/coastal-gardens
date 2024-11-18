@@ -37,7 +37,28 @@ The purpose of Coastal Gardens is to create an online community dedicated to coa
 ## User Experience (UX)
 
 ### Agile Methodology
-Epics were created to break down and group user stories which were then further broken down into tasks as steps to follow in the building process of the website. These were added to Project Boards on Github to assist with better organisation and prioritisation of the tasks. 
+
+These are the user stories I started off with. These were broken down into tasks as steps to follow in the building process of the website. These steps were added to Project Boards on Github to assist with better organisation and prioritisation of the tasks. 
+
+### User Stories
+
+1. As a Visitor, I want to browse feature articles on coastal gardening, so that I can learn more about gardening by the sea.
+2. As a Visitor, I want to understand the plant zone map, so I can determine in which zone I live.
+3. As a Visitor, I want to read an About page to understand the purpose and mission of the site.
+4. As a Visitor, I want to easily navigate to different sections of the site, so I can find relevant information quickly.
+
+5. As a Potential Member, I want to view a sign-up page that explains the benefits of joining, so I know why I should become a member.
+6. As a Potential Member, I want a simple registration process, so I can quickly join the community.
+
+7. As a Member, I want a personalized dashboard where I can save and view my favorite articles, so I can easily revisit them.
+8. As a Member, I want to see a list of all my comments in one place, so I can keep track of my participation.
+9. As a Member, I want the ability to write and publish my own gardening stories, so I can share my experiences with other members.
+10. As a Member, I want access to member-only stories, so I can learn from the experiences of other coastal gardeners.
+
+11. As an Admin, I want to manage feature posts and member stories, so that the content is relevant, accurate, and engaging for users.
+12. As an Admin, I want to moderate comments, so I can ensure a respectful and constructive environment.
+13. As an Admin, I want to manage user accounts, so I can assist with membership issues and maintain site quality.
+
 
 <details>
 <summary> User Story Template
@@ -59,25 +80,6 @@ Epics were created to break down and group user stories which were then further 
 
 ![Project Board](./assets/docs/project-board.png)
 </details>
-
-### User Stories
-
-1. As a Visitor, I want to browse feature articles on coastal gardening, so that I can learn more about gardening by the sea.
-2. As a Visitor, I want to understand the plant zone map, so I can determine in which zone I live.
-3. As a Visitor, I want to read an About page to understand the purpose and mission of the site.
-4. As a Visitor, I want to easily navigate to different sections of the site, so I can find relevant information quickly.
-
-5. As a Potential Member, I want to view a sign-up page that explains the benefits of joining, so I know why I should become a member.
-6. As a Potential Member, I want a simple registration process, so I can quickly join the community.
-
-7. As a Member, I want a personalized dashboard where I can save and view my favorite articles, so I can easily revisit them.
-8. As a Member, I want to see a list of all my comments in one place, so I can keep track of my participation.
-9. As a Member, I want the ability to write and publish my own gardening stories, so I can share my experiences with other members.
-10. As a Member, I want access to member-only stories, so I can learn from the experiences of other coastal gardeners.
-
-11. As an Admin, I want to manage feature posts and member stories, so that the content is relevant, accurate, and engaging for users.
-12. As an Admin, I want to moderate comments, so I can ensure a respectful and constructive environment.
-13. As an Admin, I want to manage user accounts, so I can assist with membership issues and maintain site quality.
 
 ***
 
@@ -341,19 +343,25 @@ The Contact Us page provides a direct way for users to reach out with inquiries 
 
 ### Frameworks, programs and libraries
 
-* [Django](https://docs.djangoproject.com/en/5.0/) - Framework used to create full stack
-* [AllAuth](https://docs.allauth.org/en/latest/) - use to provide authentication framework for project
+* [Django](https://docs.djangoproject.com/en/5.0/) - Framework used to create website.
+* [AllAuth](https://docs.allauth.org/en/latest/) - used to provide authentication framework for the project.
+* [PostGreSQL database](https://www.postgresql.org/) - used as the database for the website.
 * [Github](https://github.com/) - Used for hosting the repository.
 * [Gitpod](https://www.gitpod.io/#get-started) - Used for developing the application.
 * [Am I Responsive?](https://ui.dev/amiresponsive) - Used to create an image of the website on various screen sizes.
 * [Heroku](https://www.heroku.com/) - Used for deploying the live project.
-* [Favicon](https://favicon.io/) - Used to create favicon
-* [Font Awesome](https://fontawesome.com/) - Used to add special font images to website
 * [Bootstrap 5](https://getbootstrap.com/) - Used to add style to the displayed pages
-* [Pagination](https://getbootstrap.com/docs/4.0/components/pagination/) - Information page used to add more UX to the pagination list
-* [ChatGPT](https://chat.openai.com/) - Used to create the test blogs, user biography and landing pages articles.
-* [Code Beautify](https://codebeautify.org/) - Used to format HTML and CSS code
-* [Clouidnary](https://cloudinary.com/) - Used to host images and integrate with django and the admin portal
+* [Pagination](https://getbootstrap.com/docs/4.0/components/pagination/) - Information page used to add more UX to the pagination list.
+* [ChatGPT](https://chat.openai.com/) - Used to create the blogs, member stories and about page.
+* [Code Beautify](https://codebeautify.org/) - Used to format HTML and CSS code.
+* [Clouidnary](https://cloudinary.com/) - Used to host images and integrate with django and the admin portal.
+
+### Design
+* Fonts from [Google Fonts](https://fonts.google.com/) 
+* Favicon [Favicon](https://favicon.io)
+* Wireframes [Balsamiq wireframe](https://balsamiq.com/)
+* Images from several sources, underwhich [Pexels](https://www.pexels.com/)
+* Colour palette generator [Coolors](https://coolors.co/)
 
 ***
 
