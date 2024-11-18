@@ -46,6 +46,7 @@ body {
     margin: 0px 20px 8px;
 }
 
+
 /* Styles for Logo navbar */
 .brand {
     font-family: 'Cormorant Garamond', serif;
@@ -66,7 +67,6 @@ body {
 
 
 /* Styles Home Page */
-/* Hero section */
 #hero {
     height: 610px;
     width: 100%;
@@ -416,7 +416,7 @@ body {
 /* Styles for Dashboard */
 .dashboard-card {
     margin: 4px;
-    border-radius: 0,5rem;
+    border-radius: 0.5rem;
     background-color: #bee5d0b9;
     padding: 15px;
 }
@@ -474,7 +474,6 @@ body {
 
 
 /* Styles for login / logout / signup */
-
 .h2-signup,
 .h2-logout,
 .h2-login {
@@ -550,6 +549,8 @@ body {
     cursor: pointer;
 }
 
+
+/* Styles for messages */
 .success {
     background-color: #d4edda !important; /* Example green */
     color: #155724 !important;
@@ -598,11 +599,9 @@ body {
 }
 
 
-
 /* Media query: tablets and larger */
 
-@media (max-width: 725px) {
-    
+@media (max-width: 725px) {  
     /* What's new section on home page */
     .new-nav {
         flex-direction: column;
@@ -615,7 +614,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-
     /* Hero section */
     .hero-title {
         padding-top: 150px;
@@ -649,7 +647,6 @@ body {
 }
 
 @media (min-width: 950px) {
-
     /* links on homepage */
     .link-container {
         align-items: center;

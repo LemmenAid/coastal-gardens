@@ -306,6 +306,19 @@ After fixing the info alert by removing the trailing slash and fixing the warnin
 The Sign Up page had a few errors, but I did not know how to fix them, because it was not in the code that I have written, but in the Django Allauth Form:
 ![index](README-files/signup_error.png)
 
+### CSS Validation
+
+The [Jigsaw](https://jigsaw.w3.org/css-validator/) CSS Validator Services was used to validate the CSS code to make sure that no syntax errors were made in this project.
+
+No Errors were returned:<br>
+![alt text](README-files/css-pass.png)
+
+### JavaScript Validation
+The [JS Hint](https://jshint.com) Validator was used to validate all the JavaScript code used troughout the project (the comments.js file and the custom JavaScript used in several html pages). After inserting /*jshint esversion: 6 */ at the top of the file no errors were returned in any of the JavaScript. It only reported one undefined variable (bootstrap), but this is because the variable is defined in a different place.
+
+![alt text](README-files/js-pass.png)
+
+
 ### Python Validation
 
 The [CI Python Linter](https://pep8ci.herokuapp.com/#) is used for validation python code. The run.py file was checked and a few errors were reported:
