@@ -101,3 +101,27 @@ def create_member_story(request):
         form = MemberStoryForm()
     return render(request, "dashboard/create_member_story.html",
                   {"form": form})
+
+
+@login_required
+def delete_story(request, story_id):
+    """
+    Allows the author of a member story to delete their story.
+
+    Args:
+        request: The HTTP request object.
+        story_id: ID of the story to be deleted.
+
+    Returns:
+        Redirects to the member_stories page with a success or error message.
+    """
+    story = get_object_or_404(MemberStory, id=story_id, is_member_story=True)
+
+    if story.author == request.user:
+        story.delete()
+        messages.add_message(request, messages.SUCCESS, 'Story deleted!')
+    else:
+        messages.add_message(request, messages.ERROR,
+                             'You can only delete your own stories!')
+    return redirect('member_stories')
+

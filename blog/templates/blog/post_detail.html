@@ -41,6 +41,17 @@
         </button>
     </form>
 
+    <!-- Delete story button -->
+    {% if user.is_authenticated and post.author == user %}
+    <button 
+        class="btn btn-delete mt-3" 
+        data-bs-toggle="modal" 
+        data-bs-target="#deleteStoryModal"  
+        data-story_id="{{ post.id }}">
+        Delete Story
+    </button>
+    {% endif %}
+
     <!-- Displaying count of comments -->
     <div class="row">
         <div class="col-12 count">
@@ -129,7 +140,7 @@
     </div>
 </div>
 
-<!-- Delete confirmation modal -->
+<!-- Delete comment confirmation modal -->
 <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -142,13 +153,34 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <a id="deleteConfirm" href="#" class="btn btn-danger">Delete</a>
+                <a id="deleteConfirm" href="#" class="btn btn-delete">Delete</a>
             </div>
         </div>
     </div>
 </div>
+
+<!-- Delete story confirmation modal -->
+<div class="modal fade" id="deleteStoryModal" tabindex="-1" aria-labelledby="deleteStoryModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteStoryModalLabel">Delete story?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete your story? This action cannot be undone.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a id="deleteStoryConfirm" href="#" class="btn btn-delete">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock content %}
 
 {% block extra_js %}
 <script src="{% static 'js/comments.js' %}"></script>
+<script src="{% static 'js/delete_story.js' }"></script>
 {% endblock extra_js %}
