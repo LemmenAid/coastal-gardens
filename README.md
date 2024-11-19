@@ -38,22 +38,30 @@ The purpose of Coastal Gardens is to create an online community dedicated to coa
 
 ### Agile Methodology
 
-These are the user stories I started off with. These were broken down into tasks as steps to follow in the building process of the website. These steps were added to Project Boards on Github to assist with better organisation and prioritisation of the tasks. 
+I started with creating User Stories. Then these stories were broken down into tasks as steps to follow in the building process of the website. I added these steps to the Project Board on Github to keep track of the buidling process and to assist with better organisation and prioritisation of the tasks. 
 
 ### User Stories
+
+VISITOR
 
 1. As a Visitor, I want to browse feature articles on coastal gardening, so that I can learn more about gardening by the sea.
 2. As a Visitor, I want to understand the plant zone map, so I can determine in which zone I live.
 3. As a Visitor, I want to read an About page to understand the purpose and mission of the site.
 4. As a Visitor, I want to easily navigate to different sections of the site, so I can find relevant information quickly.
 
+POTENTIAL MEMBER
+
 5. As a Potential Member, I want to view a sign-up page that explains the benefits of joining, so I know why I should become a member.
 6. As a Potential Member, I want a simple registration process, so I can quickly join the community.
 
-7. As a Member, I want a personalized dashboard where I can save and view my favorite articles, so I can easily revisit them.
+MEMBER
+
+7. As a Member, I want a personalised dashboard where I can save and view my favourite articles, so I can easily revisit them.
 8. As a Member, I want to see a list of all my comments in one place, so I can keep track of my participation.
 9. As a Member, I want the ability to write and publish my own gardening stories, so I can share my experiences with other members.
 10. As a Member, I want access to member-only stories, so I can learn from the experiences of other coastal gardeners.
+
+ADMIN
 
 11. As an Admin, I want to manage feature posts and member stories, so that the content is relevant, accurate, and engaging for users.
 12. As an Admin, I want to moderate comments, so I can ensure a respectful and constructive environment.
@@ -65,23 +73,25 @@ These are the user stories I started off with. These were broken down into tasks
 <summary> User Story Template
 </summary>
 
-![User Story Template](./assets/docs/user-story-temp.png)
+![User Story Template](README-files/user-story-temp.png)
 </details>
 
 <details>
 <summary> User Story Issues
 </summary>
 
-![User Story Issues](./assets/docs/issues.png)
+![User Story Issues](README-files/issues.png)
 </details>
 
 <details>
 <summary> Project Board
 </summary>
 
-![Project Board](./assets/docs/project-board.png)
+![Project Board](README-files/project-board.png)
 </details>
 <br>
+
+[Link to Live Project Board](https://github.com/users/LemmenAid/projects/5/views/1)
 
 ***
 
@@ -142,7 +152,10 @@ The call to action button on the homepage leads to the Sign Up page, unless you 
 ### Imagery
 
 Several image sources were used for the images throughout the website.<br>
-The links to these sources are listed here:
+
+<details>
+<summary> The links to these sources are listed here:
+</summary>
 
 * [Hero Image, Bells of Ireland](https://floralife.com/article/bells-of-ireland-troubleshooting/)
 * Photo by Image Hunter: https://www.pexels.com/photo/hand-holding-note-on-green-bush-background-13092789/
@@ -172,7 +185,7 @@ The links to these sources are listed here:
 * Photo by Daniil Komov: https://www.pexels.com/photo/black-and-gray-bird-flying-in-the-sky-10662583/
 * https://www.lummi.ai/photo/a-close-up-view-of-a-lake-and-grass-near-a-cabin-in-t-e8db6be2-994a-4f68-b3f3-54493d2929d8-GuY3A/
 * https://www.goodeggs.com/repettonursery/bells-of-ireland/5c82e8ba2a974d000e7099fe/
-
+</details>
 
 ***
 
