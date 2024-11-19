@@ -124,4 +124,3 @@ def delete_story(request, story_id):
         messages.add_message(request, messages.ERROR,
                              'You can only delete your own stories!')
     return redirect('member_stories')
-
