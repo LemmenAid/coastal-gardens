@@ -16,15 +16,17 @@ def user_dashboard(request):
     """
     Renders the personalized user dashboard.
 
-    **Context**
-    - ``user``: The current authenticated user instance.
-    - ``user_posts``: Posts or data specific to the user.
+     **Context**
+    - ``user_profile``: The profile of the current authenticated user.
+    - ``user_posts``: Published posts authored by the user.
+    - ``saved_posts``: Posts saved by the user.
+    - ``user_comments``: Comments made by the user.
 
     **Template**
     :template:`dashboard.html`
     """
     user_profile = request.user.profile
-    user_posts = Post.objects.filter(author=request.user, is_member_story=True)
+    user_posts = Post.objects.filter(author=request.user, is_member_story=True, status=1)
     saved_posts = user_profile.saved_posts.all()
     user_comments = request.user.commenter.all()
 

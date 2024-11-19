@@ -360,6 +360,7 @@ The Contact Us page provides a direct way for users to reach out with inquiries 
 
 * [Django](https://docs.djangoproject.com/en/5.0/) - Framework used to create website.
 * [AllAuth](https://docs.allauth.org/en/latest/) - used to provide authentication framework for the project.
+* [Django signals](https://docs.djangoproject.com/en/5.0/topics/signals/) - Using signals.py to automatically create a profile when a new member registers.
 * [PostGreSQL database](https://www.postgresql.org/) - used as the database for the website.
 * [Github](https://github.com/) - Used for hosting the repository.
 * [Gitpod](https://www.gitpod.io/#get-started) - Used for developing the application.
@@ -507,8 +508,10 @@ Coastal Gardens was tested through the Heroku app website on the following brows
 
 ## Solved Bugs
 
-* Using signal.py to automatically create a profile when a new user registers
-    [Django signals](https://docs.djangoproject.com/en/5.0/topics/signals/)
+* During testing I replaced the Post.objects.get() line with get_object_or_404 in my save_post view. This ensures that if the Post with the given post_id does not exist, Django will return a 404 response instead of raising an exception.
+
+* Added the 'status=1' filter in the user_dashboard view, to only include stories that are published in "Your Stories".
+
 
  ![blank space bug](README-files/bug.png)
 
