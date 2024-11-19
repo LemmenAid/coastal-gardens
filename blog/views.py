@@ -7,8 +7,6 @@ from .models import Post, Comment
 from .forms import CommentForm
 
 
-# Create your views here.
-
 def home(request):
     """
     Renders the homepage for the blog.
@@ -17,7 +15,8 @@ def home(request):
     :template:`blog/index.html`
     """
     latest_posts = Post.objects.filter(status=1,
-        is_member_story=False).order_by('-created_on')[:3]
+                                       is_member_story=False).order_by(
+                                       "-created_on")[:3]
     return render(request, 'blog/index.html', {'latest_posts': latest_posts})
 
 
@@ -33,8 +32,28 @@ class PostList(generic.ListView):
     :template:`blog/features.html`
     """
     queryset = Post.objects.filter(status=1,
-        is_member_story=False).order_by("-created_on")
+                                   is_member_story=False).order_by(
+                                   "-created_on")
     template_name = "blog/features.html"
+    paginate_by = 3
+
+
+class MemberStoriesView(generic.ListView):
+    """
+    Displays a paginated list of member stories posts.
+
+    **Context**
+    ``object_list``
+        A list of published stories by members, ordered by creation date.
+
+    **Template:**
+    :template:`blog/member_stories.html`
+    """
+    queryset = Post.objects.filter(status=1,
+                                   is_member_story=True).order_by(
+                                   "-created_on")
+    template_name = "blog/member_stories.html"
+    context_object_name = "stories"
     paginate_by = 3
 
 
@@ -138,22 +157,5 @@ def comment_delete(request, slug, comment_id):
         messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
     else:
         messages.add_message(request, messages.ERROR,
-            'You can only delete your own comments!')
+                             'You can only delete your own comments!')
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
-
-
-class MemberStoriesView(generic.ListView):
-    """
-    Displays a paginated list of member stories posts.
-
-    **Context**
-    ``object_list``
-        A list of published stories by members, ordered by creation date.
-
-    **Template:**
-    :template:`blog/member_stories.html`
-    """
-    queryset = Post.objects.filter(status=1, is_member_story=True).order_by("-created_on")
-    template_name = "blog/member_stories.html"
-    context_object_name = "stories"
-    paginate_by = 3
