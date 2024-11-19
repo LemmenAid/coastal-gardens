@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -61,6 +61,9 @@ def post_detail(request, slug):
     comment_count = post.comments.filter(approved=True).count()
 
     if request.method == "POST":
+        if not request.user.is_authenticated:
+            return redirect(reverse('account_login'))
+
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
             comment = comment_form.save(commit=False)

@@ -26,7 +26,8 @@ def user_dashboard(request):
     :template:`dashboard.html`
     """
     user_profile = request.user.profile
-    user_posts = Post.objects.filter(author=request.user, is_member_story=True, status=1)
+    user_posts = Post.objects.filter(author=request.user,
+                                     is_member_story=True, status=1)
     saved_posts = user_profile.saved_posts.all()
     user_comments = request.user.commenter.all()
 
