@@ -59,6 +59,7 @@ These are the user stories I started off with. These were broken down into tasks
 12. As an Admin, I want to moderate comments, so I can ensure a respectful and constructive environment.
 13. As an Admin, I want to manage user accounts, so I can assist with membership issues and maintain site quality.
 
+<br>
 
 <details>
 <summary> User Story Template
@@ -80,6 +81,7 @@ These are the user stories I started off with. These were broken down into tasks
 
 ![Project Board](./assets/docs/project-board.png)
 </details>
+<br>
 
 ***
 
