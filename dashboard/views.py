@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
@@ -52,10 +52,15 @@ def save_post(request, post_id):
     Returns:
         Redirects to the post's detail page.
     """
-    post = Post.objects.get(id=post_id)
+    post = get_object_or_404(Post, id=post_id)
+
     if post in request.user.profile.saved_posts.all():
+        messages.add_message(request, messages.SUCCESS,
+                             'Story removed from your Dashboard.')
         request.user.profile.saved_posts.remove(post)
     else:
+        messages.add_message(request, messages.SUCCESS,
+                             'Story added to your Dashboard.')
         request.user.profile.saved_posts.add(post)
     return redirect("post_detail", slug=post.slug)
 

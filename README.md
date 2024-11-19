@@ -471,10 +471,7 @@ After validator testing I have used Chrome’s Lighthouse developer tool to chec
 <summary>The below table details the test cases that were used. </summary>
 <br>
 
-
-</details>
-
-User stories want to use here:
+Want to add User Stories here.
 
 | Feature | Testing Performed | Expected Outcome | Pass/Fail |
 | --- | --- | --- | --- |
@@ -487,6 +484,8 @@ User stories want to use here:
 | messages | checking feedback messages | After updating or deleting a comment as a user you get a feedback message. | PASS |
 | messages disappear automatically | checking if messages disappear after 5 sec | After message appears it will automatically disappear. | PASS |
 | Next button | checking next button on features page and member stories page | below features / stories there is a PREV and NEXT button | PASS |
+
+</details>
 
 *** 
 
