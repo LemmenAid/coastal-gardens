@@ -439,15 +439,6 @@ body {
     font-weight: 900;
 }
 
-.btn-story {
-    width: 190px;
-    text-transform: uppercase;
-    padding: 10px;
-    margin: 15px 0px;
-    color: #fbfbfb !important;
-    background-color: #717375;
-}
-
 
 /* create story page */
 .form-control {
@@ -552,11 +543,11 @@ body {
 
 /* Styles for messages */
 .success {
-    background-color: #d4edda !important; /* Example green */
+    background-color: #d4edda !important;
     color: #155724 !important;
 }
 .danger {
-    background-color: #f8d7da !important; /* Example red */
+    background-color: #f8d7da !important;
     color: #de6a0c !important;
 }
 
@@ -570,9 +561,12 @@ body {
     color: #fbfbfb;
 }
 
-.btn-delete:hover,
-.btn-delete-story:hover {
-    background-color: #252525;
+.btn-story {
+    width: 190px;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 15px 0px;
+    background-color: #717375;
     color: #fbfbfb;
 }
 
@@ -590,6 +584,12 @@ body {
 .btn-delete-story {
     color: #fbfbfb;
     background: #d8611bf3;
+}
+
+.btn-delete:hover,
+.btn-delete-story:hover {
+    background-color: #252525;
+    color: #fbfbfb;
 }
 
 .faded {
