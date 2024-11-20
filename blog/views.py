@@ -174,4 +174,4 @@ def delete_story(request, slug):
 
     post.delete()
     messages.success(request, "Your story has been successfully deleted.")
-    return redirect('member_stories')  # Redirect to the list of features or another page
+    return redirect('member_stories')
