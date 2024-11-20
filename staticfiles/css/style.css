@@ -570,18 +570,19 @@ body {
     color: #fbfbfb;
 }
 
-.btn-signup:hover,
-.btn-edit:hover,
-.btn-story:hover,
-.btn-save:hover,
-.btn-publish:hover {
+.btn-delete:hover,
+.btn-delete-story:hover {
     background-color: #252525;
     color: #fbfbfb;
 }
 
+.btn-edit:hover,
+.btn-story:hover,
+.btn-save:hover,
+.btn-publish:hover,
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #fbfbfb;
+    background-color: #f8f7f3;
     color: #558b2f;
 }
 
