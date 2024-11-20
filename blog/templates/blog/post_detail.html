@@ -41,6 +41,13 @@
         </button>
     </form>
 
+    <!-- Delete Story button -->
+    {% if user == post.author %}
+    <button class="btn btn-delete-story mt-3" data-bs-toggle="modal" data-bs-target="#deleteStoryModal">
+        Delete Story
+    </button>
+    {% endif %}
+
     <!-- Displaying count of comments -->
     <div class="row">
         <div class="col-12 count">
@@ -143,6 +150,25 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <a id="deleteConfirm" href="#" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Delete story confirmation modal -->
+<div class="modal fade" id="deleteStoryModal" tabindex="-1" aria-labelledby="deleteStoryModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteStoryModalLabel">Delete story?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete your story? This action cannot be undone.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <a href="{% url 'delete_story' slug=post.slug %}" class="btn btn-delete-story">Delete</a>
             </div>
         </div>
     </div>

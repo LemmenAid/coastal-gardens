@@ -161,3 +161,17 @@ def comment_delete(request, slug, comment_id):
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
+@login_required
+def delete_story(request, slug):
+    """
+    Allows the author to delete their story.
+    """
+    post = get_object_or_404(Post, slug=slug)
+
+    if request.user != post.author:
+        messages.error(request, "You are not authorized to delete this story.")
+        return redirect('post_detail', slug=slug)
+
+    post.delete()
+    messages.success(request, "Your story has been successfully deleted.")
+    return redirect('member_stories')  # Redirect to the list of features or another page

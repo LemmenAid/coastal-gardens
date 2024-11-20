@@ -585,7 +585,8 @@ body {
     color: #558b2f;
 }
 
-.btn-delete {
+.btn-delete,
+.btn-delete-story {
     color: #fbfbfb;
     background: #d8611bf3;
 }
