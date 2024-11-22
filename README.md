@@ -22,8 +22,9 @@ The purpose of Coastal Gardens is to create an online community dedicated to coa
 
 ## Index – Table of Contents
 
-* [User Experience (UX)](#user-experience)
 * [Creating Process](#creating-process)
+* [Agile Development Process](#agile-development-process)
+* [Planning the Project](planning-the-project)
 * [Design](#design)
 * [Features](#features)
 * [Technologies Used](#technologies-used)
@@ -34,11 +35,60 @@ The purpose of Coastal Gardens is to create an online community dedicated to coa
 
 ***
 
-## User Experience (UX)
+## Creating Process
 
-### Agile Methodology
+When I started developing Coastal Gardens, it was my first time working on a project that combined both backend and frontend development using the Django web Framework, and my second time using Python. This project presented a steep learning curve, especially as I tackled the challenges of Django, CSS, and user interactivity. I wanted to create something with real-world application, so the idea of a resource for coastal gardeners felt both meaningful and practical.
 
-I started with creating User Stories. Then these stories were broken down into tasks as steps to follow in the building process of the website. I added these steps to the Project Board on Github to keep track of the buidling process and to assist with better organisation and prioritisation of the tasks. 
+At the beginning, I felt unsure about how to approach the project, but as I started coding, things began to click. Working through each part of the website—from creating basic pages to designing the user experience—helped me better understand the concepts from my lessons. The process not only taught me more about Python logic and web frameworks, but also boosted my confidence as I realized I could solve problems and make the website functional.
+
+The creative process became really enjoyable as I saw the website take shape, and I'm happy with how far I have gotten with it - it’s a website gardeners in Ireland and the UK could use to share stories, access local gardening advice, and find inspiration for their coastal gardens.
+
+### Project SetUp
+
+For setting up Coastal Gardens, I followed the CodeStar follow-along project structure, customizing it to create a unique platform for coastal gardening enthusiasts.
+
+I began by building a Django framework, developing the foundational pages (Home, About, Features, and Zone Map) that offer general information to anyone interested in coastal gardening. Once this structure was stable, I added unique member features, including a personalized dashboards and the option for members to write and share blog posts exclusively within the community.
+
+This was my first experience handling both backend and frontend tasks together, which was challenging but rewarding. Developing these elements involved custom logic for saving, displaying, and managing user-generated content in a way that’s engaging and intuitive. Testing each step along the way helped me ensure smooth functionality and an accessible user experience.
+
+Overall, this process taught me a lot about web development and reinforced concepts from my coursework in a real-world setting, helping me build confidence in my coding abilities.
+
+Jump to Credits: [Credits](#credits)
+
+***
+
+## Agile Development Process
+
+### GitHub Projects
+
+[GitHub Projects](https://github.com/users/LemmenAid/projects/5/views/1) served as an Agile tool for the development of this project. 
+
+I started with creating the User Stories. Then these stories were broken down into tasks as steps to follow in the building process of the website. I added these steps to the Project Board on Github to keep track of the buidling process and to assist with better organisation and prioritisation of the tasks. 
+
+
+<details>
+<summary> User Story Template
+</summary>
+
+![User Story Template](README-files/user-story-temp.png)
+</details>
+
+<details>
+<summary> User Story Issues
+</summary>
+
+![User Story Issues](README-files/issues.png)
+</details>
+
+<details>
+<summary> Project Board
+</summary>
+
+![Project Board](README-files/project-board.png)
+</details>
+<br>
+
+***
 
 ### User Stories
 
@@ -67,53 +117,60 @@ ADMIN
 12. As an Admin, I want to moderate comments, so I can ensure a respectful and constructive environment.
 13. As an Admin, I want to manage user accounts, so I can assist with membership issues and maintain site quality.
 
+***
+
+## Planning the Project
+
+### Layout / Wireframes
+
+The basic design layout of the website has been made using wireframes with Balsamiq. Responsive design has been used for creating this website. For instance, when a page goes from mobile to larger screens some of the content goes from stacked to lined up.
+
+<details>
+<summary> Home Page
+</summary>
+
+![alt text](README-files/wireframe-main.png)<br>
+
+</details>
+
+<details>
+<summary> Text Pages
+</summary>
+
+![alt text](README-files/wireframe-text-page.png)<br>
+
+</details>
+
+<details>
+<summary> Features Page
+</summary>
+
+![alt text](README-files/wireframe-features.png)<br>
+
+</details>
+
+<details>
+<summary> Mobile View
+</summary>
+
+![alt text](README-files/mb-all-wireframe.png)<br>
+
+</details>
 <br>
-
-<details>
-<summary> User Story Template
-</summary>
-
-![User Story Template](README-files/user-story-temp.png)
-</details>
-
-<details>
-<summary> User Story Issues
-</summary>
-
-![User Story Issues](README-files/issues.png)
-</details>
-
-<details>
-<summary> Project Board
-</summary>
-
-![Project Board](README-files/project-board.png)
-</details>
-<br>
-
-[Link to Live Project Board](https://github.com/users/LemmenAid/projects/5/views/1)
 
 ***
 
-## Creating Process
+### Database Models / ERD's
 
-When I started developing Coastal Gardens, it was my first time working on a project that combined both backend and frontend development using the Django web Framework, and my second time using Python. This project presented a steep learning curve, especially as I tackled the challenges of Django, CSS, and user interactivity. I wanted to create something with real-world application, so the idea of a resource for coastal gardeners felt both meaningful and practical.
+While planning this project, I drew up an Entity Relationship Diagram to help me to visualise the database models and their relationships.
 
-At the beginning, I felt unsure about how to approach the project, but as I started coding, things began to click. Working through each part of the website—from creating basic pages to designing the user experience—helped me better understand the concepts from my lessons. The process not only taught me more about Python logic and web frameworks, but also boosted my confidence as I realized I could solve problems and make the website functional.
+<details>
+<summary> Entity Relationship Diagram (ERD)
+</summary>
 
-The creative process became really enjoyable as I saw the website take shape, and I'm happy with how far I have gotten with it - it’s a website gardeners in Ireland and the UK could use to share stories, access local gardening advice, and find inspiration for their coastal gardens.
+![Database Diagram](README-files/erd-diagram.png)
 
-### Project SetUp
-
-For setting up Coastal Gardens, I followed the CodeStar follow-along project structure, customizing it to create a unique platform for coastal gardening enthusiasts.
-
-I began by building a Django framework, developing the foundational pages (Home, About, Features, and Zone Map) that offer general information to anyone interested in coastal gardening. Once this structure was stable, I added unique member features, including a personalized dashboards and the option for members to write and share blog posts exclusively within the community.
-
-This was my first experience handling both backend and frontend tasks together, which was challenging but rewarding. Developing these elements involved custom logic for saving, displaying, and managing user-generated content in a way that’s engaging and intuitive. Testing each step along the way helped me ensure smooth functionality and an accessible user experience.
-
-Overall, this process taught me a lot about web development and reinforced concepts from my coursework in a real-world setting, helping me build confidence in my coding abilities.
-
-Jump to Credits: [Credits](#credits)
+</details>
 
 ***
 
@@ -142,12 +199,6 @@ Roboto:<br>
 ![alt text](README-files/roboto.png)<br>
 Cormorant Garamond:<br>
 ![alt text](README-files/cormorant.png)<br>
-
-### Call to Action
-
-The call to action button on the homepage leads to the Sign Up page, unless you are signed in as a member, then it leads to your personalised Dashboard.
-
-![alt text](README-files/action-button.png)<br>
 
 ### Imagery
 
@@ -189,57 +240,7 @@ Several image sources were used for the images throughout the website.<br>
 
 ***
 
-
-## Layout / Wireframes
-
-The basic design layout of the website has been made using wireframes with Balsamiq. Responsive design has been used for creating this website. For instance, when a page goes from mobile to larger screens some of the content goes from stacked to lined up.
-
-#### Home Page
-![alt text](README-files/wireframe-main.png)<br>
-
-#### Text Pages
-![alt text](README-files/wireframe-text-page.png)<br>
-
-#### Feature Page
-![alt text](README-files/wireframe-features.png)<br>
-
-#### Mobile View
-![alt text](README-files/mb-all-wireframe.png)<br>
-
-
-***
-
 ## Features 
-
-### Database Models / ERD's
-
-1. AllAuth User Model
-    - The Django built AllAuth is used as a default User model and provides user authentication.
-    - Pre-defined fields of username, email and password are used.
-    - The User is a one-to-many relationship with the Recipe model. 
-2. Post Model
-    - ....
-    - ....
-3. Comment Model
-    - The Comment Model was created for logged in users to post a comment if they wish on a feature or member story, with a many-to-one relationship as many comments can be posted on one story.
-    - Users see comments posted by other users on posts, date, time and who posted the comment is visible to users in the comment section.
-    - Comment model has full CRUD functionality to the user
-4.  About Model
-    - The About Model was created for users of the web page to get to know more about the site.
-    - Fields include a featured image, updated on, title and body.
-    - The fields can only be populated by the site admin with full CRUD functionality.
-6. Contact Us Model
-    - The Contact Model was created for visitors / logged in users to populate their info ie. name, email, garden zone, gardening experience and message.
-    - This information gets sent to the admin section where there is full CRUD available on the form info sent as well as an option to mark it as "read".
-
-<details>
-<summary> Database Diagram - Entity Relationship Diagram (ERD)
-</summary>
-
-![Database Diagram](./assets/docs/database-diagram.png)
-</details>
-
-***
 
 ### General Features on each page
 
@@ -587,6 +588,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 I have taken inspiration and information from the following websites for Coastal Gardens:
 
+***
 
 ### Code
 
@@ -609,6 +611,7 @@ I have used various resources to help me with figuring out how to create the Coa
 
 * Code Institute Slack Channel
 
+***
 
 ### Templates I have used for inspiration and creating my readme-file:
 
