@@ -588,6 +588,12 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 I have taken inspiration and information from the following websites for Coastal Gardens:
 
+* [Garden Illustrated](https://www.gardensillustrated.com)
+* [RHS](https://www.rhs.org.uk/garden-inspiration/garden-types/coastal-gardens)
+* [Martha Stewart.com](https://www.marthastewart.com/)
+* [Gardenista](https://www.gardenista.com/)
+* [Gardening Know How](https://www.gardeningknowhow.com/garden-how-to/gardening-by-zone)
+
 ***
 
 ### Code
@@ -596,17 +602,25 @@ The walkthrough project "Codestar" was a great way of understanding how to get s
 
 I have used various resources to help me with figuring out how to create the Coastal Garden Website:
 
+
+* [Simple is better than Complex - for the dashboard](https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html#onetoone)
+* [Harabat - for the dashboard](https://harabat.github.io/django-htmx/07_users_and_profiles/)
+* [Stackoverflow - create profile](https://stackoverflow.com/questions/61580144/django-create-profile-for-user-signal)
+* [Django Waves - one to one](https://djangowaves.com/resources/django-one-to-one-field/)
+* [Geeks for Geeks - add slug field inside model](https://www.geeksforgeeks.org/add-the-slug-field-inside-django-model/)
+* [MdBootstrap - for the footer](https://mdbootstrap.com/docs/standard/navigation/footer/examples-and-customization/)
+* [Stackoverflow - for the auto-dismiss alert](https://stackoverflow.com/questions/23101966/bootstrap-alert-auto-close)
+* [Get Bootstrap - for the auto-dismiss alert](https://getbootstrap.com/docs/5.0/components/alerts/)
+* [She Codes - for the auto-dismiss alert](https://www.shecodes.io/athena/8466-how-to-create-an-event-listener-to-alert-a-message)
+* [GitHub/CMed01 - for the custom error pages](https://github.com/CMed01/portfolio-milestone-4/tree/main)
+
+
+
 * [Stack overflow](https://stackoverflow.com/)
 * [Pep Style Guide](https://peps.python.org/pep-0008/)
 * [W3Schools](https://www.w3schools.com/)
 * [The Hitchhiker's Guide to Python](https://docs.python-guide.org/writing/style/)
 * [Real Python - for quick tutorials on several subjects](https://realpython.com/)
-* [Real Python - Name-Main](https://realpython.com/if-name-main-python/)
-* [Real Python - While loops](https://realpython.com/python-while-loop/)
-* [Pypi - ASCII title banner](https://pypi.org/project/pyfiglet/)
-* [Stack Overflow - Slow Printing](https://stackoverflow.com/questions/15375368/slow-word-by-word-terminal-printing-in-python)
-* [Stack Overflow - clear terminal](https://stackoverflow.com/questions/2084508/clear-the-terminal-in-python)
-* [W3Schools - strip()](https://www.w3schools.com/python/ref_string_strip.asp)
 * [Tripleten - best practices](https://tripleten.com/blog/posts/python-best-practices)
 
 * Code Institute Slack Channel
@@ -618,10 +632,10 @@ I have used various resources to help me with figuring out how to create the Coa
 I have used several readme file as inspiration to write this readme:
 
 * [Sample README Code Institute](https://github.com/Code-Institute-Solutions/SampleREADME/blob/master/README.md?plain=1) - Copied the Deployment section and used for general guideline.
-* [Towers of Hanoi - Lucia2007](https://github.com/lucia2007/towers-of-hanoi/) - For general inspiration and the Heroku Deployment section for this readme.
-* [Weather Checker - mdurmus](https://github.com/mdurmus/weather-checker/) - Used for general guideline.
 * [Read Me Template Code Institute](https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md)
 Used for general guideline.
 * [Plant Factory - crypticCaroline](https://github.com/crypticCaroline/ms1-plantfactory/blob/master/README.md?plain=1) - Especially for the Technologies Used, Testing sections and design sections.
 * [Visit Järbo - ClaudiaInSweden](https://github.com/ClaudiaInSweden/visit-jarbo/blob/main/README.md?plain=1) - General inspiration / guideline.
+* [Bushy Park Tennis CLub - LewisMDillon](https://github.com/LewisMDillon/bushy-park-tennis-club-ld) - General inspiration / guideline.
+* [Oasis Hotels - Marchopkins96](https://github.com/Marchopkins96/oasis-hotels) - General inspiration / guideline.
 * [GitHub Docs](https://docs.github.com/en)

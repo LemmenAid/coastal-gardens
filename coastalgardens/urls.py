@@ -16,6 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls import handler500, handler404, handler403, handler400
+from . import views
+
 
 urlpatterns = [
     path("about/", include("about.urls"), name="about-urls"),
@@ -26,3 +29,10 @@ urlpatterns = [
     path('summernote/', include('django_summernote.urls')),
     path("", include("blog.urls"), name="blog-urls"),
 ]
+
+
+# Handlers for custom error pages
+handler400 = 'coastalgardens.views.handler400'
+handler403 = 'coastalgardens.views.handler403'
+handler404 = 'coastalgardens.views.handler404'
+handler500 = 'coastalgardens.views.handler500'
