@@ -457,43 +457,70 @@ The [CI Python Linter](https://pep8ci.herokuapp.com/#) is used for validation py
 
 ### Lighthouse
 
-After validator testing I have used Chrome’s Lighthouse developer tool to check all pages for performance and accessibility. Overall I am happy with the outcome. However, the performance is significantly influenced by Cloudinary images.
+After validator testing I have used Chrome’s Lighthouse developer tool to check all pages for performance and accessibility. Overall I am happy with the outcome. However, the Best Practices is significantly influenced by Cloudinary images.
 
-#### Home Page
+<details>
+<summary> HOME PAGE
+</summary>
 
 ![alt text](README-files/lh-home.png)
 
-#### About Us Page
+</details>
+
+<details>
+<summary> ABOUT US
+</summary>
 
 ![alt text](README-files/lh-about.png)
 
-#### Zone Map Page
+</details>
 
-![alt text](README-files/lh-zone-map.png)
-
-#### Features Page
+<details>
+<summary> FEATURES
+</summary>
 
 ![alt text](README-files/lh-features.png)
 
-#### Contact Us Page
+</details>
+
+<details>
+<summary> CONTACT US
+</summary>
 
 ![alt text](README-files/lh-contact.png)
 
-#### Dashboard Page
+</details>
+
+<details>
+<summary> DASHBOARD PAGE
+</summary>
 
 ![alt text](README-files/lh-dashboard.png)
 
-#### Create Story Page
+</details>
+
+<details>
+<summary> CREATE STORY
+</summary>
 
 ![alt text](README-files/lh-create-story.png)
+</details>
 
-#### Member Stories Page
+<details>
+<summary> MEMBER STORIES
+</summary>
 
 ![alt text](README-files/lh-member-stories.png)
 
-#### Sign Up Page
+</details>
+
+<details>
+<summary> SIGN UP 
+</summary>
 
 ![alt text](README-files/lh-signup.png)
+
+</details>
 
 ***
 
@@ -544,9 +571,6 @@ Coastal Gardens was tested through the Heroku app website on the following brows
 * During testing I replaced the Post.objects.get() line with get_object_or_404 in my save_post view. This ensures that if the Post with the given post_id does not exist, Django will return a 404 response instead of raising an exception.
 
 * Added the 'status=1' filter in the user_dashboard view, to only include stories that are published in "Your Stories".
-
-
- ![blank space bug](README-files/bug.png)
 
 ***
 
