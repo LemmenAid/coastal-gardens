@@ -579,7 +579,7 @@ body {
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #f8f7f3;
-    color: #558b2f;
+    color: #558b2f !important;
 }
 
 .btn-delete,
