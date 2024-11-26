@@ -569,7 +569,7 @@ body {
     padding: 10px;
     margin: 15px 0px;
     background-color: #717375;
-    color: #fbfbfb;
+    color: #fbfbfb !important;
 }
 
 .btn-edit:hover,
