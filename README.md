@@ -477,7 +477,7 @@ After validator testing I have used Chrome’s Lighthouse developer tool to chec
 
 #### Contact Us Page
 
-![alt text](README-files/lh-score.png)
+![alt text](README-files/lh-contact.png)
 
 #### Dashboard Page
 
