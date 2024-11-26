@@ -387,7 +387,7 @@ The Contact Us page provides a direct way for users to reach out with inquiries 
 * [Django](https://docs.djangoproject.com/en/5.0/) - Framework used to create website.
 * [AllAuth](https://docs.allauth.org/en/latest/) - used to provide authentication framework for the project.
 * [Django signals](https://docs.djangoproject.com/en/5.0/topics/signals/) - Using signals.py to automatically create a profile when a new member registers.
-* [PostGreSQL database](https://www.postgresql.org/) - used as the database for the website.
+* [PostGreSQL database](https://www.postgresql.org/) - used as the relational database management for the website.
 * [Github](https://github.com/) - Used for hosting the repository.
 * [Gitpod](https://www.gitpod.io/#get-started) - Used for developing the application.
 * [Am I Responsive?](https://ui.dev/amiresponsive) - Used to create an image of the website on various screen sizes.
@@ -543,33 +543,101 @@ Coastal Gardens was tested through the Heroku app website on the following brows
 
 ***
 
-## Deployment to Heroku
-
-### Project Deployment
-
+## Deployment 
 _I have used several different READMEs to write the deployment section of this README.<br> 
 All listed in the credit section below._<br>
+
+
+The Live deplyed application can be found deployed on [Heroku](https://coastal-gardens-e950c82335fb.herokuapp.com/).<br>
+This project was developed using [GitPod Enterprise](www.gitpod.io/) and committed to git and pushed to GitHub.
+
+### Database
+This project uses [Neon.tech](https://www.neon.tech) for the PostgreSQL Database. This was provided by Code Institute via a database-maker website for Code Institute Students.
+
+### Cloudinary API
+
+This project uses the Cloudinary API to store media assets online, due to the fact that Heroku doesn't persist this type of data.
+
+To obtain your own Cloudinary API key, create an account and log in.<br>
+On your Cloudinary Dashboard, you can copy your API Environment Variable.<br>
+Be sure to remove the CLOUDINARY_URL= as part of the API value; this is the key.
+
+### Heroku Deployment 
 
 The application was deployed to Heroku. In order to deploy, the following steps were taken:
 
 1. If you have an account, login to Heroku. Otherwise create a new account.
 2. Once signed in, click the "New" button in the top right corner, below the header and choose "Create new app".
 3. Choose a unique name for the application and select your region. When done, click "Create app".
-4. This brings you to the "Deploy" tab. From here, click the "Settings" tab and scroll down to the "Config Vars" section and click on "Reveal Config Vars". 
+4. This brings you to the "Deploy" tab. From here, click the "Settings" tab and scroll down to the "Config Vars" section and click on "Reveal Config Vars" and set your environment variables.
 
-- In the KEY input field, enter "PORT" and in the VALUE input field, enter "8000". After that, click the "Add" button on the right.
+| Key | Value |
+| --- | --- |
+| `CLOUDINARY_URL` | user's own value |
+| `DATABASE_URL` | user's own value |
+| `DISABLE_COLLECTSTATIC` | 1 (*this is temporary, and can be removed for the final deployment*) |
+| `SECRET_KEY` | user's own value |
 
-- In KEY enter "CREDS", in VALUE, paste in the text content of your CREDS.json file. 
+Heroku needs two additional files in order to deploy:
+- requirements.txt
+- Procfile
 
-5. In the Settings tab, in the Buildpack section, click the button "Add Buildpack".
-6. First add "Python" package and then "node.js". 
-7. If you exchanged the order of the packages: the Python buildpack must be above the NodeJS buildpack. You can drag the Python buildback to the top.
-8. Scroll back to the top of the page and go to the "Deploy" tab. Choose "GitHub" as your Deployment method.
-9. Go to "Connect to GiHub" section, search for the repository name and click "Connect".
-10. In the "Automatic Deploys" section, choose your preferred method for deployment. I chose the 'automatic' option. Click "Deploy Branch".
-11. Once the building of the app is finished you can click the "view" button to be redirected to the newly deployed site.
+You can install this project's **requirements** (where applicable) using:
+- `pip3 install -r requirements.txt`
 
-### Forking repo on GitHub
+If you have your own packages that have been installed, then the requirements file needs updated using:
+- `pip3 freeze --local > requirements.txt`
+
+The **Procfile** can be created with the following command:
+- `echo web: gunicorn app_name.wsgi > Procfile`
+- *replace **app_name** with the name of your primary Django app name; the folder where settings.py is located*
+
+For Heroku deployment, follow these steps to connect your own GitHub repository to the newly created app:
+
+Either:
+- Select **Automatic Deployment** from the Heroku app.
+
+Or:
+- In the Terminal/CLI, connect to Heroku using this command: `heroku login -i`
+- Set the remote for Heroku: `heroku git:remote -a app_name` (replace *app_name* with your app name)
+- After performing the standard Git `add`, `commit`, and `push` to GitHub, you can now type:
+	- `git push heroku main`
+
+The project should now be connected and deployed to Heroku!
+
+<hr>
+
+### Local Deployment
+This project can be cloned or forked in order to make a local copy on your own system.
+For either method, you will need to install any applicable packages found within the *requirements.txt* file.
+- `pip3 install -r requirements.txt`.
+
+You will need to create a new file called `env.py` at the root-level,
+and include the same environment variables listed above from the Heroku deployment steps.
+
+Sample `env.py` file:
+
+```python
+import os
+
+os.environ.setdefault("CLOUDINARY_URL", "user's own value")
+os.environ.setdefault("DATABASE_URL", "user's own value")
+os.environ.setdefault("SECRET_KEY", "user's own value")
+
+# local environment only (do not include these in production/deployment!)
+os.environ.setdefault("DEBUG", "True")
+```
+
+Once the project is cloned or forked, in order to run it locally, you'll need to follow these steps:
+- Start the Django app: `python3 manage.py runserver`
+- Stop the app once it's loaded: `CTRL+C` or `⌘+C` (Mac)
+- Make any necessary migrations: `python3 manage.py makemigrations`
+- Migrate the data to the database: `python3 manage.py migrate`
+- Create a superuser: `python3 manage.py createsuperuser`
+- Load fixtures (if applicable): `python3 manage.py loaddata file-name.json` (repeat for each file)
+- Everything should be ready now, so run the Django app again: `python3 manage.py runserver`
+
+#### Forking repo on GitHub
 
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
@@ -577,7 +645,7 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
-### Making a Local Clone
+#### Making a Local Clone
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
 2. Under the repository name, click "Clone or download".
@@ -661,6 +729,6 @@ I have used several readme file as inspiration to write this readme:
 Used for general guideline.
 * [Plant Factory - crypticCaroline](https://github.com/crypticCaroline/ms1-plantfactory/blob/master/README.md?plain=1) - Especially for the Technologies Used, Testing sections and design sections.
 * [Visit Järbo - ClaudiaInSweden](https://github.com/ClaudiaInSweden/visit-jarbo/blob/main/README.md?plain=1) - General inspiration / guideline.
-* [Bushy Park Tennis CLub - LewisMDillon](https://github.com/LewisMDillon/bushy-park-tennis-club-ld) - General inspiration / guideline.
+* [Bushy Park Tennis CLub - LewisMDillon](https://github.com/LewisMDillon/bushy-park-tennis-club-ld) - Deployment section and general inspiration.
 * [Oasis Hotels - Marchopkins96](https://github.com/Marchopkins96/oasis-hotels) - General inspiration / guideline.
 * [GitHub Docs](https://docs.github.com/en)
