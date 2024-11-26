@@ -308,17 +308,42 @@ The personalized Dashboard page provides logged-in members with an overview of t
 
 ***
 
-#### Create Story
+#### Create Story Page
 This page allows members to create and publish their own stories by inputting a title, uploading an image, and writing a blog post and excerpt. The user-friendly layout encourages members to share their knowledge and unique gardening experiences.
 
 ![Create Story](README-files/create-story.png)
 
 ***
 
-#### Member Stories
+#### Member Stories Page
 The Member Stories page is a member-exclusive section where users can read stories and insights shared by other community members. This feature encourages a sense of community and gives members access to firsthand experiences in coastal gardening.
 
 ![Member Stories](README-files/member-stories.png)
+
+***
+
+#### Story / Feature Page
+When members are logged in, they have the option to save Member Stories and Feature Stories, which are stored on their personal dashboard. Each story includes a Save button; once a story is saved, the button updates to an Unsave button for easy management.
+<br>
+<br>
+Members can also delete their own stories, with the Delete button visible only to the author of the story. Additionally, logged-in members can leave comments on stories and have the ability to edit or delete their own comments.
+<br>
+<br>
+For users who are not logged in, the Save, Delete, and Comment options are not available.
+<br>
+<hr>
+
+#### Story and comments when logged in:
+![Story](README-files/story.png)
+![Story](README-files/story-comments.png)
+
+#### Story when logged in, but not the Author:
+![Story](README-files/story-login-not-author.png)
+<br>
+
+#### Story and comments when logged out:
+![Story](README-files/story-logout.png)
+![Story](README-files/story-comments-logout.png)
 
 ***
 
