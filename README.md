@@ -6,27 +6,13 @@
 
 [GitHub Repo](https://github.com/LemmenAid/coastal-gardens)
 
-*** 
-
-## Project Description  
-
-_Coastal Gardens is a website for my fourth portfolio project with [Code Institute](https://codeinstitute.net/ie/)._
-
-Coastal Gardens is a website designed to connect and support coastal gardeners in Ireland and the UK. Focused on the unique challenges and rewards of gardening by the sea, the site provides a selection of feature posts, plant zone information, and, by becoming members, unlock a personalized dashboard. Members have the opportunity to save favorite posts, keep track of their comments, and publish their own garden stories to inspire other coastal gardeners.
-
-## Project Purpose
-
-The purpose of Coastal Gardens is to create an online community dedicated to coastal gardening. Recognizing the specific needs of gardening by the sea, the platform aims to be a comprehensive resource for both beginners and seasoned gardeners facing the unique conditions of the coast. By providing a space for knowledge exchange, storytelling, and advice, Coastal Gardens empowers gardeners to create thriving and resilient gardens.
-
 ***
 
 ## Index – Table of Contents
-
-* [Creating Process](#creating-process)
-* [Agile Development Process](#agile-development-process)
-* [Planning the Project](planning-the-project)
-* [Design](#design)
 * [Features](#features)
+* [Project Development](#project-development)
+* [Layout](#layout)
+* [Design](#design)
 * [Technologies Used](#technologies-used)
 * [Testing](#testing)
 * [Solved Bugs](#solved-bugs)
@@ -35,212 +21,19 @@ The purpose of Coastal Gardens is to create an online community dedicated to coa
 
 ***
 
-## Creating Process
+### Project Description  
 
-When I started developing Coastal Gardens, it was my first time working on a project that combined both backend and frontend development using the Django web Framework, and my second time using Python. This project presented a steep learning curve, especially as I tackled the challenges of Django, CSS, and user interactivity. I wanted to create something with real-world application, so the idea of a resource for coastal gardeners felt both meaningful and practical.
+_Coastal Gardens is a website for my fourth portfolio project with [Code Institute](https://codeinstitute.net/ie/)._
 
-At the beginning, I felt unsure about how to approach the project, but as I started coding, things began to click. Working through each part of the website—from creating basic pages to designing the user experience—helped me better understand the concepts from my lessons. The process not only taught me more about Python logic and web frameworks, but also boosted my confidence as I realized I could solve problems and make the website functional.
+Coastal Gardens is a website designed to connect and support coastal gardeners in Ireland and the UK. Focused on the unique challenges and rewards of gardening by the sea, the site provides a selection of feature posts, plant zone information, and, by becoming members, unlock a personalized dashboard. Members have the opportunity to save favorite posts, keep track of their comments, and publish their own garden stories to inspire other coastal gardeners.
 
-The creative process became really enjoyable as I saw the website take shape, and I'm happy with how far I have gotten with it - it’s a website gardeners in Ireland and the UK could use to share stories, access local gardening advice, and find inspiration for their coastal gardens.
+### Project Purpose
 
-### Project SetUp
-
-For setting up Coastal Gardens, I followed the CodeStar follow-along project structure, customizing it to create a unique platform for coastal gardening enthusiasts.
-
-I began by building a Django framework, developing the foundational pages (Home, About, Features, and Zone Map) that offer general information to anyone interested in coastal gardening. Once this structure was stable, I added unique member features, including a personalized dashboards and the option for members to write and share blog posts exclusively within the community.
-
-This was my first experience handling both backend and frontend tasks together, which was challenging but rewarding. Developing these elements involved custom logic for saving, displaying, and managing user-generated content in a way that’s engaging and intuitive. Testing each step along the way helped me ensure smooth functionality and an accessible user experience.
-
-Overall, this process taught me a lot about web development and reinforced concepts from my coursework in a real-world setting, helping me build confidence in my coding abilities.
-
-Jump to Credits: [Credits](#credits)
+The purpose of Coastal Gardens is to create an online community dedicated to coastal gardening. Recognizing the specific needs of gardening by the sea, the platform aims to be a comprehensive resource for both beginners and seasoned gardeners facing the unique conditions of the coast. By providing a space for knowledge exchange, storytelling, and advice, Coastal Gardens empowers gardeners to create thriving and resilient gardens.
 
 ***
 
-## Agile Development Process
-
-### GitHub Projects
-
-[GitHub Projects](https://github.com/users/LemmenAid/projects/5/views/1) served as an Agile tool for the development of this project. 
-
-I started with creating the User Stories. Then these stories were broken down into tasks as steps to follow in the building process of the website. I added these steps to the Project Board on Github to keep track of the buidling process and to assist with better organisation and prioritisation of the tasks. 
-
-
-<details>
-<summary> User Story Template
-</summary>
-
-![User Story Template](README-files/user-story-temp.png)
-</details>
-
-<details>
-<summary> User Story Issues
-</summary>
-
-![User Story Issues](README-files/issues.png)
-</details>
-
-<details>
-<summary> Project Board
-</summary>
-
-![Project Board](README-files/project-board.png)
-</details>
-<br>
-
-***
-
-### User Stories
-
-VISITOR
-
-1. As a Visitor, I want to browse feature articles on coastal gardening, so that I can learn more about gardening by the sea.
-2. As a Visitor, I want to understand the plant zone map, so I can determine in which zone I live.
-3. As a Visitor, I want to read an About page to understand the purpose and mission of the site.
-4. As a Visitor, I want to easily navigate to different sections of the site, so I can find relevant information quickly.
-
-POTENTIAL MEMBER
-
-5. As a Potential Member, I want to view a sign-up page that explains the benefits of joining, so I know why I should become a member.
-6. As a Potential Member, I want a simple registration process, so I can quickly join the community.
-
-MEMBER
-
-7. As a Member, I want a personalised dashboard where I can save and view my favourite articles, so I can easily revisit them.
-8. As a Member, I want to see a list of all my comments in one place, so I can keep track of my participation.
-9. As a Member, I want the ability to write and publish my own gardening stories, so I can share my experiences with other members.
-10. As a Member, I want access to member-only stories, so I can learn from the experiences of other coastal gardeners.
-
-ADMIN
-
-11. As an Admin, I want to manage feature posts and member stories, so that the content is relevant, accurate, and engaging for users.
-12. As an Admin, I want to moderate comments, so I can ensure a respectful and constructive environment.
-13. As an Admin, I want to manage user accounts, so I can assist with membership issues and maintain site quality.
-
-***
-
-## Planning the Project
-
-### Layout / Wireframes
-
-The basic design layout of the website has been made using wireframes with Balsamiq. Responsive design has been used for creating this website. For instance, when a page goes from mobile to larger screens some of the content goes from stacked to lined up.
-
-<details>
-<summary> Home Page
-</summary>
-
-![alt text](README-files/wireframe-main.png)<br>
-
-</details>
-
-<details>
-<summary> Text Pages
-</summary>
-
-![alt text](README-files/wireframe-text-page.png)<br>
-
-</details>
-
-<details>
-<summary> Features Page
-</summary>
-
-![alt text](README-files/wireframe-features.png)<br>
-
-</details>
-
-<details>
-<summary> Mobile View
-</summary>
-
-![alt text](README-files/mb-all-wireframe.png)<br>
-
-</details>
-<br>
-
-***
-
-### Database Models / ERD's
-
-While planning this project, I drew up an Entity Relationship Diagram to help me to visualise the database models and their relationships.
-
-<details>
-<summary> Entity Relationship Diagram (ERD)
-</summary>
-
-![Database Diagram](README-files/erd-diagram.png)
-
-</details>
-
-***
-
-## Design
-
-### Colour Scheme
-
-![alt text](README-files/colour-palette.png)
-
-The Coastal Gardens colour scheme draws inspiration from the coastal landscape, incorporating natural tones that aligns with the garden-focused theme.
-
-Wanting to keep the design clean and clear, I have used only a few hues of green for adding colour. Making sure the attention of the reader is mostly drawn to the content. <br>
-I have chosen a light neutral for the background, which feels more natural than pure white and a deep charcoal for headers and accents to provide the necessary contrast, ensuring readability and accessible text elements without overwhelming the page.
-
-### Typography
-
-The typography on Coastal Gardens combines Cormorant Garamond with Roboto, a clean sans-serif font, to create a modern magazine-like feel. Cormorant Garamond adds an elegant, editorial touch, while the Roboto font keeps the content easy to read. 
-
-The following code has been imported into the top of the base.html file:
-
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-
-Roboto:<br>
-![alt text](README-files/roboto.png)<br>
-Cormorant Garamond:<br>
-![alt text](README-files/cormorant.png)<br>
-
-### Imagery
-
-Several image sources were used for the images throughout the website.<br>
-
-<details>
-<summary> The links to these sources are listed here:
-</summary>
-
-* [Hero Image, Bells of Ireland](https://floralife.com/article/bells-of-ireland-troubleshooting/)
-* Photo by Image Hunter: https://www.pexels.com/photo/hand-holding-note-on-green-bush-background-13092789/
-* Photo by Dave Love: https://www.pexels.com/photo/extreme-close-up-of-a-ripe-dandelion-17401938/
-* Photo by Photo By: Kaboompics.com: https://www.pexels.com/photo/plants-on-white-background-4736271/
-* Photo by Lukas Medvedevas: https://www.pexels.com/photo/a-man-standing-on-the-mountain-6013664/
-* Photo by Vicky Sim: https://unsplash.com/photos/brown-and-white-1-storey-house-surrounded-by-trees-VYRc_uIafIg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash/
-* Photo by Dmitrij Paskevic: https://unsplash.com/photos/white-concrete-house-beside-road-SGuK8EIUx_Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash/
-* Photo by Johny Goerend: https://unsplash.com/photos/aerial-view-of-green-grass-field-near-body-of-water-during-daytime-cGMTvIzhmAA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash/
-* https://www.lummi.ai/photo/a-close-up-view-of-a-lake-and-grass-near-a-cabin-in-t-e8db6be2-994a-4f68-b3f3-54493d2929d8-GuY3A
-* https://www.lummi.ai/photo/underwater-serenity-hx6rp
-* Photo by Steve W: https://www.pexels.com/photo/close-up-photo-of-labrador-on-flower-field-4200202/
-* Photo by Wynand van Poortvliet: https://unsplash.com/photos/two-black-and-white-birds-4AmyOdXZAQc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash/
-* Photo by Kristina Paukshtite: https://www.pexels.com/photo/blue-white-and-red-poppy-flower-field-712876/
-* Photo by Joerg Hartmann from Pexels: https://www.pexels.com/photo/poppy-on-meadow-17832251/
-* Photo by Photo By: Kaboompics.com: https://www.pexels.com/photo/person-in-brown-shorts-watering-the-plants-4750270/
-* Photo by Roy Manuhutu: https://www.pexels.com/photo/close-up-photo-of-flower-with-spiderweb-4099836/
-* Photo by Helena Jankovičová Kováčová from Pexels: https://www.pexels.com/photo/red-poppies-on-meadow-25578696/
-* Photo by Helena Jankovičová Kováčová: https://www.pexels.com/photo/close-up-of-red-berries-on-a-branch-outdoors-29238660/
-* https://www.gardensillustrated.com/features/wildlife-sand-habitats-gardens
-* Photo by Brendan Rühli: https://www.pexels.com/photo/close-up-of-blue-flowers-7268049/
-* Photo by Amie Roussel: https://www.pexels.com/photo/gardener-in-autumn-sunflower-garden-28965902/
-* Photo by Everson Marcos de Carvalho: https://www.pexels.com/photo/latin-american-fleabane-in-close-up-shot-12711555/
-* Photo by Tommes Frites: https://www.pexels.com/photo/a-single-cornflower-in-a-field-with-wheat-27797805/
-* Photo by Werner Redlich: https://www.pexels.com/photo/purple-foxglove-flowers-24287691/
-* Photo by Drew Anderson: https://www.pexels.com/photo/branch-of-blooming-tree-with-blossoms-5549936/
-* Photo by Daniil Komov: https://www.pexels.com/photo/black-and-gray-bird-flying-in-the-sky-10662583/
-* https://www.lummi.ai/photo/a-close-up-view-of-a-lake-and-grass-near-a-cabin-in-t-e8db6be2-994a-4f68-b3f3-54493d2929d8-GuY3A/
-* https://www.goodeggs.com/repettonursery/bells-of-ireland/5c82e8ba2a974d000e7099fe/
-</details>
-
-***
-
-## Features 
+## Features
 
 ### General Features on each page
 
@@ -370,6 +163,220 @@ The Contact Us page provides a direct way for users to reach out with inquiries 
 * A direct messages option between members.
 
 * A gallery page of all images features on the website.
+
+***
+
+## Project Development
+
+### Creating Process
+
+When I started developing Coastal Gardens, it was my first time working on a project that combined both backend and frontend development using the Django web Framework, and my second time using Python. This project presented a steep learning curve, especially as I tackled the challenges of Django, CSS, and user interactivity. I wanted to create something with real-world application, so the idea of a resource for coastal gardeners felt both meaningful and practical.
+
+At the beginning, I felt unsure about how to approach the project, but as I started coding, things began to click. Working through each part of the website—from creating basic pages to designing the user experience—helped me better understand the concepts from my lessons. The process not only taught me more about Python logic and web frameworks, but also boosted my confidence as I realized I could solve problems and make the website functional.
+
+The creative process became really enjoyable as I saw the website take shape, and I'm happy with how far I have gotten with it - it’s a website gardeners in Ireland and the UK could use to share stories, access local gardening advice, and find inspiration for their coastal gardens.
+
+### Project SetUp
+
+For setting up Coastal Gardens, I followed the CodeStar follow-along project structure, customizing it to create a unique platform for coastal gardening enthusiasts.
+
+I began by building a Django framework, developing the foundational pages (Home, About, Features, and Zone Map) that offer general information to anyone interested in coastal gardening. Once this structure was stable, I added unique member features, including a personalized dashboards and the option for members to write and share blog posts exclusively within the community.
+
+This was my first experience handling both backend and frontend tasks together, which was challenging but rewarding. Developing these elements involved custom logic for saving, displaying, and managing user-generated content in a way that’s engaging and intuitive. Testing each step along the way helped me ensure smooth functionality and an accessible user experience.
+
+Overall, this process taught me a lot about web development and reinforced concepts from my coursework in a real-world setting, helping me build confidence in my coding abilities.
+
+Jump to Credits: [Credits](#credits)
+
+***
+
+### Agile Development
+
+[GitHub Projects](https://github.com/users/LemmenAid/projects/5/views/1) served as an Agile tool for the development of this project. 
+
+I started with creating the User Stories. Then these stories were broken down into tasks as steps to follow in the building process of the website. I added these steps to the Project Board on Github to keep track of the buidling process and to assist with better organisation and prioritisation of the tasks. 
+
+
+<details>
+<summary> User Story Template
+</summary>
+
+![User Story Template](README-files/user-story-temp.png)
+</details>
+
+<details>
+<summary> User Story Issues
+</summary>
+
+![User Story Issues](README-files/issues.png)
+</details>
+
+<details>
+<summary> Project Board
+</summary>
+
+![Project Board](README-files/project-board.png)
+</details>
+<br>
+
+***
+
+### User Stories
+
+VISITOR
+
+1. As a Visitor, I want to browse feature articles on coastal gardening, so that I can learn more about gardening by the sea.
+2. As a Visitor, I want to understand the plant zone map, so I can determine in which zone I live.
+3. As a Visitor, I want to read an About page to understand the purpose and mission of the site.
+4. As a Visitor, I want to easily navigate to different sections of the site, so I can find relevant information quickly.
+
+POTENTIAL MEMBER
+
+5. As a Potential Member, I want to view a sign-up page that explains the benefits of joining, so I know why I should become a member.
+6. As a Potential Member, I want a simple registration process, so I can quickly join the community.
+
+MEMBER
+
+7. As a Member, I want a personalised dashboard where I can save and view my favourite articles, so I can easily revisit them.
+8. As a Member, I want to see a list of all my comments in one place, so I can keep track of my participation.
+9. As a Member, I want the ability to write and publish my own gardening stories, so I can share my experiences with other members.
+10. As a Member, I want access to member-only stories, so I can learn from the experiences of other coastal gardeners.
+
+ADMIN
+
+11. As an Admin, I want to manage feature posts and member stories, so that the content is relevant, accurate, and engaging for users.
+12. As an Admin, I want to moderate comments, so I can ensure a respectful and constructive environment.
+13. As an Admin, I want to manage user accounts, so I can assist with membership issues and maintain site quality.
+
+***
+
+## Layout
+
+### Wireframes
+
+The layout is clean and minimal, with a balance of serif and sans-serif fonts for a modern, magazine-like feel. Navigation is streamlined through a clear menu bar, with links to key areas such as Features, Dashboard, and About.
+
+Key interface elements include:
+
+- Interactive buttons for saving and deleting stories, visible only when applicable.
+- Easy-to-use forms for commenting and posting blogs.
+- Clear error pages that redirect users when something goes wrong.
+- Responsiveness is a priority, ensuring smooth usability on mobile and desktop devices.
+
+The basic layout for the website was designed using wireframes with Balsamiq.
+
+<details>
+<summary> Home Page
+</summary>
+
+![alt text](README-files/wireframe-main.png)<br>
+
+</details>
+
+<details>
+<summary> Text Pages
+</summary>
+
+![alt text](README-files/wireframe-text-page.png)<br>
+
+</details>
+
+<details>
+<summary> Features Page
+</summary>
+
+![alt text](README-files/wireframe-features.png)<br>
+
+</details>
+
+<details>
+<summary> Mobile View
+</summary>
+
+![alt text](README-files/mb-all-wireframe.png)<br>
+
+</details>
+<br>
+
+***
+
+### Database Models / ERD's
+
+While planning this project, I drew up an Entity Relationship Diagram to help me to visualise the database models and their relationships.
+
+<details>
+<summary> Entity Relationship Diagram (ERD)
+</summary>
+
+![Database Diagram](README-files/erd-diagram.png)
+
+</details>
+
+***
+
+## Design
+
+### Colour Scheme
+
+![alt text](README-files/colour-palette.png)
+
+The Coastal Gardens colour scheme draws inspiration from the coastal landscape, incorporating natural tones that aligns with the garden-focused theme.
+
+Wanting to keep the design clean and clear, I have used only a few hues of green for adding colour. Making sure the attention of the reader is mostly drawn to the content. <br>
+I have chosen a light neutral for the background, which feels more natural than pure white and a deep charcoal for headers and accents to provide the necessary contrast, ensuring readability and accessible text elements without overwhelming the page.
+
+### Typography
+
+The typography on Coastal Gardens combines Cormorant Garamond with Roboto, a clean sans-serif font, to create a modern magazine-like feel. Cormorant Garamond adds an elegant, editorial touch, while the Roboto font keeps the content easy to read. 
+
+The following code has been imported into the top of the base.html file:
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+Roboto:<br>
+![alt text](README-files/roboto.png)<br>
+Cormorant Garamond:<br>
+![alt text](README-files/cormorant.png)<br>
+
+### Imagery
+
+Several image sources were used for the images throughout the website.<br>
+
+<details>
+<summary> The links to these sources are listed here:
+</summary>
+
+* [Hero Image, Bells of Ireland](https://floralife.com/article/bells-of-ireland-troubleshooting/)
+* Photo by Image Hunter: https://www.pexels.com/photo/hand-holding-note-on-green-bush-background-13092789/
+* Photo by Dave Love: https://www.pexels.com/photo/extreme-close-up-of-a-ripe-dandelion-17401938/
+* Photo by Photo By: Kaboompics.com: https://www.pexels.com/photo/plants-on-white-background-4736271/
+* Photo by Lukas Medvedevas: https://www.pexels.com/photo/a-man-standing-on-the-mountain-6013664/
+* Photo by Vicky Sim: https://unsplash.com/photos/brown-and-white-1-storey-house-surrounded-by-trees-VYRc_uIafIg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash/
+* Photo by Dmitrij Paskevic: https://unsplash.com/photos/white-concrete-house-beside-road-SGuK8EIUx_Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash/
+* Photo by Johny Goerend: https://unsplash.com/photos/aerial-view-of-green-grass-field-near-body-of-water-during-daytime-cGMTvIzhmAA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash/
+* https://www.lummi.ai/photo/a-close-up-view-of-a-lake-and-grass-near-a-cabin-in-t-e8db6be2-994a-4f68-b3f3-54493d2929d8-GuY3A
+* https://www.lummi.ai/photo/underwater-serenity-hx6rp
+* Photo by Steve W: https://www.pexels.com/photo/close-up-photo-of-labrador-on-flower-field-4200202/
+* Photo by Wynand van Poortvliet: https://unsplash.com/photos/two-black-and-white-birds-4AmyOdXZAQc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash/
+* Photo by Kristina Paukshtite: https://www.pexels.com/photo/blue-white-and-red-poppy-flower-field-712876/
+* Photo by Joerg Hartmann from Pexels: https://www.pexels.com/photo/poppy-on-meadow-17832251/
+* Photo by Photo By: Kaboompics.com: https://www.pexels.com/photo/person-in-brown-shorts-watering-the-plants-4750270/
+* Photo by Roy Manuhutu: https://www.pexels.com/photo/close-up-photo-of-flower-with-spiderweb-4099836/
+* Photo by Helena Jankovičová Kováčová from Pexels: https://www.pexels.com/photo/red-poppies-on-meadow-25578696/
+* Photo by Helena Jankovičová Kováčová: https://www.pexels.com/photo/close-up-of-red-berries-on-a-branch-outdoors-29238660/
+* https://www.gardensillustrated.com/features/wildlife-sand-habitats-gardens
+* Photo by Brendan Rühli: https://www.pexels.com/photo/close-up-of-blue-flowers-7268049/
+* Photo by Amie Roussel: https://www.pexels.com/photo/gardener-in-autumn-sunflower-garden-28965902/
+* Photo by Everson Marcos de Carvalho: https://www.pexels.com/photo/latin-american-fleabane-in-close-up-shot-12711555/
+* Photo by Tommes Frites: https://www.pexels.com/photo/a-single-cornflower-in-a-field-with-wheat-27797805/
+* Photo by Werner Redlich: https://www.pexels.com/photo/purple-foxglove-flowers-24287691/
+* Photo by Drew Anderson: https://www.pexels.com/photo/branch-of-blooming-tree-with-blossoms-5549936/
+* Photo by Daniil Komov: https://www.pexels.com/photo/black-and-gray-bird-flying-in-the-sky-10662583/
+* https://www.lummi.ai/photo/a-close-up-view-of-a-lake-and-grass-near-a-cabin-in-t-e8db6be2-994a-4f68-b3f3-54493d2929d8-GuY3A/
+* https://www.goodeggs.com/repettonursery/bells-of-ireland/5c82e8ba2a974d000e7099fe/
+</details>
 
 *** 
 
