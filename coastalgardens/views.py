@@ -4,6 +4,7 @@ from django.shortcuts import render
 
 def handler400(request, exception):
     """Return custom 400 template"""
+    print("400 error handler invoked")  # Debug log
     return render(request, "errors/400.html", status=400)
 
 

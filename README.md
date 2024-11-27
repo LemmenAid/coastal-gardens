@@ -152,6 +152,7 @@ The Contact Us page provides a direct way for users to reach out with inquiries 
 
 ![Sign Up](README-files/contact.png)
 
+*** 
 
 #### Custom Error Handler Page
 Custom error pages to ensure user-friendly navigation, even in unexpected situations.

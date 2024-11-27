@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.conf.urls import handler500, handler404, handler403, handler400
+#from django.conf.urls import handler500, handler404, handler403, handler400
 from . import views
 
 
