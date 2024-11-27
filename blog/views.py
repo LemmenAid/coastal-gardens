@@ -108,6 +108,7 @@ def post_detail(request, slug):
     )
 
 
+@login_required
 def comment_edit(request, slug, comment_id):
     """
     Display an individual comment for edit.

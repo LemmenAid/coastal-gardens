@@ -2,6 +2,7 @@ from django.urls import path
 from . import views
 from blog import views as blog_views
 
+
 urlpatterns = [
     path("", views.user_dashboard, name="dashboard"),
     path("save-post/<int:post_id>/", views.save_post,

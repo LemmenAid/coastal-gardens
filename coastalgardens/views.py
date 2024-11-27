@@ -3,10 +3,10 @@ from django.core.exceptions import BadRequest
 from django.http import HttpResponseServerError
 
 
-#Testing the error pages
+# Testing the error pages
 def test_error(request):
-    #return HttpResponse(status=500) #test 500 error
-    raise BadRequest #test 400 error
+    # return HttpResponse(status=500) # test 500 error
+    raise BadRequest  # test 400 error
 
 
 def bad_request(request, exception):
