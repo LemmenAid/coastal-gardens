@@ -586,7 +586,7 @@ _I have used several different READMEs to write the deployment section of this R
 All listed in the credit section below._<br>
 
 
-The Live deplyed application can be found deployed on [Heroku](https://coastal-gardens-e950c82335fb.herokuapp.com/).<br>
+The Live deployed application can be found deployed on [Heroku](https://coastal-gardens-e950c82335fb.herokuapp.com/).<br>
 This project was developed using [GitPod Enterprise](www.gitpod.io/) and committed to git and pushed to GitHub.
 
 ### Database

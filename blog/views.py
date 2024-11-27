@@ -5,21 +5,21 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
 from .models import Post, Comment
 from .forms import CommentForm
-from django.http import HttpResponse, HttpResponseBadRequest, HttpResponseForbidden, HttpResponseServerError
+#from django.http import HttpResponse, HttpResponseBadRequest, HttpResponseForbidden, HttpResponseServerError
 
-def test_400(request):
-    raise ValueError ("Simulating a 400 error.")
+#def test_400(request):
+#    raise ValueError ("Simulating a 400 error.")
 
-def test_403(request):
-    raise PermissionError("Simulating a 403 error.")
+#def test_403(request):
+#    return HttpResponseForbidden("403.html")
 
-def test_404(request):
+#def test_404(request):
     # Raise a 404 error explicitly
-    return HttpResponse(status=404)
+ #   return HttpResponse(status=404)
 
-def test_500(request):
+#def test_500(request):
     # Simulate a server error by raising an exception
-    raise Exception("Simulating a 500 error.")
+ #   raise Exception("Simulating a 500 error.")
 
 
 def home(request):
