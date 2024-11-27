@@ -17,14 +17,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from . import views
-from django.conf.urls import handler400, handler403, handler404, handler500
-from coastalgardens.views import test_400_error
-
-# Handlers for custom error pages
-handler400 = 'coastalgardens.views.bad_request'
-handler403 = 'coastalgardens.views.permission_denied'
-handler404 = 'coastalgardens.views.page_not_found'
-handler500 = 'coastalgardens.views.server_error'
 
 
 urlpatterns = [
@@ -34,6 +26,12 @@ urlpatterns = [
     path("contact/", include("contact.urls"), name="contact-urls"),
     path("dashboard/", include("dashboard.urls")),
     path('summernote/', include('django_summernote.urls')),
+    path('test-error/', views.test_error, name='test_error'),
     path("", include("blog.urls"), name="blog-urls"),
-    path('test-400/', test_400_error, name='test_400'),
 ]
+
+# Handlers for custom error pages
+handler400 = 'coastalgardens.views.bad_request'
+handler403 = 'coastalgardens.views.permission_denied'
+handler404 = 'coastalgardens.views.page_not_found'
+handler500 = 'coastalgardens.views.server_error'

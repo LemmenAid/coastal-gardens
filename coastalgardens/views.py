@@ -1,9 +1,12 @@
 from django.shortcuts import render
 from django.core.exceptions import BadRequest
+from django.http import HttpResponseServerError
 
-#Testing the 400 error page
-def test_400_error(request):
-    raise BadRequest("This is a test 400 error.")
+
+#Testing the error pages
+def test_error(request):
+    #return HttpResponse(status=500) #test 500 error
+    raise BadRequest #test 400 error
 
 
 def bad_request(request, exception):

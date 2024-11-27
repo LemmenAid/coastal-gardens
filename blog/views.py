@@ -2,24 +2,10 @@ from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponseRedirect
 from .models import Post, Comment
 from .forms import CommentForm
-#from django.http import HttpResponse, HttpResponseBadRequest, HttpResponseForbidden, HttpResponseServerError
-
-#def test_400(request):
-#    raise ValueError ("Simulating a 400 error.")
-
-#def test_403(request):
-#    return HttpResponseForbidden("403.html")
-
-#def test_404(request):
-    # Raise a 404 error explicitly
- #   return HttpResponse(status=404)
-
-#def test_500(request):
-    # Simulate a server error by raising an exception
- #   raise Exception("Simulating a 500 error.")
 
 
 def home(request):
@@ -53,7 +39,7 @@ class PostList(generic.ListView):
     paginate_by = 3
 
 
-class MemberStoriesView(generic.ListView):
+class MemberStoriesView(LoginRequiredMixin, generic.ListView):
     """
     Displays a paginated list of member stories posts.
 
@@ -154,6 +140,7 @@ def comment_edit(request, slug, comment_id):
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
+@login_required
 def comment_delete(request, slug, comment_id):
     """
     Delete an individual comment from a blog post.

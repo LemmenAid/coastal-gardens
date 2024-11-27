@@ -31,7 +31,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    '*']
+    '8000-lemmenaid-coastalgarden-1k1wefnkeaf.ws.codeinstitute-ide.net',
+    '.herokuapp.com']
 
 # Application definition
 INSTALLED_APPS = [
