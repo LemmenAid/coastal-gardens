@@ -3,7 +3,7 @@ from django.views import generic
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponseForbidden
 from .models import Post, Comment
 from .forms import CommentForm
 
@@ -77,6 +77,13 @@ def post_detail(request, slug):
     """
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
+
+    # Restrict access if post is a member story and user is not authenticated
+    if post.is_member_story and not request.user.is_authenticated:
+        messages.warning(request,
+                         "You must be logged in to view this member story.")
+        return redirect(reverse('account_login'))
+
     comments = post.comments.all().order_by("-created_on")
     comment_count = post.comments.filter(approved=True).count()
 
