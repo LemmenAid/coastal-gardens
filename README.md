@@ -579,6 +579,8 @@ Coastal Gardens was tested through the Heroku app website on the following brows
 
 * Added the 'status=1' filter in the user_dashboard view, to only include stories that are published in "Your Stories".
 
+* During testing of my error pages, I realized that the order of URL paths in urls.py is crucial. Specifically, the empty ("") path must always be the last entry. Initially, my error page tests weren’t working because I had added the test paths at the end, which caused the empty path to interfere. Once I corrected the order, everything worked as expected.
+
 ***
 
 ## Deployment 
@@ -744,8 +746,7 @@ I have used various resources to help me with figuring out how to create the Coa
 * [Get Bootstrap - for the auto-dismiss alert](https://getbootstrap.com/docs/5.0/components/alerts/)
 * [She Codes - for the auto-dismiss alert](https://www.shecodes.io/athena/8466-how-to-create-an-event-listener-to-alert-a-message)
 * [GitHub/CMed01 - for the custom error pages](https://github.com/CMed01/portfolio-milestone-4/tree/main)
-
-
+* [Learn Django - for the custom error pages](https://learndjango.com/tutorials/customizing-django-404-and-500-error-pages)
 
 * [Stack overflow](https://stackoverflow.com/)
 * [Pep Style Guide](https://peps.python.org/pep-0008/)
