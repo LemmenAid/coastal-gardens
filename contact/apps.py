@@ -9,7 +9,8 @@ class ContactConfig(AppConfig):
     including specifying the default primary key field type and the app name.
 
     Attributes:
-        default_auto_field (str): The field type used for auto-incrementing primary keys.
+        default_auto_field (str): 
+        The field type used for auto-incrementing primary keys.
         name (str): The name of the application within the project.
     """
     default_auto_field = 'django.db.models.BigAutoField'
