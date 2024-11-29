@@ -10,7 +10,7 @@ Return back to the [README.md](README.md) file.
 * [Responsiveness](#responsiveness)
 * [Browser Compatibility](#browser-compatibility)
 * [Lighthouse Audit](#lighthouse-audit)
-* [Defensive Programming](#devensive-programming)
+* [Defensive Programming](#defensive-programming)
 * [User Story Testing](#user-story-testing)
 * [Automated Testing](#automated-testing)
 * [Solved Bugs](#solved-bugs)
