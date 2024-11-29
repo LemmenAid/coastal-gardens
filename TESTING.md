@@ -2,6 +2,20 @@
 
 Return back to the [README.md](README.md) file.
 
+## Index – Table of Contents
+* [HTML](#html)
+* [CSS](#css)
+* [JavaScript](#javascript)
+* [Python](#python)
+* [Responsiveness](#responsiveness)
+* [Browser Compatibility](#browser-compatibility)
+* [Lighthouse Audit](#lighthouse-audit)
+* [Defensive Programming](#devensive-programming)
+* [User Story Testing](#user-story-testing)
+* [Automated Testing](#automated-testing)
+* [Solved Bugs](#solved-bugs)
+
+
 
 ## Code Validation
 
@@ -116,7 +130,7 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 ***
 
-## Browser Compatibility
+### Browser Compatibility
 
 Coastal Gardens was tested through the Heroku app website on the following browsers without issues:  
 - Google Chrome (Version 132.0.6834.6) | Works as expected
@@ -126,14 +140,14 @@ Coastal Gardens was tested through the Heroku app website on the following brows
 
 ***
 
-## Responsiveness
+### Responsiveness
 * The website has been tested on different devices(under which; iPhone SE / iPhone 12 / Samsung Galaxy S9 / MacBook Air / MacBook Pro / HP laptop).
 * The website was responsive on all screens from mobile phones to desktops.
 * Chrome DEV Tools have been used to check the responsivness throughout the development of the website.
 
 ***
 
-## Lighthouse Audit
+### Lighthouse Audit
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 Overall I am happy with the outcome. However, the Best Practices is significantly influenced by Cloudinary images.
@@ -152,7 +166,7 @@ Overall I am happy with the outcome. However, the Best Practices is significantl
 
 ***
 
-## Defensive Programming
+### Defensive Programming
 
 Defensive programming was manually tested with the below user acceptance testing:
 
@@ -213,7 +227,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | | messages disappear automatically | after 5 sec message appears it will automatically disappear. | Pass |
 
 
-## User Story Testing
+### User Story Testing
 
 | User Story | Screenshot |
 | --- | --- |
@@ -236,10 +250,10 @@ Defensive programming was manually tested with the below user acceptance testing
 | As an Admin, I want to manage user accounts, so I can assist with membership issues and maintain site quality. | ![screenshot]() |
 
 
-## Automated Testing
+### Automated Testing
 
 
-### Python (Unit Testing)
+#### Python (Unit Testing)
 
 I have used Django's built-in unit testing framework to test the application functionality.
 
@@ -263,12 +277,12 @@ Below are the results from the various apps on my application that I've tested:
 
 | App | File | Coverage | Screenshot |
 | --- | --- | --- | --- |
-| Users | tests.py | 99% | ![screenshot](documentation/py-test/users.png) |
-| Reservations | tests.py | 89% | ![screenshot](documentation/py-test/reservations.png) |
-| Website | tests.py | 97% | ![screenshot](documentation/py-test/website.png) |
+| Dashboard | tests.py | 99% | ![screenshot]() |
+| Blog | tests.py | 89% | ![screenshot]() |
+| Coastalgardens | tests.py | 97% | ![screenshot]() |
 
 
-## Solved Bugs
+### Solved Bugs
 
 * During testing I replaced the Post.objects.get() line with get_object_or_404 in my save_post view. This ensures that if the Post with the given post_id does not exist, Django will return a 404 response instead of raising an exception.
 

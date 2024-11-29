@@ -15,7 +15,6 @@
 * [Design](#design)
 * [Technologies Used](#technologies-used)
 * [Testing](#testing)
-* [Solved Bugs](#solved-bugs)
 * [Deployment](#deployment)
 * [Credits](#credits)
 
