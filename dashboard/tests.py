@@ -9,7 +9,8 @@ from dashboard.models import UserProfile
 class UserProfileModelTests(TestCase):
 
     def setUp(self):
-        self.user = User.objects.create_user(username="testuser", password="password")
+        self.user = User.objects.create_user(
+            username="testuser", password="password")
         self.post = Post.objects.create(
             title="Test Post",
             content="Content of the test post",
@@ -37,11 +38,13 @@ class UserProfileModelTests(TestCase):
 class UserProfileSignalTests(TestCase):
 
     def test_user_profile_signal_creates_profile(self):
-        user = User.objects.create_user(username="signaltestuser", password="password")
+        user = User.objects.create_user(
+            username="signaltestuser", password="password")
         self.assertTrue(UserProfile.objects.filter(user=user).exists())
 
     def test_user_profile_signal_saves_profile(self):
-        user = User.objects.create_user(username="saveprofiletest", password="password")
+        user = User.objects.create_user(
+            username="saveprofiletest", password="password")
         user.profile.garden_zone = "8a"
         user.save()
         self.assertEqual(user.profile.garden_zone, "8a")
@@ -51,21 +54,23 @@ class UserProfileSignalTests(TestCase):
 class DashboardViewTests(TestCase):
 
     def setUp(self):
-        self.user = User.objects.create_user(username="dashboarduser", password="password")
+        self.user = User.objects.create_user(
+            username="dashboarduser", password="password")
         self.client.login(username="dashboarduser", password="password")
 
     def test_dashboard_view(self):
         response = self.client.get(reverse("dashboard"))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, "dashboard/dashboard.html")
-        self.assertContains(response, "Welcome")  # Customize based on your template content
+        self.assertContains(response, "Welcome")
 
 
 # ------------ SAVE_POST VIEW TESTING ------------
 class SavePostViewTests(TestCase):
 
     def setUp(self):
-        self.user = User.objects.create_user(username="savepostuser", password="password")
+        self.user = User.objects.create_user(
+            username="savepostuser", password="password")
         self.post = Post.objects.create(
             title="Test Post",
             content="Test content",
@@ -75,14 +80,17 @@ class SavePostViewTests(TestCase):
         self.client.login(username="savepostuser", password="password")
 
     def test_save_post_adds_to_saved_posts(self):
-        response = self.client.post(reverse("save_post", args=[self.post.id]))
-        self.assertRedirects(response, reverse("post_detail", kwargs={"slug": self.post.slug}))
+        response = self.client.post(reverse(
+            "save_post", args=[self.post.id]))
+        self.assertRedirects(response, reverse(
+            "post_detail", kwargs={"slug": self.post.slug}))
         self.assertIn(self.post, self.user.profile.saved_posts.all())
 
     def test_save_post_removes_from_saved_posts(self):
         self.user.profile.saved_posts.add(self.post)
         response = self.client.post(reverse("save_post", args=[self.post.id]))
-        self.assertRedirects(response, reverse("post_detail", kwargs={"slug": self.post.slug}))
+        self.assertRedirects(response, reverse(
+            "post_detail", kwargs={"slug": self.post.slug}))
         self.assertNotIn(self.post, self.user.profile.saved_posts.all())
 
 
@@ -90,14 +98,15 @@ class SavePostViewTests(TestCase):
 class CreateMemberStoryViewTests(TestCase):
 
     def setUp(self):
-        self.user = User.objects.create_user(username="storyuser", password="password")
+        self.user = User.objects.create_user(
+            username="storyuser", password="password")
         self.client.login(username="storyuser", password="password")
 
     def test_create_member_story_get_request(self):
         response = self.client.get(reverse("create_member_story"))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, "dashboard/create_member_story.html")
-        self.assertContains(response, "Create a Member Story")  # Customize based on template content
+        self.assertContains(response, "Create a Member Story")
 
     def test_create_member_story_post_valid_form(self):
         data = {
@@ -121,8 +130,10 @@ class NonAuthenticatedAccessTests(TestCase):
 
     def test_dashboard_redirects_unauthenticated_user(self):
         response = self.client.get(reverse("dashboard"))
-        self.assertRedirects(response, f"{reverse('account_login')}?next={reverse('dashboard')}")
+        self.assertRedirects(response, f"{reverse(
+            'account_login')}?next={reverse('dashboard')}")
 
     def test_create_member_story_redirects_unauthenticated_user(self):
         response = self.client.get(reverse("create_member_story"))
-        self.assertRedirects(response, f"{reverse('account_login')}?next={reverse('create_member_story')}")
+        self.assertRedirects(response, f"{reverse(
+            'account_login')}?next={reverse('create_member_story')}")

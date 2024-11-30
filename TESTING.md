@@ -126,6 +126,7 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | apps.py | ![screenshot](TESTING-files/python-db-apps.png) | Pass: No Errors |
 | forms.py | ![screenshot](TESTING-files/python-db-forms.png) | Pass: No Errors |
 | models.py | ![screenshot](TESTING-files/python-db-models.png) | Pass: No Errors |
+| tests.py | ![screenshot](TESTING-files/python-dashboard-tests.png) | Pass: No Errors |
 | signals.py | ![screenshot](TESTING-files/python-db-signals.png) | Pass: No Errors |
 | urls.py | ![screenshot](TESTING-files/python-db-urls.png) | Pass: No Errors |
 | views.py | ![screenshot](TESTING-files/python-db-views.png) | Pass: No Errors |
