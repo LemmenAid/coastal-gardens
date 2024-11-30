@@ -233,23 +233,25 @@ Defensive programming was manually tested with the below user acceptance testing
 
 | User Story | Screenshot |
 | --- | --- |
-| As a Visitor, I want to browse feature articles on coastal gardening, so that I can learn more about gardening by the sea. | ![screenshot]() |
-| As a Visitor, I want to understand the plant zone map, so I can determine in which zone I live. | ![screenshot]() |
-| As a Visitor, I want to read an About page to understand the purpose and mission of the site. | ![screenshot]() |
-| As a Visitor, I want to easily navigate to different sections of the site, so I can find relevant information quickly. | ![screenshot]() |
-| As a Visitor, I can see a paginated list of site feature posts so that I see only the most up-to-date posts and can navigate to older posts if I wish | ![screenshot]()|
-| As a Potential Member, I want to view a sign-up page that explains the benefits of joining, so I know why I should become a member. | ![screenshot]() |
-| As a Potential Member, I want a simple registration process, so I can quickly join the community. | ![screenshot]() |
-| As a Member, I want a personalised dashboard where I can save and view my favourite articles, so I can easily revisit them. | ![screenshot]() |
-| As a Member, I want to see a list of all my comments in one place, so I can keep track of my participation. | ![screenshot]() |
-| As a Member, I can see a paginated list of site Member Stories so that I see only the most up-to-date posts and can navigate to older posts if I wish | ![screenshot]()|
-| As a Member, I want the ability to write and publish my own gardening stories, so I can share my experiences with other members. | ![screenshot]() |
-| As a Member, I want access to member-only stories, so I can learn from the experiences of other coastal gardeners. | ![screenshot]() |
-| As an Member, I can logout so that access to my account is stopped and my information is kept secure | ![screenshot]() |
-| As an Member, I can login to the site so that I can access account-based functionalities and information | ![screenshot]() |
-| As an Admin, I can update select site content via a back-end interface so that I can add and remove content from the site, without engaging with the site's code. | ![screenshot]() |
-| As an Admin, I want to moderate comments, so I can ensure a respectful and constructive environment. | ![screenshot]() |
-| As an Admin, I want to manage user accounts, so I can assist with membership issues and maintain site quality. | ![screenshot]() |
+| As a Visitor, I want to browse feature articles on coastal gardening, so that I can learn more about gardening by the sea. | ![screenshot](TESTING-files/user-story-features.png) |
+| As a Visitor, I want to be able to view the plant zone map, so I can determine in which zone I live. | ![screenshot](TESTING-files/user-story-zone.png) |
+| As a Visitor, I want to read an About page to understand the purpose and mission of the site. | ![screenshot](TESTING-files/user-story-about.png) |
+| As a Visitor, I want to easily navigate to different sections of the site, so I can find relevant information quickly. | ![screenshot](TESTING-files/user-story-navigation.png) |
+| As a Visitor, I can see a paginated list of site feature posts so that I see only the most up-to-date posts and can navigate to older posts if I wish | ![screenshot](TESTING-files/user-story-pagination.png)|
+| As a Potential Member, I want to view a sign-up page that explains the benefits of joining, so I know why I should become a member. | ![screenshot](TESTING-files/user-story-signup.png) |
+| As a Potential Member, I want a simple registration process, so I can quickly join the community. | ![screenshot](TESTING-files/user-story-signup2.png) |
+| As a Member, I want a personalised dashboard where I can save and view my favourite articles, so I can easily revisit them. | ![screenshot](TESTING-files/user-story-dashboard.png) |
+| As a Member, I want to see a list of all my comments in one place, so I can keep track of my participation. | ![screenshot](TESTING-files/user-story-comments.png) |
+| As a Member, I can see a paginated list of site Member Stories so that I see only the most up-to-date posts and can navigate to older posts if I wish | ![screenshot](TESTING-files/user-story-member-stories.png)|
+| As a Member, I want the ability to write and publish my own gardening stories, so I can share my experiences with other members. | ![screenshot](TESTING-files/user-story-create.png) |
+| As a Member, I want access to member-only stories, so I can learn from the experiences of other coastal gardeners. | ![screenshot](TESTING-files/user-story-member-story.png) |
+| As a Member, I can delete a story that I have written. | ![screenshot](TESTING-files/user-story-delete-story.png) |
+| As a Member, I can comment on stories and edit / delete these comments. | ![screenshot](TESTING-files/user-story-delete-edit-comments.png) |
+| As a Member, I can logout so that access to my account is stopped and my information is kept secure | ![screenshot](TESTING-files/user-story-logout.png) |
+| As an Member, I can login to the site so that I can access account-based functionalities and information | ![screenshot](TESTING-files/user-story-login.png) |
+| As an Admin, I can update select site content via a back-end interface so that I can add and remove content from the site, without engaging with the site's code. | ![screenshot](TESTING-files/user-story-admin1.png) |
+| As an Admin, I want to moderate comments, so I can ensure a respectful and constructive environment. | ![screenshot](TESTING-files/user-story-admin2.png) |
+| As an Admin, I want to manage user accounts, so I can assist with membership issues and maintain site quality. | ![screenshot](TESTING-files/user-story-admin3.png) |
 
 
 ### Automated Testing

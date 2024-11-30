@@ -232,7 +232,7 @@ I started with creating the User Stories. Then these stories were broken down in
 VISITOR
 
 1. As a Visitor, I want to browse feature articles on coastal gardening, so that I can learn more about gardening by the sea.
-2. As a Visitor, I want to understand the plant zone map, so I can determine in which zone I live.
+2. As a Visitor, I want to be able to view the plant zone map, so I can determine in which zone I live.
 3. As a Visitor, I want to read an About page to understand the purpose and mission of the site.
 4. As a Visitor, I want to easily navigate to different sections of the site, so I can find relevant information quickly.
 
@@ -247,12 +247,14 @@ MEMBER
 8. As a Member, I want to see a list of all my comments in one place, so I can keep track of my participation.
 9. As a Member, I want the ability to write and publish my own gardening stories, so I can share my experiences with other members.
 10. As a Member, I want access to member-only stories, so I can learn from the experiences of other coastal gardeners.
+11. As a member, I can delete a story that I have written.
+12. As a member, I can comment on stories and edit / delete these comments.
 
 ADMIN
 
-11. As an Admmin, I can update select site content via a back-end interface so that I can add and remove content from the site, without engaging with the site's code.
-12. As an Admin, I want to moderate comments, so I can ensure a respectful and constructive environment.
-13. As an Admin, I want to manage user accounts, so I can assist with membership issues and maintain site quality.
+13. As an Admmin, I can update select site content via a back-end interface so that I can add and remove content from the site, without engaging with the site's code.
+14. As an Admin, I want to moderate comments, so I can ensure a respectful and constructive environment.
+15. As an Admin, I want to manage user accounts, so I can assist with membership issues and maintain site quality.
 
 ***
 
