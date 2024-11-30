@@ -100,6 +100,7 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | apps.py | ![screenshot](TESTING-files/python-blog-apps.png) | Pass: No Errors |
 | forms.py | ![screenshot](TESTING-files/python-blog-forms.png) | Pass: No Errors |
 | models.py | ![screenshot](TESTING-files/python-blog-models.png) | Pass: No Errors |
+| tests.py | ![screenshot](TESTING-files/python-blog-tests.png) | Pass: No Errors |
 | urls.py | ![screenshot](TESTING-files/python-blog-urls.png) | Pass: No Errors |
 | views.py | ![screenshot](TESTING-files/python-blog-views.png) | Pass: No Errors |
 
@@ -277,11 +278,9 @@ Below are the results from the various apps on my application that I've tested:
 
 | App | File | Coverage | Screenshot |
 | --- | --- | --- | --- |
-
 | Blog | tests.py | 93% | ![screenshot](TESTING-files/automated-blog.png) |
+| About | tests.py | 100% | ![screenshot](TESTING-files/automated-about.png) |
 | Dashboard | tests.py | 99% | ![screenshot]() |
-| Coastalgardens | tests.py | 97% | ![screenshot]() |
-
 
 ### Solved Bugs
 

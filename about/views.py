@@ -17,10 +17,15 @@ def about_me(request):
     """
     about = About.objects.all().order_by('-updated_on').first()
 
+    # If no About object exists, provide a fallback message
+    if not about:
+        about = None
+
     return render(
         request,
         "about/about.html",
-        {"about": about},
+        {"about": about,
+         "no_about_content": not about},
     )
 
 
@@ -33,8 +38,3 @@ def zone_map_view(request):
     """
     return render(request, 'about/zone-map.html')
 
-
-def get_started_view(request):
-    """
-    """
-    return HttpResponse("Get Started page is under construction")

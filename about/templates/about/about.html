@@ -19,10 +19,14 @@
   <!-- Title and Content -->
   <div class="row mb-4">
     <div class="col-12">
+      {% if no_about_content %}
+      <p>No about content available</p>
+      {% else %}
       <h2 class="h2-about">{{ about.title }}</h2>
       <div>
         {{ about.content | safe }}
       </div>
+      {% endif %}
     </div>
   </div>
 
