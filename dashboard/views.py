@@ -95,9 +95,11 @@ def create_member_story(request):
             messages.add_message(request, messages.SUCCESS,
                                  'Story waiting for approval!')
             return redirect("member_stories")
+        else:
+            messages.add_message(request, messages.ERROR,
+                                 'Error uploading story!')
     else:
-        messages.add_message(request, messages.ERROR,
-                             'Error uploading story!')
         form = MemberStoryForm()
+
     return render(request, "dashboard/create_member_story.html",
                   {"form": form})

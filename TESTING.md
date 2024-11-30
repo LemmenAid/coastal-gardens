@@ -228,6 +228,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | | feedback messages | After updating or deleting a comment as a user you get a feedback message. | Pass |
 | | messages disappear automatically | after 5 sec message appears it will automatically disappear. | Pass |
 
+***
 
 ### User Story Testing
 
@@ -253,9 +254,9 @@ Defensive programming was manually tested with the below user acceptance testing
 | As an Admin, I want to moderate comments, so I can ensure a respectful and constructive environment. | ![screenshot](TESTING-files/user-story-admin2.png) |
 | As an Admin, I want to manage user accounts, so I can assist with membership issues and maintain site quality. | ![screenshot](TESTING-files/user-story-admin3.png) |
 
+***
 
 ### Automated Testing
-
 
 #### Python (Unit Testing)
 
@@ -283,7 +284,9 @@ Below are the results from the various apps on my application that I've tested:
 | --- | --- | --- | --- |
 | Blog | tests.py | 93% | ![screenshot](TESTING-files/automated-blog.png) |
 | About | tests.py | 100% | ![screenshot](TESTING-files/automated-about.png) |
-| Dashboard | tests.py | 99% | ![screenshot]() |
+| Dashboard | tests.py | 99% | ![screenshot](TESTING-files/automated-dashboard.png) |
+
+***
 
 ### Solved Bugs
 
@@ -293,3 +296,4 @@ Below are the results from the various apps on my application that I've tested:
 
 * During testing of my error pages, I realized that the order of URL paths in urls.py is crucial. Specifically, the empty ("") path must always be the last entry. Initially, my error page tests weren’t working because I had added the test paths at the end, which caused the empty path to interfere. Once I corrected the order, everything worked as expected.
 
+* The else block of my create_storie_view was being executed every time the request method was GET, which ment that the error message from the view was added even when the user first visits the page (without having submitted the form/published the story). To fix this, I moved the error message handling to the part of the code where the form is checked for validity.

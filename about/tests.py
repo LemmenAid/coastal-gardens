@@ -4,6 +4,7 @@ from .models import About
 from django.contrib.auth import get_user_model
 
 
+# ------------ VIEWS TESTING ------------
 class AboutViewTests(TestCase):
 
     def setUp(self):
