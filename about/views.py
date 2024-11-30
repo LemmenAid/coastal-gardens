@@ -37,4 +37,3 @@ def zone_map_view(request):
     :template:`about/zone-map.html`
     """
     return render(request, 'about/zone-map.html')
-

@@ -88,6 +88,7 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | admin.py | ![screenshot](TESTING-files/python-about-admin.png) | Pass: No Errors |
 | apps.py | ![screenshot](TESTING-files/python-about-apps.png) | Pass: No Errors |
 | models.py | ![screenshot](TESTING-files/python-about-models.png) | Pass: No Errors |
+| tests.py | ![screenshot](TESTING-files/python-about-tests.png) | Pass: No Errors |
 | urls.py | ![screenshot](TESTING-files/python-about-urls.png) | Pass: No Errors |
 | views.py | ![screenshot](TESTING-files/python-about-views.png) | Pass: No Errors |
 
