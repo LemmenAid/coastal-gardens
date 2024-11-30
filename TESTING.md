@@ -77,9 +77,15 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| comments.js | ![screenshot](TESTING-files/js-comments.png) | Pass: No Errors |
+| comments.js | ![screenshot](TESTING-files/js-comments.png) | One undefined variable "bootstrap" see below. |
 | contact-zone-map.js | ![screenshot](TESTING-files/js-contact-zone-map.png) | Pass: No Errors |
-| JavaScript in the base.html | ![screenshot](TESTING-files/js-base.png) | Pass: No Errors |
+| JavaScript in the base.html | ![screenshot](TESTING-files/js-base.png) | One undefined variable "bootstrap" see below. |
+
+
+One undefined variable "bootstrap".
+
+This appears when using Bootstrap's JavaScript components (like new bootstrap.Modal in the comments.js file.) because JSHint doesn't recognize the bootstrap object as a global variable, even though it is defined globally by the included Bootstrap JS file.
+This is a common issue with external libraries that define global variables. JSHint doesn't automatically detect these variables unless they are declared in the configuration.
 
 ***
 
@@ -315,3 +321,5 @@ Below are the results from the various apps on my application that I've tested:
 * During testing of my error pages, I realized that the order of URL paths in urls.py is crucial. Specifically, the empty ("") path must always be the last entry. Initially, my error page tests weren’t working because I had added the test paths at the end, which caused the empty path to interfere. Once I corrected the order, everything worked as expected.
 
 * The else block of my create_storie_view was being executed every time the request method was GET, which ment that the error message from the view was added even when the user first visits the page (without having submitted the form/published the story). To fix this, I moved the error message handling to the part of the code where the form is checked for validity.
+
+***
