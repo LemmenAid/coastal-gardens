@@ -590,6 +590,10 @@ I have used various resources to help me with figuring out how to create the Coa
 * [She Codes - for the auto-dismiss alert](https://www.shecodes.io/athena/8466-how-to-create-an-event-listener-to-alert-a-message)
 * [GitHub/CMed01 - for the custom error pages](https://github.com/CMed01/portfolio-milestone-4/tree/main)
 * [Learn Django - for the custom error pages](https://learndjango.com/tutorials/customizing-django-404-and-500-error-pages)
+* [Django Docs - for automated testing](https://docs.djangoproject.com/en/5.1/topics/testing/overview/)
+* [The Mozilla Developer Network (MDN) - for automated testing](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Testing)
+* [YouTube - Mastering Django Unit Testing: An In-Depth Introduction and Tutorial](https://www.youtube.com/watch?v=N_HLNV2UQjg&t=1s)
+* [YouTube - Automated Test Basics - Python & Django](https://www.youtube.com/watch?v=6I_haJimhPY)
 
 * [Stack overflow](https://stackoverflow.com/)
 * [Pep Style Guide](https://peps.python.org/pep-0008/)

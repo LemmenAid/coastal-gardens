@@ -277,8 +277,9 @@ Below are the results from the various apps on my application that I've tested:
 
 | App | File | Coverage | Screenshot |
 | --- | --- | --- | --- |
-| Dashboard | tests.py | 99% | ![screenshot]() |
+
 | Blog | tests.py | 93% | ![screenshot](TESTING-files/automated-blog.png) |
+| Dashboard | tests.py | 99% | ![screenshot]() |
 | Coastalgardens | tests.py | 97% | ![screenshot]() |
 
 
