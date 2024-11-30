@@ -40,7 +40,24 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Custom Error 500 | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2F8000-lemmenaid-coastalgarden-1k1wefnkeaf.ws.codeinstitute-ide.net%2Ftest-error%2F#textarea) | ![screenshot](TESTING-files/html-500.png) | Pass: No Errors |
 | Login | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](TESTING-files/html-login.png) | Pass: No Errors |
 | Logout | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2Faccounts%2Flogin%2F#textarea) | ![screenshot](TESTING-files/html-logout.png) | Pass: No Errors |
-| Signup | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](TESTING-files/html-signup.png) | Pass: but Errors |
+| Signup | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](TESTING-files/html-signup.png) | Errors explained below. |
+
+<br>
+The following validation errors appear on the signup page when using Django allauth: 
+<br>
+<br>
+
+1. "End tag p implied, but there were open elements" 
+- This occurs because the default form rendering does not close < p > or < span > tags properly when rendering help text.
+
+2. "Unclosed element span" and "Stray end tag span" 
+- These errors are due to the way Django allauth handles help text within form fields. It wraps help text in < span > tags but does not ensure strict compliance with HTML validation rules.
+
+3. "No p element in scope but a p end tag seen" 
+- Django allauth uses < p > tags inconsistently, which causes this error when rendering form errors or help texts.
+<br>
+
+These errors are caused by the default Django form rendering engine used by allauth, which generates the HTML automatically. While these issues do not affect functionality, fixing them would require overriding the templates or form rendering logic entirely.
 
 *** 
 
