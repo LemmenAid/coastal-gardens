@@ -154,6 +154,30 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | urls.py | ![screenshot](TESTING-files/python-db-urls.png) | Pass: No Errors |
 | views.py | ![screenshot](TESTING-files/python-db-views.png) | Pass: No Errors |
 
+
+***
+
+### Testing Error Pages
+
+To ensure that custom error pages (e.g., 400, 403, 404, and 500 errors) display correctly, the following setup was implemented during development for testing purposes.
+
+1. A temporary route was added in urls.py to trigger various error responses manually.
+2. The temporary test_error view raises specific exceptions or returns error status codes to simulate different error scenarios.<br>
+
+![Screenshot](TESTING-files/testing%20error%20pages..png)
+
+<br>
+
+Testing Procedure<br>
+1. Visit the /test-error/ URL in your browser. 
+2. Uncomment one of the lines in the test_error function at a time to simulate the desired error.
+3. Reload the page and verify the correct error template is displayed.
+4. Check that the page matches your custom design for error pages.
+
+For the 404 test, a non-existent URL was accessed directly instead of using the /test-error route.
+
+
+
 ***
 
 ### Browser Compatibility
@@ -320,6 +344,6 @@ Below are the results from the various apps on my application that I've tested:
 
 * During testing of my error pages, I realized that the order of URL paths in urls.py is crucial. Specifically, the empty ("") path must always be the last entry. Initially, my error page tests weren’t working because I had added the test paths at the end, which caused the empty path to interfere. Once I corrected the order, everything worked as expected.
 
-* The else block of my create_storie_view was being executed every time the request method was GET, which ment that the error message from the view was added even when the user first visits the page (without having submitted the form/published the story). To fix this, I moved the error message handling to the part of the code where the form is checked for validity.
+* The else block of my create_stories_view was being executed every time the request method was GET, which ment that the error message from the view was added even when the user first visits the page (without having submitted the form/published the story). To fix this, I moved the error message handling to the part of the code where the form is checked for validity.
 
 ***
