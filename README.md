@@ -12,6 +12,7 @@
 * [Features](#features)
 * [Project Development](#project-development)
 * [Layout](#layout)
+* [Data Schema](#data-schema)
 * [Design](#design)
 * [Technologies Used](#technologies-used)
 * [Testing](#testing)
@@ -308,7 +309,7 @@ The basic layout for the website was designed using wireframes with Balsamiq.
 
 ***
 
-### Database Models / ERD's
+### Data Schema
 
 The data schema for the Coastal Gardens website is structured using a relational model, as illustrated in the Entity Relationship Diagram (ERD) provided. Below is an Entity Relationship Diagram that shows the key models and their fields:
 
@@ -341,7 +342,7 @@ Attributes:
 - saved_posts (ManyToManyField linked to Post model)
 
 Purpose: 
-Extends the User model to include additional fields for saved posts.
+User model for personalised dashboard, to include additional fields for saved posts.
 
 #### 3. Post Model
 
