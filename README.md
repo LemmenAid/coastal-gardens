@@ -167,6 +167,8 @@ Custom error pages to ensure user-friendly navigation, even in unexpected situat
 
 * Another future enhancement could be a “Garden Planner” feature. This planner could provide personalized monthly to-do lists where gardeners can focus on timely tasks like planting, pruning, and seasonal maintenance.
 
+* Reset password functionality for members, in case they forget their password.
+
 * A direct messages option between members.
 
 * A gallery page of all images features on the website.
