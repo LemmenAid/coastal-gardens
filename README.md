@@ -705,7 +705,7 @@ I have used various resources to help me with figuring out how to create the Coa
 
 ***
 
-### Templates I have used for inspiration and creating my readme-file:
+### Templates I have used for inspiration and creating my readme.md and my testing.md:
 
 I have used several readme file as inspiration to write this readme:
 
@@ -714,6 +714,6 @@ I have used several readme file as inspiration to write this readme:
 Used for general guideline.
 * [Plant Factory - crypticCaroline](https://github.com/crypticCaroline/ms1-plantfactory/blob/master/README.md?plain=1) - Especially for the Technologies Used, Testing sections and design sections.
 * [Visit Järbo - ClaudiaInSweden](https://github.com/ClaudiaInSweden/visit-jarbo/blob/main/README.md?plain=1) - General inspiration / guideline.
-* [Bushy Park Tennis CLub - LewisMDillon](https://github.com/LewisMDillon/bushy-park-tennis-club-ld) - Deployment section and general inspiration.
+* [Bushy Park Tennis CLub - LewisMDillon](https://github.com/LewisMDillon/bushy-park-tennis-club-ld) - Deployment section and TESTING.md.
 * [Oasis Hotels - Marchopkins96](https://github.com/Marchopkins96/oasis-hotels) - General inspiration / guideline.
 * [GitHub Docs](https://docs.github.com/en)
